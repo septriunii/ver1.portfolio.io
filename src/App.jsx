@@ -1,5 +1,5 @@
 import Intro from "./components/Intro";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Intro />
         <AboutMe />
         <Skills />
