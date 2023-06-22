@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+#triangle1 {
+  border-top: 30rem solid white;
+  border-left: 40.625rem solid transparent;
+  border-right: 8.75rem solid white;
+  opacity: 0.1;
+}
+
+#triangle2 {
+  width: 0;
+  height: 0;
+  border-bottom: 23.75rem solid black;
+  border-left: 43.75rem solid transparent;
+  opacity: ;
+}
+
+/* black */
+#triangle3 {
+  width: 0;
+  height: 0;
+  border-bottom: 30rem solid black;
+  border-left: 27.5rem solid transparent;
+  border-right: 6.25rem solid black;
+  opacity: ;
+}
+
+/* black */
+#triangle4 {
+  border-top: 30rem solid white;
+  border-left: 31.25rem solid transparent;
+  border-right: 0rem solid white;
+  opacity: 0.1;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: rgb(234, 88, 12);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+span {
+  color: rgb(234, 88, 12);
+}
+#imgbg {
+  background-image: url(../assets/intro1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bg {
+  background-size: cover;
+  background-position: center;
+}
+.bg-github-logo {
+  background-image: url("../assets/github-svgrepo-com.svg");
+}
+
+.bg-github-logo:hover {
+  background-image: url("../assets/github-svgrepo-com.png");
+}
+
+.bg-facebook-logo {
+  background-image: url("../assets/facebook-svgrepo-com.svg");
+}
+.bg-facebook-logo:hover {
+  background-image: url("../assets/facebook-svgrepo-com.png");
+}
+
+.bg-gmail-logo {
+  background-image: url("../assets/gmail-svgrepo-com.svg");
+}
+.bg-gmail-logo:hover {
+  background-image: url("../assets/gmail-svgrepo-com.png");
+}
+
+.bg-linkedin-logo {
+  background-image: url("../assets/linkedin-svgrepo-com.svg");
+}
+.bg-linkedin-logo:hover {
+  background-image: url("../assets/linkedin-svgrepo-com.png");
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.blue-div {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  transition: width 0.5s, height 0.5s;
+}
+
+.orange-border {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 10px solid orange;
+  transition: top 0.5s, left 0.5s;
+}
+#image {
+  background-image: url(../assets/intro3.jpg);
+  background-position: center;
+  background-size: cover;
+}
