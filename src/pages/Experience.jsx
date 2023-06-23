@@ -1,33 +1,113 @@
 function Experience() {
   return (
     <>
-      <div className="h-[30rem] w-[70rem] mt-28 flex flex-col">
-        <h1 className="font-bold text-3xl p-3 text-orange-600">Experience</h1>
+      <div className="h-auto w-[70rem] mt-[1300px] flex flex-col">
+        <h1 className="font-bold text-3xl p-3 text-orange-600 ">Experience</h1>
         <div className="flex h-full">
-          <div className="h-full w-[100%] flex flex-col gap-4  p-2 text-justify font-mono ml-5 ">
-            <h1>Lead Engineer @ Upstatement</h1>
-            <p className="bg-slate-900 p-3 rounded-md">May 2018 - Present</p>
-            <div className="flex flex-col gap-5">
-              <p>
-                Deliver high-quality, robust production code for a diverse array
-                of projects for clients including Harvard Business School,
-                Everytown for Gun Safety, Pratt Institute, Koala Health,
-                Vanderbilt University, The 19th News, and more
+          <div className="h-full w-[100%] flex flex-col gap-5  p-5 text-justify font-mono ml-3 bg-zinc-700 bg-opacity-20 ">
+            <div className="flex flex-col gap-2">
+              <h1 className="font-bold text-3xl p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
+                IT Support Technician
+                <span className="text-white">&middot; </span>Internship
+              </h1>
+              <p className="italic ml-3">
+                Zamboanga Sibugay 2nd District House of The Representative
+                Office
               </p>
-              <p>
-                Work alongside creative directors to lead the research,
-                development, and architecture of technical solutions to fulfill
-                business requirements
+              <p className="ml-3 text-sm text-orange-600">
+                January 2023 - April 2023
               </p>
-              <p>
-                Collaborate with designers, project managers, and other
-                engineers to transform creative concepts into production
-                realities for clients and stakeholders
+            </div>
+
+            <div className="flex flex-col gap-5 mt-5 ml-3">
+              <ul className="flex flex-col gap-5 list-disc ml-5">
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Assisted staff with{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      troubleshooting technical issues
+                    </span>
+                    , both hardware and software, providing prompt resolutions.{" "}
+                  </span>
+                </li>
+
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Supported the{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      setup and configuration
+                    </span>{" "}
+                    of computer systems, printers, and other peripherals.
+                  </span>
+                </li>
+
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Provided{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      guidance to staff members
+                    </span>{" "}
+                    on the effective use of technology resources.
+                  </span>
+                </li>
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Assisted in various{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      social work-related tasks
+                    </span>
+                    , contributing to the support and development of community.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex h-full mt-10">
+          <div className="h-full w-[100%] flex flex-col gap-5  p-5 text-justify font-mono ml-3 bg-zinc-700 bg-opacity-20 ">
+            <div className="flex flex-col gap-2">
+              <h1 className="font-bold text-3xl p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
+                Data Entry Clerk
+                <span className="text-white">&middot; </span>Immersion
+              </h1>
+              <p className="italic ml-3">
+                R.T.Lim Municipal Office - Human Ressources Department
               </p>
-              <p>
-                Provide leadership within engineering department through close
-                collaboration, knowledge shares, and mentorship
-              </p>
+              <p className="ml-3 text-sm text-orange-600">September 2018</p>
+            </div>
+            <div className="flex flex-col gap-5 mt-5 ml-3">
+              <ul className="flex flex-col gap-5 list-disc ml-5">
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Assisted in{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      encoding and organizing data
+                    </span>{" "}
+                    in the office’s database
+                  </span>
+                </li>
+
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Provided{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      IT support and troubleshooting
+                    </span>{" "}
+                    for office staff.
+                  </span>
+                </li>
+
+                <li className="text-orange-600">
+                  <span className="text-white">
+                    Provided assistance to the office staff in{" "}
+                    <span className="border-b border-orange-600 text-white cursor-default">
+                      HR-related tasks
+                    </span>
+                    , supporting their efforts in personnel management.
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

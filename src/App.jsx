@@ -4,7 +4,7 @@ import AboutMe from "./pages/AboutMe";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
-import GetInTouch from "./pages/GetInTouch";
+import Tools from "./pages/Tools";
 import Footer from "./components/Footer";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
-        <GetInTouch />
+        <Tools />
         <Footer />
       </div>
     </>

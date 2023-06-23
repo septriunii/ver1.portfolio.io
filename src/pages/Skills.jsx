@@ -2,7 +2,9 @@ function Skills() {
   return (
     <>
       <div className="h-[30rem] w-[70rem] mt-36 flex flex-col">
-        <h1 className="font-bold text-3xl p-3 mb-5 text-orange-600">Skills</h1>
+        <h1 className="font-bold text-3xl p-3 mb-5 text-orange-600">
+          /Skills/
+        </h1>
         <div className="flex h-full">
           <div className="h-full w-[100%] flex flex-col gap-7  p-2 text-justify font-mono mr-5">
             <ul className="flex flex-col gap-3 list-disc ml-5">

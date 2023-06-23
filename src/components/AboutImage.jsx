@@ -35,8 +35,8 @@ function ImageDiv() {
           }`}
         ></div>
         <div
-          className={`h-full w-full absolute bg-zinc-900 opacity-50 z-20 transition-all duration-300 ease-in-out ${
-            isHovered ? "opacity-0" : ""
+          className={`h-full w-full absolute bg-black opacity-50  transition-all duration-300 ease-in-out ${
+            isHovered ? "opacity-[0.1]" : ""
           }`}
         ></div>
       </div>
