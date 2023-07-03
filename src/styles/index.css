@@ -61,11 +61,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -116,7 +111,7 @@ span {
   background-position: center;
 }
 .bg-github-logo {
-  background-image: url("../assets/github-svgrepo-com.svg");
+  background-image: url("");
 }
 
 .bg-github-logo:hover {
@@ -170,4 +165,70 @@ span {
   background-image: url(../assets/intro3.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.font_theme {
+  font-weight: 400;
+}
+
+.font_descript {
+  font-weight: 200;
+}
+
+.Hi {
+  font-weight: 600;
+}
+
+.font_uniform {
+  font-size: 1.1rem;
+}
+
+.text-gap {
+  line-height: 30px;
+}
+.text-gap2 {
+  line-height: 32px;
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
 }

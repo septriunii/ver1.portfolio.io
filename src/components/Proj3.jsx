@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function ImageDiv() {
   const [isHovered, setIsHovered] = useState(false);
@@ -50,7 +50,7 @@ function ImageDiv() {
           </button>
         </div>
         <p
-          className={`bg-zinc-900 rounded-md absolute left-[33rem] w-[25rem] px-8 py-5 font-mono transition-all duration-500 ease-in-out ${
+          className={`bg-zinc-900 rounded-md absolute left-[33rem] w-[25rem] px-8 py-5 font-light transition-all duration-500 ease-in-out ${
             isHovered ? "left-[39rem]" : ""
           }`}
         >

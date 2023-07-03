@@ -1,89 +1,142 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/a.png";
 import ToggleButton from "./ToggleButton";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Rectangle from "./Rectangle";
 
 function Navbar() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isSmScreen, setIsSmScreen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [showRectangle, setShowRectangle] = useState(false);
+
+  const toggleRectangle = () => {
+    setShowRectangle(!showRectangle);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-
-      setVisible(currentScrollPos < prevScrollPos);
-
-      setPrevScrollPos(currentScrollPos);
+    const handleResize = () => {
+      setIsSmScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
     };
 
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingUp = prevScrollPos > currentScrollPos;
+
+      setPrevScrollPos(currentScrollPos);
+      setVisible(isScrollingUp || currentScrollPos < 10); // Show navbar when scrolling up or at the top of the page
+    };
+
+    handleResize(); // Check initial screen size
+
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
   return (
     <div>
-      <div
-        className={`bg-zinc-900 w-full h-20 fixed top-0 left-0 flex items-center justify-between ${
-          visible ? "" : "transform translate-y-[-100%]"
-        } transition-transform duration-300 z-50 `}
-      >
-        <section className="ml-7 cursor-pointer">
-          <div className="h-12 w-12 flex bg-center items-center p-3">
-            <img src={logo} alt="" href="#" />
-          </div>
-        </section>
-        <section className="flex gap-10 mr-14 font-mono  ">
-          <div className="cursor-pointer hover:text-orange-600 transition-colors duration-300">
-            About Me
-          </div>
-          <div className="cursor-pointer hover:text-orange-600 transition-colors duration-300">
-            Skills
-          </div>
-          <div className="cursor-pointer hover:text-orange-600 transition-colors duration-300">
-            Projects
-          </div>
-          <div className="cursor-pointer hover:text-orange-600 transition-colors duration-300">
-            Experience
-          </div>
-          <div className="cursor-pointer hover:text-orange-600 transition-colors duration-300">
-            Contact Me
-          </div>
-          <ToggleButton />
-        </section>
-      </div>
+      {isSmScreen ? (
+        // Hamburger menu for sm screen
+        <div className="bg-zinc-900 w-full h-20 fixed top-0 left-0 flex items-center justify-between z-50">
+          <section className="ml-7 cursor-pointer">
+            <div className="h-12 w-12 flex bg-center items-center p-3">
+              <img src={logo} alt="" href="#" />
+            </div>
+          </section>
 
-      {/* sidebar */}
-      <div className="bg-zinc- h-[32rem] w-24 fixed left-0 flex flex-col justify-center items-center gap-4 top-32">
-        <div className="w-10 h-10 cursor-pointer flex items-center p-1 relative ">
-          <div className="bg bg-github-logo w-full h-full object-contain transition-all duration-300 transform hover:scale-110"></div>
+          <div className="sm:hidden mr-7 z-50">
+            <div className="hamburger" onClick={toggleRectangle}>
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
+            </div>
+          </div>
         </div>
-        <div className="w-10 h-10 cursor-pointer flex items-center p-1 relative">
-          <div className="bg bg-facebook-logo w-full h-full object-contain transition-all duration-300 transform hover:scale-110"></div>
+      ) : (
+        // Regular navbar for md and lg screens
+        <div className="bg-zinc-900 w-full h-20 fixed top-0 left-0 flex justify-between items-center">
+          <section className="ml-7 cursor-pointer">
+            <div className="h-12 w-12 flex bg-center items-center p-3">
+              <img src={logo} alt="" href="#" />
+            </div>
+          </section>
+
+          {/* Navbar responsive */}
+          <section className="hidden sm:flex mr-7 gap-4 md:gap-7 lg:mr-14 lg:gap-12">
+            <div className="opacity-80">
+              <ScrollLink
+                to="aboutme"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+              >
+                About Me
+              </ScrollLink>
+            </div>
+
+            <div className="opacity-80">
+              <ScrollLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+              >
+                Skills
+              </ScrollLink>
+            </div>
+
+            <div className="opacity-80">
+              <ScrollLink
+                to="proj"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+              >
+                Projects
+              </ScrollLink>
+            </div>
+
+            <div className="opacity-80">
+              <ScrollLink
+                to="exp"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+              >
+                Experience
+              </ScrollLink>
+            </div>
+
+            <div className="opacity-80">
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+              >
+                Contact Me
+              </ScrollLink>
+            </div>
+            <ToggleButton />
+          </section>
         </div>
-        <div className="w-10 h-10 cursor-pointer flex items-center p-1 relative">
-          <div className="bg bg-gmail-logo w-full h-full object-contain transition-all duration-300 transform hover:scale-110"></div>
+      )}
+
+      {showRectangle && (
+        <div className="sm:hidden">
+          <Rectangle onClose={toggleRectangle} />
         </div>
-        <div className="w-10 h-10 cursor-pointer flex items-center p-1 relative">
-          <div className="bg bg-linkedin-logo w-full h-full object-contain transition-all duration-300 transform hover:scale-110"></div>
-        </div>
-
-        <div className="h-36 w-[3px] bg-[#111010] fixed bottom-[0]"></div>
-      </div>
-
-      {/* sidebar 2*/}
-      <div className="bg-zinc- h-[32rem] w-24 fixed right-0 flex flex-col justify-center items-center gap-7">
-        <div className="h-32 w-[4px] bg-[#111010] absolute top-0"></div>
-
-        <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-        <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-        <div className="w-3 h-3 cursor-pointer flex items-center relative  rounded-full border-orange-600 border-2"></div>
-        <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-        <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-
-        <div className="h-32 w-[4px] bg-[#111010] absolute bottom-0"></div>
-      </div>
+      )}
     </div>
   );
 }

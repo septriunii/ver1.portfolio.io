@@ -1,22 +1,32 @@
 function Skills() {
   return (
     <>
-      <div className="h-[30rem] w-[70rem] mt-36 flex flex-col">
-        <h1 className="font-bold text-3xl p-3 mb-5 text-orange-600">
-          /Skills/
+      <div
+        id="skills"
+        className="lg:h-[30rem] mt-28 lg:w-[70rem] lg:mt-32 flex flex-col lg:pl-10 "
+      >
+        <h1 className="font-bold text-2xl mb-8 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
+          <p className="w-16 italic mr-5">Skills</p>
+          <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
         <div className="flex h-full">
-          <div className="h-full w-[100%] flex flex-col gap-7  p-2 text-justify font-mono mr-5">
+          <div className="text-xs px-3 h-full w-[100%] flex flex-col gap-7 text-justify font-light opacity-90 lg:mr-5 lg:px-5 lg:p-5">
             <ul className="flex flex-col gap-3 list-disc ml-5">
               <li className="text-orange-600">
                 <span className="text-white">
                   Proficient in frontend web technologies such as
                   <span> HTML</span>, <span>CSS</span>, and
-                  <span> JavaScript</span>. Experienced in modern frontend
-                  frameworks and libraries including <span>ReactJS</span> and{" "}
-                  <span>TailwindCSS</span>. Familiar with additional tools and
-                  languages like <span>TypeScript</span> and <span>Sass</span>{" "}
-                  for enhanced development capabilities.
+                  <span> JavaScript</span>.
+                </span>
+              </li>
+
+              <li className="text-orange-600">
+                <span className="text-white">
+                  Experienced in modern frontend frameworks and libraries
+                  including <span>ReactJS</span> and <span>TailwindCSS</span>.
+                  Familiar with additional tools and languages like{" "}
+                  <span>TypeScript</span> and <span>Sass</span> for enhanced
+                  development capabilities.
                 </span>
               </li>
 
@@ -70,19 +80,6 @@ function Skills() {
               </span>{" "}
               set to deliver exceptional web solutions.
             </p>
-          </div>
-          <div className="h-full w-[45%] flex items-center">
-            {/* container */}
-            <div
-              id="imgbg"
-              className="w-full h-[75%] flex items-center justify-center bg-slate-950"
-            >
-              {/* image */}
-              <div className="h-full w-full relative p-3">
-                {/* border */}
-                <div className="w-full h-full border-orange-600 border-2 absolut"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
