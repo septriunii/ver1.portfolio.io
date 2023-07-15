@@ -1,30 +1,60 @@
+import { useEffect, useRef } from "react";
+
 function Experience() {
+  const fadeRefs = [useRef(null), useRef(null)];
+
+  useEffect(() => {
+    const observers = fadeRefs.map((ref) => {
+      return new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          ref.current.classList.add("active");
+        }
+      });
+    });
+
+    observers.forEach((observer, index) => {
+      observer.observe(fadeRefs[index].current);
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        observer.unobserve(fadeRefs[index].current);
+      });
+    };
+  }, []);
+
   return (
     <>
-      <div id="exp" className="h-auto w-[70rem] mt-[68rem] flex flex-col ">
-        <h1 className="font-bold text-4xl py-3 text-orange-600 flex justify-center items-center pl-5 mb-12">
-          <p className="w-60 italic mr-7">Experience</p>
+      <div
+        id="exp"
+        className="mt-10 w-full lg:h-auto lg:w-[67rem] flex flex-col lg:mt-28"
+      >
+        <h1 className="font-bold text-2xl mb-8 ml-5 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
+          <p className="w-28 italic mr-5 lg:w-52">Experience</p>
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
 
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex h-full">
-            <div className="h-full w-[100%] flex flex-col gap-5  p-5 text-justify font-light ml-3 bg-zinc-700 bg-opacity-20 rounded-md">
+        <div className="flex flex-col md:grid md:grid-cols-2 justify-center items-center gap-5">
+          <div className="flex h-full w-full ">
+            <div
+              ref={fadeRefs[0]}
+              className="fade-in h-full w-full flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light ml-3 bg-zinc-700 bg-opacity-20 rounded-md "
+            >
               <div className="flex flex-col gap-2">
-                <h1 className="font-bold text-3xl p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
+                <h1 className="flex justify-center text-lg font-bold p-2 md:text-2xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 w-full gap-2">
                   IT Support Technician
                   <span className="text-white">&middot; </span>Internship
                 </h1>
-                <p className="italic ml-3">
+                <p className="text-xs md:text-sm italic ml-3">
                   Zamboanga Sibugay 2nd District House of The Representative
                   Office
                 </p>
-                <p className="ml-3 text-sm text-orange-600">
+                <p className="text-xs md:text-sm ml-3 lg:text-sm text-orange-600">
                   January 2023 - April 2023
                 </p>
               </div>
 
-              <div className="flex flex-col gap-5 mt-5 ml-3">
+              <div className="text-xs md:text-sm flex flex-col gap-5 mt-5 lg:ml-3">
                 <ul className="flex flex-col gap-5 list-disc ml-5">
                   <li className="text-orange-600">
                     <span className="text-white">
@@ -71,19 +101,24 @@ function Experience() {
             </div>
           </div>
 
-          <div className="flex h-full mt-10">
-            <div className="h-full w-[100%] flex flex-col gap-5  p-5 text-justify font-light ml-3 bg-zinc-700 bg-opacity-20 rounded-md">
+          <div ref={fadeRefs[1]} className="flex h-full w-full fade-in">
+            <div className="h-full w-[100%] flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-md ">
               <div className="flex flex-col gap-2">
-                <h1 className="font-bold text-3xl p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
+                <h1 className="justify-center text-lg font-bold p-2 md:text-2xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
                   Data Entry Clerk
                   <span className="text-white">&middot; </span>Immersion
                 </h1>
-                <p className="italic ml-3">
+
+                <p className="text-xs md:text-sm italic ml-3">
                   R.T.Lim Municipal Office - Human Ressources Department
                 </p>
-                <p className="ml-3 text-sm text-orange-600">September 2018</p>
+
+                <p className="text-xs md:text-sm ml-3 lg:text-sm text-orange-600">
+                  September 2018
+                </p>
               </div>
-              <div className="flex flex-col gap-5 mt-5 ml-3">
+
+              <div className="text-xs md:text-sm flex flex-col gap-5 mt-5 lg:ml-3">
                 <ul className="flex flex-col gap-5 list-disc ml-5">
                   <li className="text-orange-600">
                     <span className="text-white">

@@ -18,17 +18,18 @@ function ImageDiv() {
 
         <div
           id="border"
-          className={`w-[570px] h-[360px] border-orange-600 border-2 absolute top-0 right-0 z-0 transition-all duration-300 ease-in-out ${
+          className={`lg:w-[570px] lg:h-[360px] md:h-72 md:w-96 border-orange-600 border-2 absolute top-0 right-0 z-0 transition-all duration-300 ease-in-out ${
             isHovered ? "top-5 right-5" : ""
           }`}
         ></div>
 
         <div
           id="imgbg"
-          className="h-[360px] w-[570px] flex items-center justify-center bg-slate-950"
+          className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center bg-slate-950"
         ></div>
+
         <div
-          className={`h-[360px] w-[570px] flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out ${
+          className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out ${
             isHovered ? "bg-black opacity-70 p-5" : ""
           }`}
           onMouseEnter={handleContainerHover}
@@ -49,9 +50,10 @@ function ImageDiv() {
             View code
           </button>
         </div>
+
         <p
-          className={`bg-zinc-900 rounded-md absolute left-[33rem] w-[25rem] px-8 py-5 transition-all duration-500 ease-in-out font-light ${
-            isHovered ? "left-[39rem]" : ""
+          className={`bg-zinc-900 rounded-md absolute md:text-sm md:left-[23rem] md:w-96 lg:left-[33rem] lg:w-[25rem] px-8 py-5 font-light transition-all duration-500 ease-in-out ${
+            isHovered ? "lg:left-[39rem] md:left-[28rem]" : ""
           }`}
         >
           Developed a comprehensive e-commerce website, ShopifyPro, that offers

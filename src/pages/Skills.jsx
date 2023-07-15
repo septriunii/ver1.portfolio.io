@@ -1,18 +1,52 @@
+import Tools from "./Tools";
+import React, { useEffect, useRef } from "react";
+
 function Skills() {
+  const fadeRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
+
+  useEffect(() => {
+    const observers = fadeRefs.map((ref) => {
+      return new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          ref.current.classList.add("active");
+        }
+      });
+    });
+
+    observers.forEach((observer, index) => {
+      observer.observe(fadeRefs[index].current);
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        observer.unobserve(fadeRefs[index].current);
+      });
+    };
+  }, []);
+
   return (
     <>
       <div
         id="skills"
-        className="lg:h-[30rem] mt-28 lg:w-[70rem] lg:mt-32 flex flex-col lg:pl-10 "
+        className="lg:h-[30rem] mt-28 lg:w-[67rem] flex flex-col lg:pl-10 lg:mt-28"
       >
-        <h1 className="font-bold text-2xl mb-8 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
-          <p className="w-16 italic mr-5">Skills</p>
+        <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
+          <p className="w-16 italic mr-5 lg:w-20 lg:mr-5">Skills</p>
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
-        <div className="flex h-full">
-          <div className="text-xs px-3 h-full w-[100%] flex flex-col gap-7 text-justify font-light opacity-90 lg:mr-5 lg:px-5 lg:p-5">
-            <ul className="flex flex-col gap-3 list-disc ml-5">
-              <li className="text-orange-600">
+        <div className="flex h-full -mt-3">
+          <div className=" text-xs px-3 h-full w-[100%] flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:w-[90%]  lg:mr-5 lg:px-5 lg:p-5">
+            <ul className="flex flex-col gap-3 list-disc ml-5 lg:gap-5">
+              <li ref={fadeRefs[0]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in frontend web technologies such as
                   <span> HTML</span>, <span>CSS</span>, and
@@ -20,7 +54,7 @@ function Skills() {
                 </span>
               </li>
 
-              <li className="text-orange-600">
+              <li ref={fadeRefs[1]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Experienced in modern frontend frameworks and libraries
                   including <span>ReactJS</span> and <span>TailwindCSS</span>.
@@ -30,7 +64,7 @@ function Skills() {
                 </span>
               </li>
 
-              <li className="text-orange-600">
+              <li ref={fadeRefs[2]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Skilled in <span>graphic design</span>, applying fundamental
                   design principles to create visually appealing web
@@ -39,27 +73,27 @@ function Skills() {
                 </span>
               </li>
 
-              <li className="text-orange-600">
+              <li ref={fadeRefs[3]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Knowledgeable in <span>backend development</span>, including
                   database management, SQL, and NoSQL.
                 </span>
               </li>
-              <li className="text-orange-600">
+              <li ref={fadeRefs[4]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Experienced in utilizing version control systems like{" "}
                   <span>Git</span> and <span>GitHub</span> for efficient
                   collaboration and code management.
                 </span>
               </li>
-              <li className="text-orange-600">
+              <li ref={fadeRefs[5]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in programming languages such as <span>C++</span>,{" "}
                   <span>Python</span>, and
                   <span>JavaScript</span>, enabling versatile problem-solving.
                 </span>
               </li>
-              <li className="text-orange-600">
+              <li ref={fadeRefs[6]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Experienced in utilizing prompts for <span>chatbots</span> and
                   other <span>AI tools</span>, including their applications in
@@ -67,7 +101,9 @@ function Skills() {
                 </span>
               </li>
             </ul>
-            <p>
+            <Tools />
+
+            <p ref={fadeRefs[7]} className="leading-7 right-fade-in">
               With these skills, I am well-equipped to handle various aspects of
               web development, from designing visually captivating interfaces to
               implementing robust backend functionality. I am committed to{" "}

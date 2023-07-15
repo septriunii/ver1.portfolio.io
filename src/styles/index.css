@@ -17,38 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-#triangle1 {
-  border-top: 30rem solid white;
-  border-left: 40.625rem solid transparent;
-  border-right: 8.75rem solid white;
-  opacity: 0.1;
-}
-
-#triangle2 {
-  width: 0;
-  height: 0;
-  border-bottom: 23.75rem solid black;
-  border-left: 43.75rem solid transparent;
-  opacity: ;
-}
-
-/* black */
-#triangle3 {
-  width: 0;
-  height: 0;
-  border-bottom: 30rem solid black;
-  border-left: 27.5rem solid transparent;
-  border-right: 6.25rem solid black;
-  opacity: ;
-}
-
-/* black */
-#triangle4 {
-  border-top: 30rem solid white;
-  border-left: 31.25rem solid transparent;
-  border-right: 0rem solid white;
-  opacity: 0.1;
-}
 
 a {
   font-weight: 500;
@@ -81,10 +49,6 @@ button {
 button:hover {
   border-color: rgb(234, 88, 12);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -116,6 +80,7 @@ span {
 
 .bg-github-logo:hover {
   background-image: url("../assets/github-svgrepo-com.png");
+  opacity: 1;
 }
 
 .bg-facebook-logo {
@@ -231,4 +196,105 @@ span {
 .body-container {
   display: grid;
   grid-template-columns: 1fr 12fr 1fr;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.5s steps(40);
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+::selection {
+  background-color: rgb(12, 10, 10);
+  color: orangered;
+  opacity: 0.5;
+}
+
+/* appear from below */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* just appear */
+.just-fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.just-fade-in.active {
+  opacity: 1;
+}
+
+/* appear from above */
+.above-fade-in {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.above-fade-in.active {
+  opacity: 0.4;
+  transform: translateY(0);
+}
+
+/* appear from right */
+.right-fade-in {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.right-fade-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* appear from left */
+.left-fade-in {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.left-fade-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* appear from below */
+.text-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.text-fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
 }

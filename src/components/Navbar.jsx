@@ -42,9 +42,9 @@ function Navbar() {
     <div>
       {isSmScreen ? (
         // Hamburger menu for sm screen
-        <div className="bg-zinc-900 w-full h-20 fixed top-0 left-0 flex items-center justify-between z-50">
-          <section className="ml-7 cursor-pointer">
-            <div className="h-12 w-12 flex bg-center items-center p-3">
+        <div className="bg-zinc-900 w-full h-14 lg:h-20 fixed top-0 left-0 flex items-center justify-between">
+          <section className="ml-3 md:ml-7 cursor-pointer">
+            <div className="h-12 w-12 p-[0.83rem] flex bg-center items-center lg:p-3">
               <img src={logo} alt="" href="#" />
             </div>
           </section>
@@ -61,9 +61,17 @@ function Navbar() {
         // Regular navbar for md and lg screens
         <div className="bg-zinc-900 w-full h-20 fixed top-0 left-0 flex justify-between items-center">
           <section className="ml-7 cursor-pointer">
-            <div className="h-12 w-12 flex bg-center items-center p-3">
-              <img src={logo} alt="" href="#" />
-            </div>
+            <ScrollLink
+              to="intro"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+            >
+              <div className="h-12 w-12 flex bg-center items-center p-3">
+                <img src={logo} alt="" href="#" />
+              </div>
+            </ScrollLink>
           </section>
 
           {/* Navbar responsive */}
