@@ -1,5 +1,6 @@
 import ImageDiv from "../components/AboutImage";
 import { useEffect, useRef } from "react";
+
 function AboutMe() {
   const fadeRefs = [useRef(null), useRef(null), useRef(null)];
 
@@ -22,10 +23,11 @@ function AboutMe() {
       });
     };
   }, []);
+
   return (
     <div
       id="aboutme"
-      className="lg:mt-1 lg:flex lg:flex-col p-3 lg:h-auto lg:w-[67rem] "
+      className="lg:mt-1 lg:flex lg:flex-col p-3 lg:h-auto lg:w-[67rem] z-40"
     >
       <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
         <p className="w-44 lg:w-52 lg:mr-1 italic">About Me</p>

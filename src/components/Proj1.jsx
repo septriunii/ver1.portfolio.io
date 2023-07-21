@@ -1,4 +1,5 @@
 import { useState } from "react";
+import img from "../assets/Project_1.jpg";
 
 function ImageDiv() {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,10 +24,9 @@ function ImageDiv() {
           }`}
         ></div>
 
-        <div
-          id="imgbg"
-          className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center bg-slate-950"
-        ></div>
+        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-slate-950">
+          <img src={img} alt="" />
+        </div>
 
         <div
           className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out ${
@@ -52,14 +52,18 @@ function ImageDiv() {
         </div>
 
         <p
-          className={`bg-zinc-900 rounded-md absolute md:text-sm md:left-[23rem] md:w-96 lg:left-[33rem] lg:w-[25rem] px-8 py-5 font-light transition-all duration-500 ease-in-out ${
+          className={`bg-zinc-900 rounded-md absolute md:text-sm md:left-[23rem] md:w-96 lg:left-[33rem] lg:w-[27rem] px-8 py-5 font-light transition-all duration-500 ease-in-out ${
             isHovered ? "lg:left-[39rem] md:left-[28rem]" : ""
           }`}
         >
-          Developed a comprehensive e-commerce website, ShopifyPro, that offers
-          a seamless online shopping experience. The platform allows users to
-          browse a wide range of products, add items to their cart, and securely
-          complete transactions.
+          SwiftCart is an exquisite e-commerce website that{" "}
+          <span className="border-b border-orange-600 text-white cursor-default">
+            showcases my prowess in JavaScript functions
+          </span>
+          . With a functioning features like an add to cart, purchasing, and
+          page linking, it delivers a captivating and dynamic browsing
+          experience. Moreover, each restart surprises you with a fresh array of
+          product displays, adding a touch of elegance to your shopping journey.
         </p>
       </div>
     </>

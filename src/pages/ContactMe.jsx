@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from "react";
 
 function ContactMe() {
@@ -26,7 +27,7 @@ function ContactMe() {
     <>
       <div
         id="contact"
-        className="w-full lg:h-[30rem] lg:w-[67rem] lg:mt-32 p-2 "
+        className="mt-36 w-full  lg:h-[30rem] lg:w-[67rem] lg:mt-32 p-2 z-40"
       >
         <div className="h-full w-full ">
           <h1 className="font-bold text-2xl mb-8 lg:ml-5 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
@@ -43,7 +44,7 @@ function ContactMe() {
           >
             <div className="w-full lg:h-[70%] p-2 lg:w-[75%] flex flex-col lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-lg relative">
               <div className="text-xs md:text-sm  flex flex-col justify-center items-center lg:gap-2">
-                <p className=" bg-zinc-900 p-2 lg:p-3 indent-5 lg:indent-0 lg:leading-7">
+                <p className="leading-6 bg-zinc-900 p-2 lg:p-3 indent-5 lg:indent-0 lg:leading-7">
                   If you're seeking a Frontend Web Developer who is committed to
                   delivering exceptional web experiences, leveraging ReactJS and
                   Tailwind CSS expertise, I would be delighted to connect and
@@ -53,7 +54,7 @@ function ContactMe() {
                 </p>
               </div>
               <div className="flex flex-col gap-5 mt-5">
-                <div className="h-full w-full flex justify-center gap-10 mt-10 italic ">
+                <div className="h-full w-full flex justify-center lg:gap-10 mt-10 italic flex-col lg:flex-row lg:pl-0 text-sm gap-3 pl-[30%]">
                   <a
                     ref={fadeRefs[1]}
                     href="https://www.facebook.com/anthony.alabado.37/"
@@ -61,8 +62,8 @@ function ContactMe() {
                     rel="noreferrer"
                     className="flex items-center gap-2 text-black hover:text-orange-600 right-fade-in"
                   >
-                    <div className="h-9 w-9 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/facebook-svgrepo-com.svg')] bg-cover bg-center "></div>
-                    <p className="text-sm">Anthony Hitalada Alabado</p>
+                    <div className="h-7 w-7 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/facebook-svgrepo-com.svg')] bg-cover bg-center "></div>
+                    <p>Anthony Hitalada Alabado</p>
                   </a>
 
                   <a
@@ -72,19 +73,17 @@ function ContactMe() {
                     rel="noreferrer"
                     className="flex items-center gap-2 text-black hover:text-orange-600 right-fade-in"
                   >
-                    <div className="h-9 w-9 lg:h-10 lg:w-9  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/gmail-svgrepo-com.svg')] bg-cover bg-center "></div>
-                    <p className="text-sm">anthonyalabado3712@gmail.com</p>
+                    <div className="h-6 w-6 lg:h-10 lg:w-9  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/gmail-svgrepo-com.svg')] bg-cover bg-center "></div>
+                    <p>anthonyalabado3712@gmail.com</p>
                   </a>
 
                   <a
                     ref={fadeRefs[3]}
-                    href="https://github.com/Septriunii"
-                    target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-black hover:text-orange-600 right-fade-in"
                   >
-                    <div className="h-9 w-9 lg:h-8 lg:w-8  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/call.svg')] bg-cover bg-center "></div>
-                    <p className="text-sm"> +639709919006</p>
+                    <div className="h-6 w-6 lg:h-8 lg:w-8  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/call.svg')] bg-cover bg-center "></div>
+                    <p> +639709919006</p>
                   </a>
                 </div>
               </div>

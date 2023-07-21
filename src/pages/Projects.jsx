@@ -29,7 +29,7 @@ function Projects() {
     <>
       <div
         id="proj"
-        className="mt-20 w-full md:w-[53rem] lg:h-auto lg:w-[67rem]  flex flex-col shrink lg:mt-[30rem]"
+        className="mt-20 w-full md:w-[53rem] lg:h-auto lg:w-[67rem]  flex flex-col shrink lg:mt-[30rem] z-40"
       >
         <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
           <p className="w-52 italic md:mr-5 lg:w-60">My Projects</p>
@@ -42,9 +42,13 @@ function Projects() {
         >
           <Proj1 />
           <div className="lg:h-[80%] w-[100%] md:h-[75%] flex flex-col gap-4  p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 mt-10  rounded justify-between">
-            <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-              DarkHaul
-            </p>
+            <div className="gap-1 flex flex-col ">
+              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                SwiftCart
+              </p>
+              <p className="opacity-60 italic text-sm">e-commerce website</p>
+            </div>
+
             <div className="flex flex-col gap-5">
               <div className="flex gap-5 opacity-40 text-sm">
                 <p className=" ">Frontend</p>
@@ -60,9 +64,14 @@ function Projects() {
           className="hidden md:flex h-full mt-10 mb-10 left-fade-in"
         >
           <div className="h-[80%] w-[100%] flex flex-col gap-4 items-end  p-2 text-justify font-light mr-5 px-5 bg-opacity-20 mt-10 bg-zinc-700 rounded justify-between">
-            <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-              Social Media
-            </p>
+            <div>
+              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                AimRobotics
+              </p>
+              <p className="opacity-60 italic text-sm">
+                company brochure website
+              </p>
+            </div>
 
             <div className="flex flex-col gap-5">
               <div className="flex gap-5 opacity-40 text-sm">
@@ -75,15 +84,20 @@ function Projects() {
           </div>
           <Proj2 />
         </div>
+
         <div
           ref={fadeRefs[2]}
           className="hidden md:flex h-full mt-10 mb-10 right-fade-in"
         >
           <Proj3 />
-          <div className="lg:h-[80%] w-[100%] md:h-[75%] flex flex-col gap-4  p-2 text-justify font-light ml-5 px-5 mt-10  rounded justify-between bg-zinc-700 bg-opacity-20">
-            <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-              StockExchange
-            </p>
+          <div className="lg:h-[80%] w-[100%] md:h-[75%] flex flex-col gap-4  p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 mt-10  rounded justify-between">
+            <div className="gap-1 flex flex-col ">
+              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                SwiftCart
+              </p>
+              <p className="opacity-60 italic text-sm">e-commerce website</p>
+            </div>
+
             <div className="flex flex-col gap-5">
               <div className="flex gap-5 opacity-40 text-sm">
                 <p className=" ">Frontend</p>
@@ -159,7 +173,6 @@ function Projects() {
             </div>
           </div>
         </div>
-        <p>if you want to see more</p>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/a.png";
-import ToggleButton from "./ToggleButton";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import ToggleButton from "../functions/ToggleButton";
+import { Link as ScrollLink } from "react-scroll";
 import Rectangle from "./Rectangle";
 
 function Navbar() {
@@ -19,22 +19,12 @@ function Navbar() {
       setIsSmScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
     };
 
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = prevScrollPos > currentScrollPos;
-
-      setPrevScrollPos(currentScrollPos);
-      setVisible(isScrollingUp || currentScrollPos < 10); // Show navbar when scrolling up or at the top of the page
-    };
-
     handleResize(); // Check initial screen size
 
     window.addEventListener("resize", handleResize);
-    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 

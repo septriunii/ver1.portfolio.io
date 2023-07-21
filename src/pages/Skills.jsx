@@ -37,7 +37,7 @@ function Skills() {
     <>
       <div
         id="skills"
-        className="lg:h-[30rem] mt-28 lg:w-[67rem] flex flex-col lg:pl-10 lg:mt-28"
+        className="lg:h-[30rem] mt-28 lg:w-[67rem] flex flex-col lg:pl-10 lg:mt-28 z-40"
       >
         <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
           <p className="w-16 italic mr-5 lg:w-20 lg:mr-5">Skills</p>
@@ -58,8 +58,8 @@ function Skills() {
                 <span className="text-white">
                   Experienced in modern frontend frameworks and libraries
                   including <span>ReactJS</span> and <span>TailwindCSS</span>.
-                  Familiar with additional tools and languages like{" "}
-                  <span>TypeScript</span> and <span>Sass</span> for enhanced
+                  Familiar with additional tools and languages like
+                  <span> TypeScript</span> and <span>Sass</span> for enhanced
                   development capabilities.
                 </span>
               </li>
@@ -81,16 +81,16 @@ function Skills() {
               </li>
               <li ref={fadeRefs[4]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
-                  Experienced in utilizing version control systems like{" "}
-                  <span>Git</span> and <span>GitHub</span> for efficient
+                  Experienced in utilizing version control systems like
+                  <span> Git</span> and <span>GitHub</span> for efficient
                   collaboration and code management.
                 </span>
               </li>
               <li ref={fadeRefs[5]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
-                  Proficient in programming languages such as <span>C++</span>,{" "}
-                  <span>Python</span>, and
-                  <span>JavaScript</span>, enabling versatile problem-solving.
+                  Proficient in programming languages such as <span>C++</span>,
+                  <span> Python</span>, and
+                  <span> JavaScript</span>, enabling versatile problem-solving.
                 </span>
               </li>
               <li ref={fadeRefs[6]} className="text-orange-600 right-fade-in">

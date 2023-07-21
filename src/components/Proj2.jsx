@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import img from "../assets/Project_2.jpg";
 
 function ImageDiv() {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,10 +24,9 @@ function ImageDiv() {
           }`}
         ></div>
 
-        <div
-          id="imgbg"
-          className="md:h-72 md:w-96 lg:h-[360px] lg:w-[570px] flex items-center justify-center bg-slate-950"
-        ></div>
+        <div className="md:h-72 md:w-96 lg:h-[360px] lg:w-[570px] flex items-center justify-center bg-slate-950">
+          <img src={img} alt="" />
+        </div>
         <div
           className={`md:h-72 md:w-96 lg:h-[360px] lg:w-[570px] flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out ${
             isHovered ? "bg-black opacity-70 p-5" : ""
@@ -54,10 +54,15 @@ function ImageDiv() {
             isHovered ? "lg:right-[39rem] md:right-[28rem]" : ""
           }`}
         >
-          Developed a comprehensive e-commerce website, ShopifyPro, that offers
-          a seamless online shopping experience. The platform allows users to
-          browse a wide range of products, add items to their cart, and securely
-          complete transactions.
+          AimRobotics is a captivating company website that beautifully presents
+          their range of products and services. It{" "}
+          <span className="border-b border-orange-600 text-white cursor-default">
+            demonstrates my skill in designing engaging websites
+          </span>{" "}
+          specifically tailored for businesses. With easy navigation, striking
+          visuals, and compelling content, AimRobotics provides visitors with an
+          immersive experience into the world of innovative solutions offered by
+          the company.
         </p>
       </div>
     </>

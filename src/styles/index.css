@@ -74,24 +74,9 @@ span {
   background-size: cover;
   background-position: center;
 }
-.bg-github-logo {
-  background-image: url("");
-}
-
-.bg-github-logo:hover {
-  background-image: url("../assets/github-svgrepo-com.png");
-  opacity: 1;
-}
-
-.bg-facebook-logo {
-  background-image: url("../assets/facebook-svgrepo-com.svg");
-}
-.bg-facebook-logo:hover {
-  background-image: url("../assets/facebook-svgrepo-com.png");
-}
 
 .bg-gmail-logo {
-  background-image: url("../assets/gmail-svgrepo-com.svg");
+  background-image: url("../assets/Bgmail-svgrepo-com.png");
 }
 .bg-gmail-logo:hover {
   background-image: url("../assets/gmail-svgrepo-com.png");
