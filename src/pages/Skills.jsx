@@ -1,4 +1,4 @@
-import Tools from "./Tools";
+import Tools from "../components/Tools";
 import React, { useEffect, useRef } from "react";
 
 function Skills() {

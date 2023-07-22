@@ -7,7 +7,7 @@ function Sidebar1() {
 
         <div className="w-9 h-9 cursor-pointer flex items-center p-1 relative">
           <a
-            href="github.com"
+            href="https://github.com/Septriunii"
             target="_blank"
             rel="noreferrer"
             className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out bg-[url('../assets/github-svgrepo-com.svg')] hover:bg-[url('../assets/github-svgrepo-com.png')]  bg bg-cover bg-center"
@@ -16,7 +16,7 @@ function Sidebar1() {
 
         <div className="w-9 h-9 cursor-pointer flex items-center p-1 relative">
           <a
-            href="github.com"
+            href="https://www.facebook.com/anthony.alabado.37/"
             target="_blank"
             rel="noreferrer"
             className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out bg-[url('../assets/facebook-svgrepo-com.svg')] hover:bg-[url('../assets/facebook-svgrepo-com.png')]  bg bg-cover bg-center"
@@ -24,7 +24,7 @@ function Sidebar1() {
         </div>
         <div className="w-8 h-8 cursor-pointer flex items-center p-1 relative">
           <a
-            href="github.com"
+            href="https://mail.google.com/mail/u/0/"
             target="_blank"
             rel="noreferrer"
             className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out  bg-[url('../assets/gmail-svgrepo-com.svg')] hover:bg-[url('../assets/gmail-svgrepo-com.png')] bg bg-cover bg-center"
@@ -32,7 +32,7 @@ function Sidebar1() {
         </div>
         <div className="w-9 h-9 cursor-pointer flex items-center p-1 relative">
           <a
-            href="github.com"
+            href="https://www.linkedin.com/in/anthony-alabado-7b5112279/"
             target="_blank"
             rel="noreferrer"
             className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out  bg-[url('../assets/linkedin-svgrepo-com.svg')] hover:bg-[url('../assets/linkedin-svgrepo-com.png')] bg bg-cover bg-center"

@@ -2,6 +2,9 @@ import Proj1 from "../components/Proj1";
 import Proj2 from "../components/Proj2";
 import Proj3 from "../components/Proj3";
 import { useEffect, useRef } from "react";
+import img1 from "../assets/Project_1.jpg";
+import img2 from "../assets/Project_2.jpg";
+import img3 from "../assets/Project_3.jpg";
 
 function Projects() {
   const fadeRefs = [useRef(null), useRef(null), useRef(null)];
@@ -109,19 +112,27 @@ function Projects() {
         </div>
 
         {/* For small screen */}
-        <div className="h-auto w-full flex p-2 flex-col gap-5 md:hidden">
+        <div className="h-auto w-full flex p-2 flex-col gap-7 md:hidden">
           <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
-            <div className="h-40 w-full bg-black flex flex-col justify-center gap-5 p-2">
-              <div className="h-5 w-5 bg-slate-900"></div>
-              <div className="h-5 w-5 bg-slate-900"></div>
+            <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
+              <img src={img1} alt="" />
+              <div className="h-5 w-5 bg-slate-900 absolute top-[40%] left-3"></div>
+              <div className="h-5 w-5 bg-slate-900 absolute top-[60%] left-3"></div>
             </div>
-            <div className="flex flex-col gap-3">
-              <p className="text-orange-600 text-lg font-bold">Title</p>
-              <p className="bg-zinc-900 p-2">
-                Developed a comprehensive e-commerce website, ShopifyPro, that
-                offers a seamless online shopping experience. The platform
-                allows users to browse a wide range of products, add items to
-                their cart, and securely complete transactions.
+            <div className="flex flex-col">
+              <p className="text-orange-600 text-lg font-bold"> SwiftCart</p>
+              <p className="opacity-60 italic text-xs">e-commerce website</p>
+
+              <p className="bg-zinc-900 p-2 leading-5 mt-5">
+                SwiftCart is an exquisite e-commerce website that{" "}
+                <span className="border-b border-orange-600 text-white cursor-default">
+                  showcases my prowess in JavaScript functions
+                </span>
+                . With a functioning features like an add to cart, purchasing,
+                and page linking, it delivers a captivating and dynamic browsing
+                experience. Moreover, each restart surprises you with a fresh
+                array of product displays, adding a touch of elegance to your
+                shopping journey.
               </p>
             </div>
             <div className="flex gap-5 opacity-40 ">
@@ -132,17 +143,26 @@ function Projects() {
           </div>
 
           <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
-            <div className="h-40 w-full bg-black flex flex-col justify-center gap-5 p-2">
-              <div className="h-5 w-5 bg-slate-900"></div>
-              <div className="h-5 w-5 bg-slate-900"></div>
+            <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
+              <img src={img2} alt="" />
+              <div className="h-5 w-5 bg-slate-900 absolute top-[40%] left-3"></div>
+              <div className="h-5 w-5 bg-slate-900 absolute top-[60%] left-3"></div>
             </div>
-            <div className="flex flex-col gap-3">
-              <p className="text-orange-600 text-lg font-bold">Title</p>
-              <p className="bg-zinc-900 p-2">
-                Developed a comprehensive e-commerce website, ShopifyPro, that
-                offers a seamless online shopping experience. The platform
-                allows users to browse a wide range of products, add items to
-                their cart, and securely complete transactions.
+            <div className="flex flex-col">
+              <p className="text-orange-600 text-lg font-bold"> AimRobotics</p>
+              <p className="opacity-60 italic text-xs">
+                company brochure websites
+              </p>
+              <p className="bg-zinc-900 p-2 leading-5 mt-5">
+                AimRobotics is a captivating company website that beautifully
+                presents their range of products and services. It{" "}
+                <span className="border-b border-orange-600 text-white cursor-default">
+                  demonstrates my skill in designing engaging websites
+                </span>{" "}
+                specifically tailored for businesses. With easy navigation,
+                striking visuals, and compelling content, AimRobotics provides
+                visitors with an immersive experience into the world of
+                innovative solutions offered by the company.
               </p>
             </div>
             <div className="flex gap-5 opacity-40 ">
@@ -153,17 +173,25 @@ function Projects() {
           </div>
 
           <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
-            <div className="h-40 w-full bg-black flex flex-col justify-center gap-5 p-2">
-              <div className="h-5 w-5 bg-slate-900"></div>
-              <div className="h-5 w-5 bg-slate-900"></div>
+            <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
+              <img src={img3} alt="" />
+              <div className="h-5 w-5 bg-slate-900 absolute top-[40%] left-3"></div>
+              <div className="h-5 w-5 bg-slate-900 absolute top-[60%] left-3"></div>
             </div>
-            <div className="flex flex-col gap-3">
-              <p className="text-orange-600 text-lg font-bold">Title</p>
-              <p className="bg-zinc-900 p-2">
-                Developed a comprehensive e-commerce website, ShopifyPro, that
-                offers a seamless online shopping experience. The platform
-                allows users to browse a wide range of products, add items to
-                their cart, and securely complete transactions.
+            <div className="flex flex-col">
+              <p className="text-orange-600 text-lg font-bold"> SwiftCart</p>
+              <p className="opacity-60 italic text-xs">e-commerce website</p>
+
+              <p className="bg-zinc-900 p-2 leading-5 mt-5">
+                SwiftCart is an exquisite e-commerce website that{" "}
+                <span className="border-b border-orange-600 text-white cursor-default">
+                  showcases my prowess in JavaScript functions
+                </span>
+                . With a functioning features like an add to cart, purchasing,
+                and page linking, it delivers a captivating and dynamic browsing
+                experience. Moreover, each restart surprises you with a fresh
+                array of product displays, adding a touch of elegance to your
+                shopping journey.
               </p>
             </div>
             <div className="flex gap-5 opacity-40 ">
