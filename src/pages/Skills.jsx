@@ -37,7 +37,7 @@ function Skills() {
     <>
       <div
         id="skills"
-        className="lg:h-[30rem] mt-28 lg:w-[67rem] flex flex-col lg:pl-10 lg:mt-28 z-40"
+        className="lg:h-[30rem] mt-28 flex flex-col lg:pl-10 lg:mt-28 z-40"
       >
         <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
           <p className="w-16 italic mr-5 lg:w-20 lg:mr-5">Skills</p>

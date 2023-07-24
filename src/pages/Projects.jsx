@@ -32,7 +32,7 @@ function Projects() {
     <>
       <div
         id="proj"
-        className="mt-20 w-full md:w-[53rem] lg:h-auto lg:w-[67rem]  flex flex-col shrink lg:mt-[30rem] z-40"
+        className="mt-20 w-full lg:h-auto flex flex-col shrink lg:mt-[30rem] z-40"
       >
         <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
           <p className="w-52 italic md:mr-5 lg:w-60">My Projects</p>
