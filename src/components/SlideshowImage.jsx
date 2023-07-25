@@ -12,7 +12,7 @@ const Show = () => {
       <Slideshow
         images={images}
         interval={2000}
-        className="ease-in-out transition-transform duration-300"
+        className="ease-in-out transition-transform duration-300 w-full h-full"
       />
     </div>
   );

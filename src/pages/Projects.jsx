@@ -1,13 +1,27 @@
 import Proj1 from "../components/Proj1";
 import Proj2 from "../components/Proj2";
 import Proj3 from "../components/Proj3";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import img1 from "../assets/Project_1.jpg";
 import img2 from "../assets/Project_2.jpg";
 import img3 from "../assets/Project_3.jpg";
+import { Project } from "../data/projects";
 
 function Projects() {
-  const fadeRefs = [useRef(null), useRef(null), useRef(null)];
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleContainerHover = () => {
+    setIsHovered(true);
+  };
+
+  const handleContainerLeave = () => {
+    setIsHovered(false);
+  };
+
+  const fadeRefs = [
+    useRef(null),
+    //  useRef(null), useRef(null)
+  ];
 
   useEffect(() => {
     const observers = fadeRefs.map((ref) => {
@@ -35,34 +49,67 @@ function Projects() {
         className="mt-20 w-full lg:h-auto flex flex-col shrink lg:mt-[30rem] z-40"
       >
         <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
-          <p className="w-52 italic md:mr-5 lg:w-60">My Projects</p>
+          <p className="w-52 md:w-64 lg:w-72 italic">My Projects</p>
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
 
         <div
           ref={fadeRefs[0]}
-          className="hidden md:flex h-full mt-10 mb-10 right-fade-in"
+          className="hidden md:flex h-full mt-10 mb-10 right-fade-in relative"
         >
-          <Proj1 />
-          <div className="lg:h-[80%] w-[100%] md:h-[75%] flex flex-col gap-4  p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 mt-10  rounded justify-between">
+          <div
+            className={` transition-all duration-500 ease-in-out ${
+              isHovered ? "lg:left-[39rem] md:left-[28rem]" : ""
+            }`}
+            onMouseEnter={handleContainerHover}
+            onMouseLeave={handleContainerLeave}
+          >
+            <Proj1 />
+          </div>
+          <div className=" w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">
-              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                SwiftCart
+              {Project.map((project) => (
+                <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                  {project.name}
+                </p>
+              ))}
+
+              <p className="opacity-60 italic md:text-xs lg:text-sm">
+                e-commerce website
               </p>
-              <p className="opacity-60 italic text-sm">e-commerce website</p>
+            </div>
+            <div className="w-full h-full relative">
+              <div
+                className={`bg-green-500 w-full h-auto -left-28 absolute transition-all duration-500 ease-in-out ${
+                  isHovered ? "lg:left-0 md:left-0" : ""
+                }`}
+              >
+                <p
+                  className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
+              "
+                >
+                  SwiftCart is an exquisite e-commerce website that showcases my
+                  prowess in JavaScript functions . With a functioning features
+                  like an add to cart, purchasing, and page linking, it delivers
+                  a captivating and dynamic browsing experience. Moreover,
+                  restart surprises you with a fresh array of product displays,
+                  adding a touch of elegance to your shopping journey.
+                </p>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 text-sm">
-                <p className=" ">Frontend</p>
+            <div className="flex flex-col gap-5 ">
+              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                <p className=" ">HTML</p>
+                <p className=" ">CSS</p>
                 <p className=" ">ReactJS</p>
-                <p className=" ">Tailwind CSS</p>
+                <p className=" ">TailwindCSS</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div
+        {/* <div
           ref={fadeRefs[1]}
           className="hidden md:flex h-full mt-10 mb-10 left-fade-in"
         >
@@ -86,9 +133,9 @@ function Projects() {
             </div>
           </div>
           <Proj2 />
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           ref={fadeRefs[2]}
           className="hidden md:flex h-full mt-10 mb-10 right-fade-in"
         >
@@ -109,7 +156,7 @@ function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* For small screen */}
         <div className="h-auto w-full flex p-2 flex-col gap-7 md:hidden">

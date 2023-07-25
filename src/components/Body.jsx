@@ -12,9 +12,9 @@ function Body({ children }) {
         <div className="bg-blue-950 md:flex md:w-16 h-auto hidden">
           <Sidebar1 />
         </div>
-        <div className="bg-red-950 w-full h-auto">{children}</div>
+        <div className="bg-red-950 w-full h-auto mx-5 md:mx-0">{children}</div>
 
-        <div className="bg-blue-950 md:flex md:w-16 h-auto hidden">
+        <div className="bg-blue-950 md:flex md:w-16 h-auto hidden ">
           <Sidebar2 />
         </div>
       </div>

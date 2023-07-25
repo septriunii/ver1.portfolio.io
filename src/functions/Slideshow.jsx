@@ -16,11 +16,11 @@ const Slideshow = ({ images, interval = 3000 }) => {
   }, [images, interval]);
 
   return (
-    <div className="slideshow">
+    <div className="slideshow relative justify-center items-center">
       <img
         src={images[currentImageIndex]}
         alt={`Slideshow Image ${currentImageIndex + 1}`}
-        className="absolute top-0 left-0 rounded-full"
+        className="h-full w-full bg-cover rounded-full "
       />
     </div>
   );

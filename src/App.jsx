@@ -1,5 +1,5 @@
 import {
-  // Intro,
+  Intro,
   AboutMe,
   Skills,
   Projects,
@@ -11,12 +11,12 @@ import { Footer, Body } from "./components";
 function App() {
   return (
     <Body>
-      {/* <Intro /> */}
-      {/* <AboutMe /> */}
-      {/* <Skills /> */}
+      <Intro />
+      <AboutMe />
+      <Skills />
       <Projects />
-      {/* <Experience /> */}
-      {/* <ContactMe /> */}
+      <Experience />
+      <ContactMe />
       <Footer />
     </Body>
   );

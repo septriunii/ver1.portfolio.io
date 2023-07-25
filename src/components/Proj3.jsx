@@ -24,7 +24,7 @@ function ImageDiv() {
           }`}
         ></div>
 
-        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center bg-slate-950">
+        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-slate-950">
           <img src={img} alt="" />
         </div>
 
@@ -50,19 +50,6 @@ function ImageDiv() {
             View code
           </button>
         </div>
-
-        <p
-          className={`bg-zinc-900 rounded-md absolute md:text-sm md:left-[23rem] md:w-96 lg:left-[33rem] lg:w-[27rem] px-8 py-5 font-light transition-all duration-500 ease-in-out ${
-            isHovered ? "lg:left-[39rem] md:left-[28rem]" : ""
-          }`}
-        >
-          SwiftCart is an exquisite e-commerce website that showcases my prowess
-          in JavaScript functions. With a funcioning features like an add to
-          cart, purchasing, and page linking, it delivers a captivating and
-          dynamic browsing experience. Moreover, each restart surprises you with
-          a fresh array of product displays, adding a touch of elegance to your
-          shopping journey.
-        </p>
       </div>
     </>
   );
