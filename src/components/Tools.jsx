@@ -30,7 +30,7 @@ function Tools() {
           <p ref={fadeRefs[3]} className="font-bold text-lg fade-in">
             Tools that I use
           </p>
-          <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center font-ligh w-full mt-5 gap-3">
+          <div className="flex flex-row justify-center font-ligh w-full mt-5 gap-3">
             <div
               ref={fadeRefs[0]}
               className="p-2 flex lg:h-56 lg:w-48 lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"

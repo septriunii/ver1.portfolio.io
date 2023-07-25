@@ -8,12 +8,13 @@ const Show = () => {
   const images = [img1, img2, img3, img4];
 
   return (
-    <div>
+    <div className="flex h-auto w-auto">
       <Slideshow
         images={images}
         interval={2000}
         className="ease-in-out transition-transform duration-300 w-full h-full"
       />
+      {/* <div className="bg-blue-900 w-full h-full absolute"></div> */}
     </div>
   );
 };
