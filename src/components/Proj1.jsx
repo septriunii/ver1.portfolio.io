@@ -24,7 +24,7 @@ function ImageDiv() {
           }`}
         ></div>
 
-        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-slate-950">
+        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-zinc-950">
           <img src={img} alt="" />
         </div>
 

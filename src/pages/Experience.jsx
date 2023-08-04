@@ -41,8 +41,8 @@ function Experience() {
               className="fade-in h-full w-full flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light ml-3 bg-zinc-700 bg-opacity-20 rounded-md "
             >
               <div className="flex flex-col gap-2">
-                <h1 className="flex justify-center text-lg font-bold p-2 md:text-2xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 w-full gap-2">
-                  IT Support Technician
+                <h1 className="flex justify-center text-lg  font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 w-full gap-2">
+                  IT Support
                   <span className="text-white">&middot; </span>Internship
                 </h1>
                 <p className="text-xs md:text-sm italic ml-3">
@@ -104,7 +104,7 @@ function Experience() {
           <div ref={fadeRefs[1]} className="flex h-full w-full fade-in">
             <div className="h-full w-[100%] flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-md ">
               <div className="flex flex-col gap-2">
-                <h1 className="justify-center text-lg font-bold p-2 md:text-2xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
+                <h1 className="justify-center text-lg font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
                   Data Entry Clerk
                   <span className="text-white">&middot; </span>Immersion
                 </h1>

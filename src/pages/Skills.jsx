@@ -43,9 +43,9 @@ function Skills() {
           <p className="w-16 italic mr-5 lg:w-20 lg:mr-5">Skills</p>
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
-        <div className="flex h-full -mt-3">
-          <div className=" text-xs px-3 h-full w-[100%] flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:w-[90%]  lg:mr-5 lg:px-5 lg:p-5">
-            <ul className="flex flex-col gap-3 list-disc ml-5 lg:gap-5">
+        <div className="flex h-auto -mt-3  ">
+          <div className=" text-xs px-3 h-full md:w-[80%] flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:w-[80%]  lg:mr-5 lg:px-5 lg:p-5">
+            <ul className="flex flex-col gap-3 list-disc ml-5 lg:gap-5  w-[90%]">
               <li ref={fadeRefs[0]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in frontend web technologies such as

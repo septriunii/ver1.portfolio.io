@@ -27,7 +27,7 @@ function ContactMe() {
     <>
       <div
         id="contact"
-        className="mt-36 w-full h-full lg:h-[30rem] lg:mt-32 p-2 z-40 mb-14"
+        className=" mt-36 w-full h-auto lg:h-[30rem] lg:mt-32 p-2 z-40 mb-14"
       >
         <div className="h-full w-full ">
           <h1 className="w-full font-bold text-2xl mb-8 lg:ml-5 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">

@@ -26,10 +26,11 @@ function Intro() {
   return (
     <div id="intro">
       <div className="w-full h-[33rem] flex flex-col-reverse md:flex-row mt-10 md:mt-0">
-        <div className="h-full w-full p-2 ">
+        <div className="h-full w-full p-2 pt-14 lg:pl-10">
           <p
-            className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic first-letter:
- left-fade-in ${isVisible ? "active" : ""}`}
+            className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic first-letter: left-fade-in ${
+              isVisible ? "active" : ""
+            }`}
           >
             Hi I am
           </p>
@@ -38,7 +39,7 @@ function Intro() {
               <p className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40 shrink typing-effect ">
                 Anthony<span className="text-orange-600">Alabado</span>
               </p>
-              {showText && <h1 className="md:text-6xl cursor-blink">|</h1>}
+              {showText && <h1 className="md:text-6xl cursor-blink ">|</h1>}
             </div>
 
             <p
@@ -75,7 +76,7 @@ function Intro() {
         </div>
 
         <div
-          className={` h-56 w-full justify-center  md:h-full  lg:w-[35%] md:w-[40%] p-1 shrink-0 flex mt-32 md:mt-0 right-fade-in ${
+          className={` h-56 w-full justify-center  md:h-full  lg:w-[35%] md:w-[40%] p-1 shrink-0 flex md:mt-0 right-fade-in ${
             isVisible ? "active" : ""
           }`}
         >

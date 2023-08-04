@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Sidebar1 from "./Sidebar";
 import Sidebar2 from "./Sidebar2";
 import img from "../assets/bgpattern.png";
+// import img from "../assets/bgpat.webp";
 
 function Body({ children }) {
   return (

@@ -29,21 +29,21 @@ function ImageDiv() {
         </div>
 
         <div
-          className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out ${
+          className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out  ${
             isHovered ? "bg-black opacity-70 p-5" : ""
           }`}
           onMouseEnter={handleContainerHover}
           onMouseLeave={handleContainerLeave}
         >
           <button
-            className={`absolute  opacity-0 transition-all z-40 top-[40%] right-[50%] duration-300 ease-in-out ${
+            className={`absolute  opacity-0 transition-all z-40 md:left-20 lg:left-40 duration-300 ease-in-out md:text-sm lg:text-base md:px-2 ${
               isHovered ? "opacity-100" : ""
             }`}
           >
             Visit website
           </button>
           <button
-            className={`absolute  opacity-0 transition-all z-40 top-[40%] right-[25%] duration-300 ease-in-out ${
+            className={`absolute  opacity-0 transition-all z-40 md:right-20 lg:right-40  duration-300 ease-in-out md:text-sm lg:text-base lg:px-5 ${
               isHovered ? "opacity-100" : ""
             }`}
           >
