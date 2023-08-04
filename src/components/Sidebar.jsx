@@ -24,7 +24,7 @@ function Sidebar1() {
         </div>
         <div className="w-8 h-8 cursor-pointer flex items-center p-1 relative">
           <a
-            href="https://mail.google.com/mail/u/0/"
+            href="mailto:anthonyalabado@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out  bg-[url('../assets/gmail-svgrepo-com.svg')] hover:bg-[url('../assets/gmail-svgrepo-com.png')] bg bg-cover bg-center"
