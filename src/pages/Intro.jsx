@@ -83,7 +83,7 @@ function Intro() {
           <div className="w-56 md:w-full lg:h-96 md:h-[60%] md:items-start  md:justify-end flex md:mt-10">
             <div className="h-full w-full md:place-items-end lg:w-[23rem] lg:h-[23rem] ">
               <div className="flex justify-center items-center w-full h-full relative ">
-                <div className="h-[85%] w-[85%] flex items-center border-orange-600 border-2 z-30 absolute"></div>
+                <div className="h-[85%] w-[85%] flex items-center border-orange-600 rounded-tl-3xl rounded-br-3xl  border-2 z-30 absolute"></div>
                 <div className="h-14 w-14 md:h-16 md:w-16 lg:h-24 lg:w-24 bg-orange-700 absolute rounded-full -left-2 md:left-1 top-12 -z-40 opacity-90 "></div>
                 <div className="h-14 w-14 md:h-16 md:w-16 lg:h-24 lg:w-24 bg-orange-800 absolute rounded-full right-12 -bottom-1 z-40"></div>
                 <SlideshowImage />

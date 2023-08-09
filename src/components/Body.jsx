@@ -7,7 +7,7 @@ import img from "../assets/bgpattern.png";
 function Body({ children }) {
   return (
     <>
-      <div className="h-auto w-full fixed z-50 top-0">
+      <div className="h-auto w-full fixed z-50 top-0 ">
         <Navbar />
       </div>
       <div className="w-full h-auto mt-14 md:mt-24 gap-2 flex">

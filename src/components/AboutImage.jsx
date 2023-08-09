@@ -24,8 +24,8 @@ function ImageDiv() {
       ></div>
       <div className="flex flex-col items-center justify-center">
         <div
-          className={`h-full w-full absolute bg-slate-950 transition-all duration-300 ease-in-out  bg-[url('../assets/AboutMePic.jpg')] bg-center bg-contain ${
-            isHovered ? " h-[90%] w-[90%] scale-90" : ""
+          className={`h-full w-full absolute bg-slate-950 transition-all duration-300 ease-in-out  bg-[url('../assets/AboutMePic.jpg')]  bg-center bg-contain ${
+            isHovered ? " h-[90%] w-[90%] scale-90" : "grayscale"
           }`}
         ></div>
         <div

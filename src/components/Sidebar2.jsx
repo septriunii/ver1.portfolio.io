@@ -1,15 +1,76 @@
-function Sidebar2() {
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+
+function Sidebar() {
+  const [activeSection, setActiveSection] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const introTop = document.getElementById("intro").offsetTop;
+      const aboutmeTop = document.getElementById("aboutme").offsetTop;
+      const skillsTop = document.getElementById("skills").offsetTop;
+      const projTop = document.getElementById("proj").offsetTop;
+      const expTop = document.getElementById("exp").offsetTop;
+      const contactTop = document.getElementById("contact").offsetTop;
+
+      const windowHeight = window.innerHeight;
+      const triggerPoint = windowHeight / 2;
+
+      if (window.scrollY + triggerPoint >= contactTop) {
+        setActiveSection("contact");
+      } else if (window.scrollY + triggerPoint >= expTop) {
+        setActiveSection("exp");
+      } else if (window.scrollY + triggerPoint >= projTop) {
+        setActiveSection("proj");
+      } else if (window.scrollY + triggerPoint >= skillsTop) {
+        setActiveSection("skills");
+      } else if (window.scrollY + triggerPoint >= aboutmeTop) {
+        setActiveSection("aboutme");
+      } else if (window.scrollY + triggerPoint >= introTop) {
+        setActiveSection(null);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="bg-zinc- h-[32rem] w-16 right-0 flex flex-col justify-center items-center gap-7 fixed">
-      <div className="h-36 w-0.5 bg-zinc-900 absolute top-0"></div>
-      <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-      <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-      <div className="w-3 h-3 cursor-pointer flex items-center relative  rounded-full border-orange-600 border-2"></div>
-      <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-      <div className="w-3 h-3 cursor-pointer flex items-center relative rounded-full border-orange-600 border-2"></div>
-      <div className="h-36 w-0.5 bg-zinc-900 absolute bottom-0"></div>
-    </div>
+    <nav>
+      <ul className="flex  fixed flex-col gap-8 right-3 top-[38%]">
+        <li
+          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
+            activeSection === "aboutme" ? "bg-orange-600" : ""
+          }`}
+        ></li>
+        <li
+          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
+            activeSection === "skills" ? "bg-orange-600" : ""
+          }`}
+        ></li>
+        <li
+          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
+            activeSection === "proj" ? "bg-orange-600" : ""
+          }`}
+        ></li>
+
+        <li
+          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
+            activeSection === "exp" ? "bg-orange-600" : ""
+          }`}
+        ></li>
+
+        <li
+          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
+            activeSection === "contact" ? "bg-orange-600" : ""
+          }`}
+        ></li>
+      </ul>
+    </nav>
   );
 }
 
-export default Sidebar2;
+export default Sidebar;

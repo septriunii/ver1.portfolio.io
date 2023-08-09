@@ -56,6 +56,10 @@ function Projects() {
         id="proj"
         className="mt-20 w-full lg:h-auto flex flex-col shrink lg:mt-[30rem] z-40"
       >
+        <h1 className="font-bold text-2xl  ml-5 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
+          <p className="w-28 italic mr-5 lg:w-32">Projects</p>
+          <div className="h-0.5 w-full bg-zinc-900"></div>
+        </h1>
         {/* Project 1 */}
         <div
           ref={fadeRefs[0]}
@@ -137,12 +141,12 @@ function Projects() {
                   className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
               "
                 >
-                  SwiftCart is an exquisite e-commerce website that showcases my
-                  prowess in JavaScript functions . With a functioning features
-                  like an add to cart, purchasing, and page linking, it delivers
-                  a captivating and dynamic browsing experience. Moreover,
-                  restart surprises you with a fresh array of product displays,
-                  adding a touch of elegance to your shopping journey.
+                  Highlighting my skill in website design, this project
+                  demonstrates my expertise in creating digital experiences.
+                  Prioritizing user-friendly navigation, engaging content, and
+                  an artfully designed layout, it effectively shows my ability
+                  to build impactful and visually pleasing online platforms that
+                  enhance businesses' digital presence.
                 </p>
               </div>
             </div>
