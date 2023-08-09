@@ -24,7 +24,7 @@ function ImageDiv() {
           }`}
         ></div>
 
-        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-slate-950">
+        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-slate-950 bg-opacity-80">
           <img src={img} alt="" />
         </div>
 
@@ -40,14 +40,28 @@ function ImageDiv() {
               isHovered ? "opacity-100" : ""
             }`}
           >
-            Visit website
+            <a
+              href="https://github.com/Septriunii/ver1.portfolio.io"
+              target="_blank"
+              rel="noreferrer"
+              className="text-white hover:text-white"
+            >
+              Visit Website
+            </a>
           </button>
           <button
             className={`absolute  opacity-0 transition-all z-40 md:right-20 lg:right-40  duration-300 ease-in-out md:text-sm lg:text-base lg:px-5 ${
               isHovered ? "opacity-100" : ""
             }`}
           >
-            View code
+            <a
+              href="https://github.com/Septriunii/ver1.portfolio.io"
+              target="_blank"
+              rel="noreferrer"
+              className="text-white hover:text-white"
+            >
+              View code
+            </a>
           </button>
         </div>
       </div>
