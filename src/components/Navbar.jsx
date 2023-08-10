@@ -49,7 +49,7 @@ function Navbar() {
         </div>
       ) : (
         // Regular navbar for md and lg screens
-        <div className="backdrop-blur-md   w-full h-20 fixed top-0 left-0 flex justify-between items-center shadow-lg ">
+        <div className="backdrop-blur-md  w-full h-20 fixed top-0 left-0 flex justify-between items-center shadow-lg ">
           <section className="ml-7 cursor-pointer">
             <ScrollLink
               to="intro"

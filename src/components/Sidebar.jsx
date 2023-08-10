@@ -10,7 +10,7 @@ function Sidebar1() {
             href="https://github.com/Septriunii"
             target="_blank"
             rel="noreferrer"
-            className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out bg-[url('../assets/github-svgrepo-com.svg')] hover:bg-[url('../assets/github-svgrepo-com.png')]  bg bg-cover bg-center"
+            className="bg w-full h-full object-contain transition-opacity duration-1000 ease-out bg-[url('../assets/github-svgrepo-com.svg')]  hover:bg-[url('../assets/github-svgrepo-com.png')]  bg bg-cover bg-center"
           ></a>
         </div>
 

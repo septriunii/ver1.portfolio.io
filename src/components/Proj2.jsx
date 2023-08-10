@@ -41,7 +41,7 @@ function ImageDiv() {
             }`}
           >
             <a
-              href="https://github.com/Septriunii/ver1.portfolio.io"
+              href="https://septriunii.github.io/proj2.aimrobotics.io/"
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-white"
@@ -55,7 +55,7 @@ function ImageDiv() {
             }`}
           >
             <a
-              href="https://github.com/Septriunii/ver1.portfolio.io"
+              href="https://github.com/Septriunii/proj2.aimrobotics.io"
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-white"

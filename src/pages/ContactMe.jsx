@@ -54,8 +54,8 @@ function ContactMe() {
                   leave a lasting impact.
                 </p>
               </div>
-              <div className="flex flex-col gap-5 mt-5">
-                <div className="h-full w-full flex justify-center lg:gap-10 mt-10 italic flex-col lg:flex-row lg:pl-0 text-xs gap-3 pl-[20%]">
+              <div className="flex flex-col gap-5 mt-5 w-full items-center justify-center">
+                <div className="h-full w-auto flex justify-center  lg:gap-10 mt-10 italic flex-col lg:flex-row  text-xs gap-3">
                   <a
                     ref={fadeRefs[1]}
                     href="https://www.facebook.com/anthony.alabado.37/"

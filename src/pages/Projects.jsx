@@ -282,15 +282,14 @@ function Projects() {
                 company brochure websites
               </p>
               <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                AimRobotics is a captivating company website that beautifully
-                presents their range of products and services. It{" "}
-                <span className="border-b border-orange-600 text-white cursor-default">
-                  demonstrates my skill in designing engaging websites
-                </span>{" "}
-                specifically tailored for businesses. With easy navigation,
-                striking visuals, and compelling content, AimRobotics provides
-                visitors with an immersive experience into the world of
-                innovative solutions offered by the company.
+                AimRobotics is a company brochure website showcasing my adept
+                skill in website design. Highlighting my skill in website
+                design, this project demonstrates my expertise in creating
+                digital experiences. Prioritizing user-friendly navigation,
+                engaging content, and an artfully designed layout, it
+                effectively shows my ability to build impactful and visually
+                pleasing online platforms that enhance businesses' digital
+                presence.
               </p>
             </div>
             <div className="flex gap-5 opacity-40 ">
@@ -311,19 +310,19 @@ function Projects() {
               </div>
             </div>
             <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold"> SwiftCart</p>
-              <p className="opacity-60 italic text-xs">e-commerce website</p>
+              <p className="text-orange-600 text-lg font-bold"> ReelQuest</p>
+              <p className="opacity-60 italic text-xs">movie search database</p>
 
               <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                SwiftCart is an exquisite e-commerce website that{" "}
-                <span className="border-b border-orange-600 text-white cursor-default">
-                  showcases my prowess in JavaScript functions
-                </span>
-                . With a functioning features like an add to cart, purchasing,
-                and page linking, it delivers a captivating and dynamic browsing
-                experience. Moreover, each restart surprises you with a fresh
-                array of product displays, adding a touch of elegance to your
-                shopping journey.
+                ReelQuest is a movie search database that showcases my adeptness
+                in harnessing the power of RESTful APIs to develop fully
+                operational and dynamically engaging web applications. This
+                skillful creation not only serves as a testament to my technical
+                proficiency but also underscores my commitment to enhancing
+                users' entertainment journeys. By seamlessly integrating
+                real-time data from APIs, ReelQuest offers an immersive
+                experience, where users can explore an extensive collection of
+                films.
               </p>
             </div>
             <div className="flex gap-5 opacity-40 ">
