@@ -37,15 +37,15 @@ function Skills() {
     <>
       <div
         id="skills"
-        className="lg:h-[30rem] mt-28 flex flex-col lg:pl-10 lg:mt-28 z-40"
+        className="lg:h-auto flex flex-col lg:pl-10 lg:mt-28 z-40"
       >
         <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
           <p className="w-16 italic mr-5 lg:w-20 lg:mr-5">Skills</p>
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
         <div className="flex h-auto -mt-3  ">
-          <div className=" text-xs px-3 h-full md:w-[80%] flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:w-[80%]  lg:mr-5 lg:px-5 lg:p-5">
-            <ul className="flex flex-col gap-3 list-disc ml-5 lg:gap-5  w-[90%]">
+          <div className=" text-xs px-3 h-full md:w-[90%] flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:w-[80%]  lg:mr-5 lg:px-5 lg:p-5">
+            <ul className="flex flex-col gap-3 list-disc ml-5 lg:gap-5">
               <li ref={fadeRefs[0]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in frontend web technologies such as

@@ -54,7 +54,7 @@ function Projects() {
     <>
       <div
         id="proj"
-        className="mt-20 w-full lg:h-auto flex flex-col shrink lg:mt-[30rem] z-40"
+        className="w-full h-auto flex flex-col shrink mt-16 md:mt-20 z-40"
       >
         <h1 className="font-bold text-2xl  ml-5 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
           <p className="w-28 italic mr-5 lg:w-32">Projects</p>

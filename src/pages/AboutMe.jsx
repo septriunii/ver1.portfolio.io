@@ -27,7 +27,7 @@ function AboutMe() {
   return (
     <div
       id="aboutme"
-      className="lg:mt-1 lg:flex lg:flex-col p-3 lg:h-auto z-40"
+      className="mt-5 md:mt-10 lg:mt-20 lg:flex lg:flex-col p-3 lg:h-auto z-40"
     >
       <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
         <p className="w-44 lg:w-52 lg:mr-1 italic">About Me</p>

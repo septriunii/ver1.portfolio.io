@@ -209,9 +209,8 @@ span {
 }
 
 ::selection {
-  background-color: rgb(12, 10, 10);
-  color: orangered;
-  opacity: 0.5;
+  background-color: rgb(207, 63, 10);
+  color: white;
 }
 
 /* appear from below */
@@ -282,4 +281,51 @@ span {
 .text-fade-in.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.slideshow-container {
+  display: flex;
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hexagon {
+  width: 100px;
+  height: 58px;
+  background-color: transparent;
+  position: relative;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  top: -29px;
+  border-bottom: 29px solid #ffcc00;
+}
+
+.hexagon:after {
+  bottom: -29px;
+  border-top: 29px solid #ffcc00;
+}
+
+/* New code for middle part */
+.hexagon div {
+  position: absolute;
+  width: 100px;
+  height: 58px;
+  background-color: #ffcc00;
 }

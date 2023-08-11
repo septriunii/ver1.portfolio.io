@@ -16,7 +16,7 @@ function Rectangle({ onClose }) {
 
   return (
     <div
-      className={`text-lg flex flex-col items-center justify-around md:hidden w-80 h-[30rem] bg-zinc-900 fixed top-14 right-0 z-40 transition-transform duration-300 ease-in-out transform ${
+      className={`text-lg flex flex-col items-center justify-around md:hidden w-auto h-auto px-16 py-7 gap-10 bg-zinc-900 fixed top-14 right-0 z-40 transition-transform duration-300 ease-in-out transform ${
         isShowing ? "translate-x-0" : "translate-x-full"
       }`}
       onAnimationEnd={handleAnimationEnd}

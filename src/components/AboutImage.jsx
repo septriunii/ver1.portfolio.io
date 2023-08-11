@@ -1,5 +1,4 @@
 import { useState } from "react";
-import dots from "../assets/dots.png";
 
 function ImageDiv() {
   const [isHovered, setIsHovered] = useState(false);
