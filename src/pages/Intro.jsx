@@ -26,9 +26,9 @@ function Intro() {
   return (
     <div id="intro">
       <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-0">
-        <div className="h-full w-full p-2 pt-14 lg:pl-10 -mt-14 md:mt-0 ">
+        <div className="h-full w-full p-2 pt-14 lg:pl-10  md:mt-0 z-40">
           <p
-            className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic first-letter: left-fade-in ${
+            className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic z-50 left-fade-in ${
               isVisible ? "active" : ""
             }`}
           >
@@ -79,29 +79,13 @@ function Intro() {
           </button>
         </div>
 
-        {/* <div
-          className={` mt-3  justify-center h-60 w-1/2 md:h-auto md:w-[40%] p-1 shrink-0 flex md:mt-0 right-fade-in ${
-            isVisible ? "active" : ""
-          }`}
-        >
-          <div className="w-56 md:w-full lg:h-96 md:h-[60%] md:items-start  md:justify-end flex md:mt-10">
-            <div className="h-full w-full md:place-items-end lg:w-[23rem] lg:h-[23rem] ">
-              <div className="flex justify-center items-center w-full h-full relative">
-                <div className="h-14 w-14 md:h-16 md:w-16 lg:h-24 lg:w-24 bg-orange-700 absolute rounded-full -left-2 md:left-1 top-12 -z-40 opacity-90 "></div>
-                <div className="h-14 w-14 md:h-16 md:w-16 lg:h-24 lg:w-24 bg-orange-800 absolute rounded-full right-12 -bottom-1 z-40"></div>
-                <Slideshow />
-              </div>
-            </div>
-          </div>
-          
-        </div> */}
         <div
-          className={`h-52 w-1/2 md:h-auto md:w-[65%]  flex justify-end items-center mt-3 md:mt-0  right-fade-in ${
+          className={`h-52 w-1/2 md:h-auto md:w-[65%]  flex justify-end items-center mt-3 md:mt-0 z-10  right-fade-in  ${
             isVisible ? "active" : ""
           }`}
         >
-          <div className="h-full lg:w-[85%] md:w-[90%] md:h-[85%] w-full -z-10 md:mt-20 lg:mt-0">
-            <div className="h-full w-full rounded-full ">
+          <div className="h-full w-full  lg:w-[85%] md:w-[90%] md:h-[85%] -z-10 md:mt-20 lg:mt-0  ">
+            <div className="h-full w-full rounded-full md:overflow-hidden relative  ">
               <Slideshow />
             </div>
           </div>

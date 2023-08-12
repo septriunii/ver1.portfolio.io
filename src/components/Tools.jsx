@@ -33,9 +33,9 @@ function Tools() {
           <div className="flex flex-row justify-center font-ligh w-full mt-5 gap-3">
             <div
               ref={fadeRefs[0]}
-              className="p-2 flex lg:h-56 lg:w-48 lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"
+              className="p-2 flex lg:h-56 w-full lg:w-48 lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"
             >
-              <p>Frontend development</p>
+              <p className="text-center">Frontend development</p>
               <div className="h-full w-full grid grid-cols-3 place-items-center  items-center justify-center gap-5 p-3">
                 <div className="h-10 w-10 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/html.svg')] bg-cover bg-center "></div>
                 <div className="h-8 w-8 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/css.svg')] bg-cover bg-center "></div>
@@ -48,7 +48,7 @@ function Tools() {
             </div>
             <div
               ref={fadeRefs[1]}
-              className="p-2 flex lg:h-56 lg:w-48   lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"
+              className="p-2 flex lg:h-56 w-full lg:w-48   lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"
             >
               <p>Development Tools</p>
               <div className="h-full w-full grid grid-cols-2 place-items-center  items-center justify-center gap-2 py-5 px-3">
@@ -60,7 +60,7 @@ function Tools() {
             </div>
             <div
               ref={fadeRefs[2]}
-              className="p-2 flex lg:h-56 lg:w-48 lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"
+              className="p-2 flex lg:h-56 w-full lg:w-48 lg:gap-3 flex-col justify-center items-center text-orange-600 font-bold bg-zinc-700 bg-opacity-20 lg:p-2 fade-in"
             >
               <p>Graphic Design</p>
               <div className="h-full w-full grid grid-cols-2 place-items-center  items-center justify-center gap-5 p-3 px-4">
