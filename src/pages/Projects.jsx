@@ -75,12 +75,16 @@ function Projects() {
             <Proj1 />
           </div>
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
-            <div className="gap-1 flex flex-col ">
+            {/* <div className="gap-1 flex flex-col ">
               {Project.map((project) => (
                 <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
                   {project.name}
                 </p>
-              ))}
+              ))} */}
+            <div className="gap-1 flex flex-col ">
+              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                SwiftCart
+              </p>
 
               <p className="opacity-60 italic md:text-xs lg:text-sm">
                 e-commerce website
