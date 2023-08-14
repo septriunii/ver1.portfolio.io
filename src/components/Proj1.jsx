@@ -1,7 +1,7 @@
 import { useState } from "react";
 import img from "../assets/Project_1.jpg";
 
-function ImageDiv() {
+function ImageDiv({ image }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleContainerHover = () => {

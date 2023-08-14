@@ -1,4 +1,5 @@
 import { useState } from "react";
+import img from "../assets/AboutMePic.jpg";
 
 function ImageDiv() {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,10 +24,12 @@ function ImageDiv() {
       ></div>
       <div className="flex flex-col items-center justify-center">
         <div
-          className={`h-full w-full absolute bg-slate-950 transition-all duration-300 ease-in-out  bg-[url('../assets/AboutMePic.jpg')]  bg-center bg-contain ${
-            isHovered ? " h-[90%] w-[90%] scale-90" : "grayscale"
+          className={`h-full w-full absolute transition-all duration-300 ease-in-out   ${
+            isHovered ? "h-[90%] w-[90%] scale-90" : "grayscale"
           }`}
-        ></div>
+        >
+          <img src={img} alt="" className="h-full w-full object-cover" />
+        </div>
         <div
           id="border"
           className={`h-[90%] w-[90%] border-2 border-orange-600 absolute z-30 transition-all duration-300 ease-in-out ${

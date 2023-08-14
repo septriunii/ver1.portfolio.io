@@ -5,9 +5,9 @@ import { useEffect, useRef, useState } from "react";
 import img1 from "../assets/Project_1.jpg";
 import img2 from "../assets/Project_2.jpg";
 import img3 from "../assets/Project_3.jpg";
-import { Project } from "../data/projects";
 import viewsite from "../assets/viewsite.svg";
 import viewcode from "../assets/viewcode.svg";
+import { projects } from "../data/projects";
 
 function Projects() {
   const [isHovered, setIsHovered] = useState([false, false, false]);
@@ -75,19 +75,13 @@ function Projects() {
             <Proj1 />
           </div>
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
-            {/* <div className="gap-1 flex flex-col ">
-              {Project.map((project) => (
-                <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                  {project.name}
-                </p>
-              ))} */}
             <div className="gap-1 flex flex-col ">
               <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                SwiftCart
+                {projects[0].name}
               </p>
 
               <p className="opacity-60 italic md:text-xs lg:text-sm">
-                e-commerce website
+                {projects[0].class}
               </p>
             </div>
             <div className="w-full h-full relative">
@@ -100,22 +94,18 @@ function Projects() {
                   className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
               "
                 >
-                  SwiftCart is an exquisite e-commerce website that showcases my
-                  prowess in JavaScript functions . With a functioning features
-                  like an add to cart, purchasing, and page linking, it delivers
-                  a captivating and dynamic browsing experience. Moreover,
-                  restart surprises you with a fresh array of product displays,
-                  adding a touch of elegance to your shopping journey.
+                  {projects[0].description}
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 ">
+            <div className="flex flex-col gap-5">
               <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                <p className=" ">HTML</p>
-                <p className=" ">CSS</p>
-                <p className=" ">ReactJS</p>
-                <p className=" ">TailwindCSS</p>
+                {projects[0].composition.map((tech, index) => (
+                  <p key={index} className=" ">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -129,10 +119,10 @@ function Projects() {
           <div className="w-full h-auto flex flex-col items-end justify-between gap-4 p-2 text-justify font-light mr-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">
               <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                AimRobotics
+                {projects[1].name}
               </p>
               <p className="opacity-60 italic md:text-xs lg:text-sm">
-                company brochure website
+                {projects[1].class}
               </p>
             </div>
             <div className="w-full h-full relative">
@@ -145,24 +135,18 @@ function Projects() {
                   className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
               "
                 >
-                  AimRobotics is a company brochure website showcasing my adept
-                  skill in website design. Highlighting my skill in website
-                  design, this project demonstrates my expertise in creating
-                  digital experiences. Prioritizing user-friendly navigation,
-                  engaging content, and an artfully designed layout, it
-                  effectively shows my ability to build impactful and visually
-                  pleasing online platforms that enhance businesses' digital
-                  presence.
+                  {projects[1].description}
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 ">
+            <div className="flex flex-col gap-5">
               <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                <p className=" ">HTML</p>
-                <p className=" ">CSS</p>
-                <p className=" ">ReactJS</p>
-                <p className=" ">TailwindCSS</p>
+                {projects[1].composition.map((tech, index) => (
+                  <p key={index} className=" ">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -194,11 +178,11 @@ function Projects() {
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">
               <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                ReelQuest
+                {projects[2].name}
               </p>
 
               <p className="opacity-60 italic md:text-xs lg:text-sm">
-                movie search database
+                {projects[2].class}
               </p>
             </div>
             <div className="w-full h-full relative">
@@ -211,25 +195,18 @@ function Projects() {
                   className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
               "
                 >
-                  ReelQuest is a movie search database that showcases my
-                  adeptness in harnessing the power of RESTful APIs to develop
-                  fully operational and dynamically engaging web applications.
-                  This skillful creation not only serves as a testament to my
-                  technical proficiency but also underscores my commitment to
-                  enhancing users' entertainment journeys. By seamlessly
-                  integrating real-time data from APIs, ReelQuest offers an
-                  immersive experience, where users can explore an extensive
-                  collection of films.
+                  {projects[2].description}
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 ">
+            <div className="flex flex-col gap-5">
               <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                <p className=" ">HTML</p>
-                <p className=" ">CSS</p>
-                <p className=" ">ReactJS</p>
-                <p className=" ">TailwindCSS</p>
+                {projects[2].composition.map((tech, index) => (
+                  <p key={index} className=" ">
+                    {tech}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -239,34 +216,39 @@ function Projects() {
         <div className="h-auto w-full flex p-2 flex-col gap-7 md:hidden">
           <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
             <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
-              <img src={img1} alt="" />
+              <img src={img1} alt="" className="" />
               <div className="h-7 w-7 absolute top-[40%] left-3">
-                <img src={viewsite} alt="" />
+                <a
+                  href="https://github.com/Septriunii/ver1.portfolio.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={viewsite} alt="" className="cursor-pointer" />
+                </a>
               </div>
               <div className="h-7 w-7 absolute top-[60%] left-3">
-                <img src={viewcode} alt="" />
+                <img src={viewcode} alt="" className="cursor-pointer" />
               </div>
             </div>
             <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold"> SwiftCart</p>
-              <p className="opacity-60 italic text-xs">e-commerce website</p>
+              <p className="text-orange-600 text-lg font-bold">
+                {" "}
+                {projects[0].name}
+              </p>
+              <p className="opacity-60 italic text-xs"> {projects[0].class}</p>
 
               <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                SwiftCart is an exquisite e-commerce website that{" "}
-                <span className="border-b border-orange-600 text-white cursor-default">
-                  showcases my prowess in JavaScript functions
-                </span>
-                . With a functioning features like an add to cart, purchasing,
-                and page linking, it delivers a captivating and dynamic browsing
-                experience. Moreover, each restart surprises you with a fresh
-                array of product displays, adding a touch of elegance to your
-                shopping journey.
+                {projects[0].description}
               </p>
             </div>
-            <div className="flex gap-5 opacity-40 ">
-              <p className=" ">Frontend</p>
-              <p className=" ">ReactJS</p>
-              <p className=" ">Tailwind CSS</p>
+            <div className="flex flex-col gap-5">
+              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                {projects[0].composition.map((tech, index) => (
+                  <p key={index} className=" ">
+                    {tech}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -281,32 +263,29 @@ function Projects() {
               </div>
             </div>
             <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold"> AimRobotics</p>
-              <p className="opacity-60 italic text-xs">
-                company brochure websites
+              <p className="text-orange-600 text-lg font-bold">
+                {projects[1].name}
               </p>
+              <p className="opacity-60 italic text-xs">{projects[1].class}</p>
               <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                AimRobotics is a company brochure website showcasing my adept
-                skill in website design. Highlighting my skill in website
-                design, this project demonstrates my expertise in creating
-                digital experiences. Prioritizing user-friendly navigation,
-                engaging content, and an artfully designed layout, it
-                effectively shows my ability to build impactful and visually
-                pleasing online platforms that enhance businesses' digital
-                presence.
+                {projects[1].description}
               </p>
             </div>
-            <div className="flex gap-5 opacity-40 ">
-              <p className=" ">Frontend</p>
-              <p className=" ">ReactJS</p>
-              <p className=" ">Tailwind CSS</p>
+            <div className="flex flex-col gap-5">
+              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                {projects[1].composition.map((tech, index) => (
+                  <p key={index} className=" ">
+                    {tech}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
             <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
               <img src={img3} alt="" />
-              <div className="h-7 w-7 absolute top-[40%] left-3">
+              <div className="h-7 w-7 absolute top-[40%] left-3 ">
                 <img src={viewsite} alt="" />
               </div>
               <div className="h-7 w-7 absolute top-[60%] left-3">
@@ -314,25 +293,23 @@ function Projects() {
               </div>
             </div>
             <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold"> ReelQuest</p>
-              <p className="opacity-60 italic text-xs">movie search database</p>
+              <p className="text-orange-600 text-lg font-bold">
+                {projects[2].name}
+              </p>
+              <p className="opacity-60 italic text-xs">{projects[2].class}</p>
 
               <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                ReelQuest is a movie search database that showcases my adeptness
-                in harnessing the power of RESTful APIs to develop fully
-                operational and dynamically engaging web applications. This
-                skillful creation not only serves as a testament to my technical
-                proficiency but also underscores my commitment to enhancing
-                users' entertainment journeys. By seamlessly integrating
-                real-time data from APIs, ReelQuest offers an immersive
-                experience, where users can explore an extensive collection of
-                films.
+                {projects[2].description}
               </p>
             </div>
-            <div className="flex gap-5 opacity-40 ">
-              <p className=" ">Frontend</p>
-              <p className=" ">ReactJS</p>
-              <p className=" ">Tailwind CSS</p>
+            <div className="flex flex-col gap-5">
+              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                {projects[2].composition.map((tech, index) => (
+                  <p key={index} className=" ">
+                    {tech}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ function Tools() {
               <p>Development Tools</p>
               <div className="h-full w-full grid grid-cols-2 place-items-center  items-center justify-center gap-2 py-5 px-3">
                 <div className="h-8 w-8 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/vsc.svg')] bg-cover bg-center "></div>
-                <div className="h-8 w-8 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/vsc.svg')] bg-cover bg-center "></div>
+                <div className="h-8 w-8 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/github.svg')] bg-cover bg-center "></div>
                 <div className="h-8 w-8 lg:h-9 lg:w-9  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/edge.svg')] bg-cover bg-center "></div>
                 <div className="h-8 w-8 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/powershell.svg')] bg-cover bg-center "></div>
               </div>

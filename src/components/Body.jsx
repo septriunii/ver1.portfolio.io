@@ -4,8 +4,6 @@ import Sidebar2 from "./Sidebar2";
 import img1 from "../assets/bgpattern.png";
 import img from "../assets/bg.jpg";
 
-// import img from "../assets/bgpat.webp";
-
 function Body({ children }) {
   return (
     <>

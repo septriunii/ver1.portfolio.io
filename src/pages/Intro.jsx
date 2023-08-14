@@ -72,7 +72,7 @@ function Intro() {
               isVisible ? "active" : ""
             }`}
             onClick={() =>
-              window.open("/test1.github.io/src/assets/resume.pdf", "_blank")
+              window.open("/ver1.portfolio.io/src/assets/resume.pdf", "_blank")
             }
           >
             Check out my resume
