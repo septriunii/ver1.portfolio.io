@@ -90,10 +90,7 @@ function Projects() {
                   isHovered[0] ? "lg:left-0 md:left-0" : ""
                 }`}
               >
-                <p
-                  className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
-              "
-                >
+                <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
                   {projects[0].description}
                 </p>
               </div>

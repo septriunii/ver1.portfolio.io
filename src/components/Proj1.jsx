@@ -1,7 +1,7 @@
 import { useState } from "react";
 import img from "../assets/Project_1.jpg";
 
-function ImageDiv({ image }) {
+function ImageDiv() {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleContainerHover = () => {
@@ -41,7 +41,7 @@ function ImageDiv({ image }) {
             }`}
           >
             <a
-              href="https://github.com/Septriunii/ver1.portfolio.io"
+              href="https://septriunii.github.io/proj1.swiftcart.io"
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-white"
@@ -55,7 +55,7 @@ function ImageDiv({ image }) {
             }`}
           >
             <a
-              href="https://github.com/Septriunii/ver1.portfolio.io"
+              href="https://github.com/Septriunii/proj1.swiftcart.io"
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-white"
