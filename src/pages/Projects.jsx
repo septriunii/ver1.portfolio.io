@@ -229,7 +229,6 @@ function Projects() {
             </div>
             <div className="flex flex-col">
               <p className="text-orange-600 text-lg font-bold">
-                {" "}
                 {projects[0].name}
               </p>
               <p className="opacity-60 italic text-xs"> {projects[0].class}</p>

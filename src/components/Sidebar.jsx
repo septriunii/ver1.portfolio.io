@@ -1,3 +1,5 @@
+import img from "../assets/github-svgrepo-com.svg";
+
 function Sidebar1() {
   return (
     <div>
@@ -10,7 +12,7 @@ function Sidebar1() {
             href="https://github.com/Septriunii"
             target="_blank"
             rel="noreferrer"
-            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out bg-[url('../assets/github-svgrepo-com.svg')] opacity-70 hover:opacity-100  hover:bg-[url('../assets/github-svgrepo-com.png')]  bg bg-cover bg-center"
+            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out bg-[url('../assets/github-square-svgrepo-com.svg')] hover:opacity-100  hover:bg-[url('../assets/github-svgrepo-com.png')]  bg bg-cover bg-center"
           ></a>
         </div>
 
@@ -19,7 +21,7 @@ function Sidebar1() {
             href="https://www.facebook.com/anthony.alabado.37/"
             target="_blank"
             rel="noreferrer"
-            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out opacity-70 hover:opacity-100 bg-[url('../assets/facebook-svgrepo-com.svg')] hover:bg-[url('../assets/facebook-svgrepo-com.png')]  bg bg-cover bg-center"
+            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out hover:opacity-100 bg-[url('../assets/facebook-svgrepo-com.svg')] hover:bg-[url('../assets/facebook-svgrepo-com.png')]  bg bg-cover bg-center"
           ></a>
         </div>
         <div className="w-8 h-8 cursor-pointer flex items-center p-1 relative">
@@ -27,7 +29,7 @@ function Sidebar1() {
             href="mailto:anthonyalabado@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out opacity-70 hover:opacity-100  bg-[url('../assets/gmail-svgrepo-com.svg')] hover:bg-[url('../assets/gmail-svgrepo-com.png')] bg bg-cover bg-center"
+            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out  hover:opacity-100  bg-[url('../assets/gmail-svgrepo-com.svg')] hover:bg-[url('../assets/gmail-svgrepo-com.png')] bg bg-cover bg-center"
           ></a>
         </div>
         <div className="w-9 h-9 cursor-pointer flex items-center p-1 relative">
@@ -35,7 +37,7 @@ function Sidebar1() {
             href="https://www.linkedin.com/in/anthony-alabado-7b5112279/"
             target="_blank"
             rel="noreferrer"
-            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out opacity-70 hover:opacity-100  bg-[url('../assets/linkedin-svgrepo-com.svg')] hover:bg-[url('../assets/linkedin-svgrepo-com.png')] bg bg-cover bg-center"
+            className="bg w-full h-full object-contain transition-opacity duration-500 ease-out hover:opacity-100  bg-[url('../assets/linkedin-svgrepo-com.svg')] hover:bg-[url('../assets/linkedin-svgrepo-com.png')] bg bg-cover bg-center"
           ></a>
         </div>
         <div className="h-36 w-0.5 bg-zinc-900 absolute bottom-0"></div>
