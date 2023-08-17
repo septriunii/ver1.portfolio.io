@@ -89,7 +89,7 @@ function Skills() {
               <li ref={fadeRefs[5]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in programming languages such as <span>C++</span>,
-                  <span> Python</span>, and
+                  <span> Python </span>, and
                   <span> JavaScript</span>, enabling versatile problem-solving.
                 </span>
               </li>

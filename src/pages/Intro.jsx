@@ -51,17 +51,16 @@ function Intro() {
                 isVisible ? "active" : ""
               }`}
             >
-              I am a passionate and dedicated web developer focusing on frontend
-              development.
+              I am a dedicated web developer focusing on frontend development
+              specializing in ReactJS and Tailwind CSS.
             </p>
             <p
               className={`md:mt-5  text-xs mb-10 text-justify leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light opacity-90 font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
-              I have a keen eye for design and I'm skilled in{" "}
-              <span>graphics design</span>, applying fundamental design
-              principles to create visually appealing and user-friendly
-              interfaces. I am well-versed in{" "}
+              My passion lies in crafting visually captivating and user-friendly
+              interfaces, skillfully combining graphics design and
+              web-responsive design. I am well-versed in{" "}
               <span>web development architecture</span> and have a thorough
               understanding of how to integrate frontend interfaces with{" "}
               <span>backend systems</span>.
