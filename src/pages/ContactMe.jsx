@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 function ContactMe() {
-  const fadeRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const fadeRefs = [useRef(null), useRef(null)];
 
   useEffect(() => {
     const observers = fadeRefs.map((ref) => {
@@ -58,33 +58,12 @@ function ContactMe() {
                 <div className="h-full w-auto flex justify-center  lg:gap-10 mt-10 italic flex-col lg:flex-row  text-xs gap-3">
                   <a
                     ref={fadeRefs[1]}
-                    href="https://www.linkedin.com/in/anthony-alabado-7b5112279/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-black hover:text-orange-600 right-fade-in"
-                  >
-                    <div className="h-7 w-7 lg:h-10 lg:w-10  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/linkedin-svgrepo-com.svg')] bg-cover bg-center "></div>
-                    <p>Anthony Alabado</p>
-                  </a>
-
-                  <a
-                    ref={fadeRefs[2]}
                     href="mailto:anthonyalabado@gmail.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 text-black hover:text-orange-600 right-fade-in"
+                    className="flex items-center gap-2 text-orange-600 hover:text-orange-600 right-fade-in"
                   >
-                    <div className="h-6 w-6 lg:h-10 lg:w-9  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/gmail-svgrepo-com.svg')] bg-cover bg-center "></div>
-                    <p>anthonyalabado3712@gmail.com</p>
-                  </a>
-
-                  <a
-                    ref={fadeRefs[3]}
-                    rel="noreferrer"
-                    className="flex items-center gap-2 text-black hover:text-orange-600 right-fade-in"
-                  >
-                    <div className="h-6 w-6 lg:h-8 lg:w-8  hover:scale-125 transition duration-300 ease-in-out cursor-pointer bg-[url('../assets/call.svg')] bg-cover bg-center "></div>
-                    <p> +639709919006</p>
+                    <button className="text-base">Get in touch</button>
                   </a>
                 </div>
               </div>
