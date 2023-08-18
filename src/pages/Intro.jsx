@@ -26,7 +26,7 @@ function Intro() {
   return (
     <div id="intro">
       <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-0">
-        <div className="h-full w-full p-2 lg:pt-14 md:pt-7 lg:pl-10  md:mt-0 z-40">
+        <div className="h-full w-full p-2 lg:pt-14 md:pt-7 lg:pl-10  md:mt-5 z-40">
           <p
             className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic z-50 left-fade-in ${
               isVisible ? "active" : ""

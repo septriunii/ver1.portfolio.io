@@ -43,7 +43,7 @@ function ContactMe() {
             ref={fadeRefs[0]}
             className="flex  w-full h-full mt-8 justify-center fade-in"
           >
-            <div className="h-[22rem]  p-2 md:w-[75%] flex flex-col lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-lg relative">
+            <div className="h-[22rem]  p-2 md:w-[75%] lg:w-[65%] flex flex-col lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-lg relative">
               <div className="text-xs md:text-sm  flex flex-col justify-center items-center lg:gap-2">
                 <p className="leading-6 bg-zinc-900 p-2 lg:p-3 indent-5 lg:indent-0 lg:leading-7">
                   If you're seeking a Frontend Web Developer who is committed to
@@ -63,7 +63,9 @@ function ContactMe() {
                     rel="noreferrer"
                     className="flex items-center gap-2 text-orange-600 hover:text-orange-600 right-fade-in"
                   >
-                    <button className="text-base">Get in touch</button>
+                    <button className="text-xs md:text-sm lg:text-base py-3 px-5">
+                      Get in touch
+                    </button>
                   </a>
                 </div>
               </div>
