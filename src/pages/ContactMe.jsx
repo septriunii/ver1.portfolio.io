@@ -64,7 +64,7 @@ function ContactMe() {
                     className="flex items-center gap-2 text-orange-600 hover:text-orange-600 right-fade-in"
                   >
                     <button className="text-xs md:text-sm lg:text-base py-3 px-5">
-                      Get in touch
+                      Message Me!
                     </button>
                   </a>
                 </div>

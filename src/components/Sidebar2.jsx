@@ -42,30 +42,40 @@ function Sidebar() {
     <nav>
       <ul className="flex  fixed flex-col gap-8 right-3 top-[38%]">
         <li
-          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
-            activeSection === "aboutme" ? "bg-orange-600" : ""
+          className={`h-3 w-2 rounded-full border-2  ${
+            activeSection === "aboutme"
+              ? "bg-orange-600 border-orange-600   "
+              : "border-orange-500"
           }`}
         ></li>
         <li
-          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
-            activeSection === "skills" ? "bg-orange-600" : ""
+          className={`h-3 w-2 rounded-full border-2  ${
+            activeSection === "skills"
+              ? "bg-orange-600 border-orange-600 "
+              : "border-orange-500"
           }`}
         ></li>
         <li
-          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
-            activeSection === "proj" ? "bg-orange-600" : ""
+          className={`h-3 w-2 rounded-full border-2  ${
+            activeSection === "proj"
+              ? "bg-orange-600 border-orange-600"
+              : "border-orange-500"
           }`}
         ></li>
 
         <li
-          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
-            activeSection === "exp" ? "bg-orange-600" : ""
+          className={`h-3 w-2 rounded-full border-2  ${
+            activeSection === "exp"
+              ? "bg-orange-600 border-orange-600"
+              : "border-orange-500"
           }`}
         ></li>
 
         <li
-          className={`h-3 w-2 rounded-full border-2 border-orange-600 ${
-            activeSection === "contact" ? "bg-orange-600" : ""
+          className={`h-3 w-2 rounded-full border-2  ${
+            activeSection === "contact"
+              ? "bg-orange-600 border-orange-600"
+              : "border-orange-500"
           }`}
         ></li>
       </ul>

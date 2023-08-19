@@ -6,7 +6,7 @@ import img from "../assets/bg.jpg";
 
 function Body({ children }) {
   return (
-    <>
+    <div>
       <div className="h-auto w-full fixed z-50 top-0 ">
         <Navbar />
       </div>
@@ -31,7 +31,7 @@ function Body({ children }) {
           <Sidebar2 />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
