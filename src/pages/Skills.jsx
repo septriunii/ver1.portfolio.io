@@ -14,22 +14,23 @@ function Skills() {
     useRef(null),
   ];
 
+  const observers = useRef([]);
+
   useEffect(() => {
-    const observers = fadeRefs.map((ref) => {
-      return new IntersectionObserver(([entry]) => {
+    observers.current = fadeRefs.map((ref) => {
+      const observer = new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
           ref.current.classList.add("active");
         }
       });
-    });
 
-    observers.forEach((observer, index) => {
-      observer.observe(fadeRefs[index].current);
+      observer.observe(ref.current);
+      return observer;
     });
 
     return () => {
-      observers.forEach((observer, index) => {
-        observer.unobserve(fadeRefs[index].current);
+      observers.current.forEach((observer) => {
+        observer.disconnect(); // Disconnect each observer
       });
     };
   }, []);
