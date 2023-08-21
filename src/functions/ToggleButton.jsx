@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function ToggleButton() {
+function ToggleButton({ onClick }) {
   const [isChecked, setIsChecked] = useState(false);
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   const [isDisabledTextVisible, setIsDisabledTextVisible] = useState(false);
@@ -48,6 +48,7 @@ function ToggleButton() {
     <div>
       <div className="relative flex w-10 h-6 items-center justify-center">
         <input
+          onClick={onClick}
           type="checkbox"
           id="toggleButton"
           className={`absolute w-10 h-full appearance-none rounded-full bg-white cursor-pointer ${
@@ -76,6 +77,7 @@ function ToggleButton() {
       </div>
     </div>
   );
+  s;
 }
 
 export default ToggleButton;

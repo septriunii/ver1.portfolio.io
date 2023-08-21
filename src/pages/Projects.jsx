@@ -1,6 +1,4 @@
-import Proj1 from "../components/Proj1";
-import Proj2 from "../components/Proj2";
-import Proj3 from "../components/Proj3";
+import ImageDiv from "../components/ProjIMG";
 import { useEffect, useRef, useState } from "react";
 import img1 from "../assets/Project_1.jpg";
 import img2 from "../assets/Project_2.jpg";
@@ -72,7 +70,7 @@ function Projects() {
             onMouseEnter={() => handleContainerHover(0)}
             onMouseLeave={() => handleContainerLeave(0)}
           >
-            <Proj1 />
+            <ImageDiv image={img1} />
           </div>
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">
@@ -154,7 +152,7 @@ function Projects() {
             onMouseEnter={() => handleContainerHover(1)}
             onMouseLeave={() => handleContainerLeave(1)}
           >
-            <Proj2 />
+            <ImageDiv image={img2} />
           </div>
         </div>
 
@@ -170,7 +168,7 @@ function Projects() {
             onMouseEnter={() => handleContainerHover(2)}
             onMouseLeave={() => handleContainerLeave(2)}
           >
-            <Proj3 />
+            <ImageDiv image={img3} />
           </div>
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">

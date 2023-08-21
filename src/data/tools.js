@@ -68,7 +68,7 @@ export const tools = [
     class: "IDE",
   },
   {
-    id: "tool9",
+    id: "tool13",
     name: "Github",
     img: github,
     class: "Tool",

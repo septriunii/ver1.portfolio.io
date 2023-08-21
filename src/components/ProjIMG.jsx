@@ -1,7 +1,6 @@
 import { useState } from "react";
-import img from "../assets/Project_1.jpg";
 
-function ImageDiv() {
+function ImageDiv({ image }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleContainerHover = () => {
@@ -25,7 +24,7 @@ function ImageDiv() {
         ></div>
 
         <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-zinc-900 bg-opacity-70">
-          <img src={img} alt="" />
+          <img src={image} alt="" />
         </div>
 
         <div
