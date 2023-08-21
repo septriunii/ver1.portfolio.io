@@ -1,8 +1,6 @@
 import { useState } from "react";
 import ToggleButton from "./components/ToggleButton";
 import BlackComponent from "./components/BlackComponent";
-import WhiteComponent from "./components/WhiteComponent";
-import MainPage from "./MAIN PAGE/MainPage";
 import {
   Intro,
   AboutMe,
@@ -12,6 +10,7 @@ import {
   ContactMe,
 } from "./pages";
 import { Footer, Body } from "./components";
+import SummaryPage from "./components/SummaryPage";
 const App = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -20,10 +19,10 @@ const App = () => {
   };
 
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto relative ">
       <ToggleButton isActive={isActive} toggleMode={toggleMode} />
       {isActive ? (
-        <BlackComponent />
+        <SummaryPage />
       ) : (
         <Body>
           <Intro />

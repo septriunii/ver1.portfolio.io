@@ -10,7 +10,6 @@ import { projects } from "../data/projects";
 function Projects() {
   const [isHovered, setIsHovered] = useState([false, false, false]);
   const observers = useRef([]);
-
   const handleContainerHover = (index) => {
     setIsHovered((prevState) => {
       const newState = [...prevState];

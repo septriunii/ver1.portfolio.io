@@ -9,7 +9,7 @@ function ToggleButton({ isActive, toggleMode }) {
   };
 
   return (
-    <div className="relative flex w-10 h-6 items-center justify-center mt-20">
+    <div className="absolute flex w-10 h-6 items-center justify-center z-50 ">
       <input
         type="checkbox"
         id="toggleButton"

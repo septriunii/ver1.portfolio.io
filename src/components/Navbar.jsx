@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/a.png";
-import ToggleButton from "../functions/ToggleButton";
 import { Link as ScrollLink } from "react-scroll";
 import Rectangle from "./Rectangle";
 import { navs } from "../data/navs";
+import ToggleButton from "./ToggleButton";
 
 function Navbar() {
   const [isSmScreen, setIsSmScreen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [showRectangle, setShowRectangle] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleMode = () => {
+    setIsActive(!isActive);
+  };
 
   const toggleRectangle = () => {
     setShowRectangle(!showRectangle);
@@ -79,7 +84,7 @@ function Navbar() {
                 </ScrollLink>
               </div>
             ))}
-            <ToggleButton />
+            <ToggleButton isActive={isActive} toggleMode={toggleMode} />
           </section>
         </div>
       )}
