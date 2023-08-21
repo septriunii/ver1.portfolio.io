@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Intro,
   AboutMe,
@@ -7,7 +8,6 @@ import {
   ContactMe,
 } from "./pages";
 import { Footer, Body } from "./components";
-
 function App() {
   return (
     <Body>

@@ -7,19 +7,19 @@ function Tools() {
   return (
     <>
       <div className="h-full w-full flex flex-col">
-        <div className="h-auto w-full  flex justify-center">
-          <p>Tools that I use</p>
+        <div className="h-auto w-full  flex justify-center text-base font-bold p-3">
+          <p>Technologies I Utillize</p>
         </div>
 
         <div className="h-full w-full  flex gap-2">
-          <div className="h-full w-5 p-3  flex flex-col items-center justify-center vertical-text">
+          <div className="h-full w-5 p-3  flex flex-col items-center justify-center ">
             {hoveredTool
-              ? hoveredTool.class
+              ? hoveredTool.name
                   .split("")
                   .map((char, index) => <span key={index}>{char}</span>)
               : ""}
           </div>
-          <div className="h-full w-full  flex gap-3 justify-center items-center">
+          <div className="h-full w-full  grid grid-cols-4 gap-3  items-center place-content-center place-items-center">
             {tools.map((tool) => (
               <div
                 key={tool.id}
@@ -33,7 +33,7 @@ function Tools() {
           </div>
           <div className="h-full w-5  p-3 flex flex-col items-center justify-center vertical-text">
             {hoveredTool
-              ? hoveredTool.name
+              ? hoveredTool.class
                   .split("")
                   .map((char, index) => <span key={index}>{char}</span>)
               : ""}

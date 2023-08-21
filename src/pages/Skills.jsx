@@ -1,8 +1,9 @@
 import Tools from "../components/Tools";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function Skills() {
   const fadeRefs = [
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -105,7 +106,10 @@ function Skills() {
                   </span>
                 </li>
               </ul>
-              <div className="md:w-[80%] lg:w-[60%] h-auto bg-opacity-70 bg-zinc-900">
+              <div
+                ref={fadeRefs[8]}
+                className="md:w-[80%] lg:w-[60%] h-auto bg-opacity-20 bg-zinc-700 fade-in"
+              >
                 <Tools />
               </div>
             </div>

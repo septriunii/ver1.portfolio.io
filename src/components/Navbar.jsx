@@ -3,11 +3,11 @@ import logo from "../assets/a.png";
 import ToggleButton from "../functions/ToggleButton";
 import { Link as ScrollLink } from "react-scroll";
 import Rectangle from "./Rectangle";
+import { navs } from "../data/navs";
 
 function Navbar() {
   const [isSmScreen, setIsSmScreen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
   const [showRectangle, setShowRectangle] = useState(false);
 
   const toggleRectangle = () => {
@@ -66,65 +66,19 @@ function Navbar() {
 
           {/* Navbar responsive */}
           <section className="hidden sm:flex mr-7 gap-4 md:gap-7 lg:mr-14 lg:gap-12">
-            <div className="opacity-80">
-              <ScrollLink
-                to="aboutme"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                className="text-white cursor-pointer hover:text-orange-600  transition-colors duration-300 font-light font_theme text-sm"
-              >
-                About Me
-              </ScrollLink>
-            </div>
-
-            <div className="opacity-80">
-              <ScrollLink
-                to="skills"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
-              >
-                Skills
-              </ScrollLink>
-            </div>
-
-            <div className="opacity-80">
-              <ScrollLink
-                to="proj"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
-              >
-                Projects
-              </ScrollLink>
-            </div>
-
-            <div className="opacity-80">
-              <ScrollLink
-                to="exp"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
-              >
-                Experience
-              </ScrollLink>
-            </div>
-
-            <div className="opacity-80">
-              <ScrollLink
-                to="contact"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
-              >
-                Contact Me
-              </ScrollLink>
-            </div>
+            {navs.map((nav) => (
+              <div key={nav.id} className="opacity-80">
+                <ScrollLink
+                  to={nav.links}
+                  smooth={true}
+                  duration={500}
+                  offset={-100}
+                  className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+                >
+                  {nav.name}
+                </ScrollLink>
+              </div>
+            ))}
             <ToggleButton />
           </section>
         </div>
