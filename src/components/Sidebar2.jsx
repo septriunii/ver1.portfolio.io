@@ -96,7 +96,6 @@ function Sidebar2() {
     { id: "proj", name: "proj" },
     { id: "exp", name: "exp" },
     { id: "contact", name: "contact" },
-    // ... other section IDs
   ];
 
   useEffect(() => {
