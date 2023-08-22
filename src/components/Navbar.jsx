@@ -34,7 +34,7 @@ function Navbar() {
   }, [prevScrollPos]);
 
   return (
-    <div>
+    <div className="">
       {isSmScreen ? (
         // Hamburger menu for sm screen
         <div className="w-full h-14 lg:h-20 fixed top-0 left-0 flex items-center justify-between backdrop-blur-md shadow-md">
@@ -84,7 +84,7 @@ function Navbar() {
                 </ScrollLink>
               </div>
             ))}
-            <ToggleButton isActive={isActive} toggleMode={toggleMode} />
+            <div className="w-10 hidden md:flex"></div>
           </section>
         </div>
       )}

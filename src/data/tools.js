@@ -11,6 +11,8 @@ import github from "../assets/github.svg";
 import powershell from "../assets/powershell.svg";
 import nodejs from "../assets/nodeJS.svg";
 import python from "../assets/python.svg";
+import photoshop from "../assets/photoshop.svg";
+import figma from "../assets/figma.svg";
 
 export const tools = [
   {
@@ -90,5 +92,17 @@ export const tools = [
     name: "Python",
     img: python,
     class: "Language",
+  },
+  {
+    id: "tool15",
+    name: "Photoshop",
+    img: photoshop,
+    class: "Design",
+  },
+  {
+    id: "tool14",
+    name: "Figma",
+    img: figma,
+    class: "Design",
   },
 ];

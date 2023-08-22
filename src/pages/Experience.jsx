@@ -30,7 +30,7 @@ function Experience() {
         className="mt-10 w-full lg:h-auto flex flex-col lg:mt-28 z-40"
       >
         <h1 className="font-bold text-2xl mb-8 ml-5 lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
-          <p className="w-28 italic mr-5 lg:w-52">Experience</p>
+          <p className="w-28 italic mr-5 lg:w-52">Experiences</p>
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
 

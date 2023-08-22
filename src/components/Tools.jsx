@@ -19,11 +19,11 @@ function Tools() {
                   .map((char, index) => <span key={index}>{char}</span>)
               : ""}
           </div>
-          <div className="h-full w-full  grid grid-cols-4 gap-3  items-center place-content-center place-items-center">
+          <div className="h-full w-full lg:px-5  grid grid-cols-5 md:grid-cols-3 lg:grid-cols-4 gap-3  items-center place-content-center place-items-center">
             {tools.map((tool) => (
               <div
                 key={tool.id}
-                className="h-12 w-12  duration-200 ease-in-out hover:scale-105"
+                className="h-10 w-full flex justify-center   duration-200 ease-in-out hover:scale-105"
                 onMouseEnter={() => setHoveredTool(tool)}
                 onMouseLeave={() => setHoveredTool(null)}
               >

@@ -9,7 +9,7 @@ function ToggleButton({ isActive, toggleMode }) {
   };
 
   return (
-    <div className="absolute flex w-10 h-6 items-center justify-center z-50 ">
+    <div className="hidden md:fixed md:flex w-10 h-6 items-center justify-center z-50 -mt-[4.2rem] md:right-7  lg:right-14">
       <input
         type="checkbox"
         id="toggleButton"
@@ -24,7 +24,7 @@ function ToggleButton({ isActive, toggleMode }) {
         }`}
       ></label>
       <div className="absolute top-full text-xs text-gray-500 mt-1">
-        {isActive ? "active" : "inactive"}
+        {isActive ? "summarized" : "summarize?"}
       </div>
     </div>
   );
