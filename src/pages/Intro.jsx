@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import IntroIMG from "../components/IntroIMG";
-import img from "../assets/introbg.png";
+import img from "../assets/IntroIMGbg.png";
 
 function Intro() {
   const [showText, setShowText] = useState(false);

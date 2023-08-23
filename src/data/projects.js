@@ -10,7 +10,7 @@ export const projects = [
   {
     id: "proj2",
     name: "AimRobotics",
-    class: " company brochure websites",
+    class: " company brochure website",
     description:
       "AimRobotics is a company brochure website showcasing my adept skill in website design. Highlighting my skill in website design, this project demonstrates my expertise in creating digital experiences. Prioritizing user-friendly navigation, engaging content, and an artfully designed layout, it effectively shows my ability to build impactful and visually pleasing online platforms that enhance businesses' digital presence.",
     composition: ["HTML", "CSS", "ReactJS", "TailwindCSS"],

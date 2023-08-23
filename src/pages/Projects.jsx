@@ -69,7 +69,11 @@ function Projects() {
             onMouseEnter={() => handleContainerHover(0)}
             onMouseLeave={() => handleContainerLeave(0)}
           >
-            <ImageDiv image={img1} />
+            <ImageDiv
+              image={img1}
+              visit={"https://septriunii.github.io/proj1.swiftcart.io"}
+              view={"https://github.com/Septriunii/proj1.swiftcart.io"}
+            />
           </div>
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">
@@ -151,7 +155,11 @@ function Projects() {
             onMouseEnter={() => handleContainerHover(1)}
             onMouseLeave={() => handleContainerLeave(1)}
           >
-            <ImageDiv image={img2} />
+            <ImageDiv
+              image={img2}
+              visit={"https://septriunii.github.io/proj2.aimrobotics.io"}
+              view={"https://github.com/Septriunii/proj2.aimrobotics.io"}
+            />
           </div>
         </div>
 
@@ -167,7 +175,11 @@ function Projects() {
             onMouseEnter={() => handleContainerHover(2)}
             onMouseLeave={() => handleContainerLeave(2)}
           >
-            <ImageDiv image={img3} />
+            <ImageDiv
+              image={img3}
+              visit={"https://septriunii.github.io/proj3.reelquest.io"}
+              view={"https://github.com/Septriunii/proj3.reelquest.io"}
+            />
           </div>
           <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
             <div className="gap-1 flex flex-col ">

@@ -42,8 +42,7 @@ function Experience() {
             >
               <div className="flex flex-col gap-2">
                 <h1 className="flex justify-center text-lg  font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 w-full gap-2">
-                  IT Support
-                  <span className="text-white">&middot; </span>Internship
+                  IT Support Intern
                 </h1>
                 <p className="text-xs md:text-sm italic ml-3">
                   Zamboanga Sibugay 2nd District House of The Representative
@@ -105,8 +104,7 @@ function Experience() {
             <div className="h-full w-[100%] flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-md ">
               <div className="flex flex-col gap-2">
                 <h1 className="justify-center text-lg font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
-                  Data Entry Clerk
-                  <span className="text-white">&middot; </span>Immersion
+                  Data Entry Clerk Intern
                 </h1>
 
                 <p className="text-xs md:text-sm italic ml-3">

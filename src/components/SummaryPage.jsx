@@ -3,17 +3,48 @@ import { Body, Footer } from ".";
 import { tools } from "../data/tools";
 import { useState } from "react";
 import { projects } from "../data/projects";
+import { useRef, useEffect } from "react";
 
 function SummaryPage() {
   const [hoveredTool, setHoveredTool] = useState(null);
+  const fadeRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
+  const observers = useRef([]);
+
+  useEffect(() => {
+    observers.current = fadeRefs.map((ref) => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          ref.current.classList.add("active");
+        }
+      });
+
+      observer.observe(ref.current);
+      return observer;
+    });
+
+    return () => {
+      observers.current.forEach((observer) => {
+        observer.disconnect(); // Disconnect each observer
+      });
+    };
+  }, []);
 
   return (
     <div>
       <Body>
-        <div className="h-[33rem] w-full">
-          <div className="bg-zinc-700 bg-opacity-20 h-full w-full flex p-3">
-            <div className="w-[90%] h-full  flex flex-col border-r-[2px] pr-3 border-zinc-900 ">
-              <div className="font-thin w-full h-full flex flex-col">
+        <div className="h-auto w-full md:mt-0 mt-5">
+          <div className="bg-zinc-700 bg-opacity-20 h-full w-full flex p-3 md:flex-row flex-col gap-5">
+            <div className="md:w-[90%] h-full  flex flex-col md:border-r-[2px] md:pr-2 lg:pr-3  md:border-zinc-900 ">
+              <div
+                ref={fadeRefs[0]}
+                className="font-thin w-full h-full flex flex-col fade-in"
+              >
                 <p className="text-3xl font-bold bg-zinc-900 p-2 w-[17rem] flex justify-center">
                   Anthony Alabado
                 </p>
@@ -54,7 +85,10 @@ function SummaryPage() {
                   </li>
                 </ul>
               </div>
-              <div className="w-full h-full flex flex-col  mt-5">
+              <div
+                ref={fadeRefs[1]}
+                className="w-full h-full flex flex-col  mt-5 left-fade-in"
+              >
                 <div className="text-2xl font-bold text-orange-600 flex items-center">
                   <p>Skills</p>
                   <div className="h-0.5 ml-3 bg-zinc-900 w-full"></div>
@@ -90,8 +124,11 @@ function SummaryPage() {
 
             <div className="w-full h-full flex flex-col pl-3">
               <div className=" w-full h-full flex">
-                <div className="w-full h-full p-3">
-                  <div className="bg-zinc-900 w-full h-full bg-opacity-50 flex flex-col">
+                <div
+                  ref={fadeRefs[2]}
+                  className="w-full h-full p-3 left-fade-in"
+                >
+                  <div className="bg-zinc-900 w-full h-full bg-opacity-50 flex flex-col ">
                     <p className="text-xl p-2 font-bold">Experiences</p>
                     <div className="h-full w-full  p-2">
                       <p className="font-bold text-orange-600 text-lg">
@@ -115,7 +152,10 @@ function SummaryPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full h-full flex flex-col">
+                <div
+                  ref={fadeRefs[3]}
+                  className="w-full h-full flex flex-col right-fade-in"
+                >
                   <div className="text-2xl font-bold text-orange-600 flex items-center">
                     <p>Projects</p>
                     <div className="h-0.5 ml-3 bg-zinc-900 w-full"></div>
@@ -125,7 +165,16 @@ function SummaryPage() {
                       <p className="font-bold text-lg">{projects[0].name}</p>
                       <div className="flex gap-3 justify-between items-center">
                         <p className=" text-sm">{projects[0].class}</p>
-                        <button className="px-5 py-2 text-sm ">Visit</button>
+                        <button className="px-5 py-2 text-sm ">
+                          <a
+                            href="https://septriunii.github.io/proj1.swiftcart.io"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-white hover:text-white"
+                          >
+                            Visit
+                          </a>
+                        </button>
                       </div>
                     </div>
 
@@ -133,7 +182,16 @@ function SummaryPage() {
                       <p className="font-bold text-lg">{projects[1].name}</p>
                       <div className="flex gap-3 justify-between items-center">
                         <p className="text-sm">{projects[1].class}</p>
-                        <button className="px-5 py-2 text-sm  ">Visit</button>
+                        <button className="px-5 py-2 text-sm ">
+                          <a
+                            href="https://septriunii.github.io/proj2.aimrobotics.io"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-white hover:text-white"
+                          >
+                            Visit
+                          </a>
+                        </button>
                       </div>
                     </div>
 
@@ -141,13 +199,25 @@ function SummaryPage() {
                       <p className="font-bold text-lg">{projects[2].name}</p>
                       <div className="flex gap-3 justify-between items-center">
                         <p className="text-sm">{projects[2].class}</p>
-                        <button className="px-5 py-2 text-sm  ">Visit</button>
+                        <button className="px-5 py-2 text-sm ">
+                          <a
+                            href="https://septriunii.github.io/proj3.reelquest.io"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-white hover:text-white"
+                          >
+                            Visit
+                          </a>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" w-full h-[40%] flex flex-col">
+              <div
+                ref={fadeRefs[4]}
+                className=" w-full h-[40%] flex flex-col fade-in"
+              >
                 <div className=" text-2xl font-bold text-orange-600 flex items-center">
                   <p className="flex w-44">Contact Me</p>
                   <div className="h-0.5 bg-zinc-900 w-full"></div>
@@ -155,16 +225,26 @@ function SummaryPage() {
                 <div className="flex w-full h-full">
                   <div className="text-sm h-full w-full items-center flex">
                     {" "}
-                    If you're seeking a Frontend Web Developer who is committed
-                    to delivering exceptional web experiences, leveraging
-                    ReactJS and Tailwind CSS expertise, I would be delighted to
-                    connect and explore opportunities to work together. Let's
+                    If you're seeking a Frontend Web Developer committed to
+                    delivering exceptional web experiences, I would be delighted
+                    to connect and explore opportunities to work together. Let's
                     bring your vision to life and create remarkable digital
                     experiences that leave a lasting impact.
                   </div>
                   <div className="h-full w-[35%] gap-2 justify-center  flex flex-col px-3">
-                    <button>Resume</button>
-                    <button>Message ME</button>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "/ver1.portfolio.io/src/assets/resume.pdf",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Resume
+                    </button>
+                    <button>
+                      <a href="mailto:anthonyalabado@gmail.com">Message Me</a>
+                    </button>
                   </div>
                 </div>
               </div>
