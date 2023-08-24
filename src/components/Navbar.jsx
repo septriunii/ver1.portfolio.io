@@ -3,17 +3,11 @@ import logo from "../assets/a.png";
 import { Link as ScrollLink } from "react-scroll";
 import Rectangle from "./Rectangle";
 import { navs } from "../data/navs";
-import ToggleButton from "./ToggleButton";
 
 function Navbar() {
   const [isSmScreen, setIsSmScreen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [showRectangle, setShowRectangle] = useState(false);
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleMode = () => {
-    setIsActive(!isActive);
-  };
 
   const toggleRectangle = () => {
     setShowRectangle(!showRectangle);
