@@ -219,7 +219,7 @@ function SummaryPage() {
                 className=" w-full h-[40%] flex flex-col fade-in"
               >
                 <div className=" text-2xl font-bold text-orange-600 flex items-center">
-                  <p className="flex w-44">Contact Me</p>
+                  <p className="flex md:w-52 lg:w-44">Contact Me</p>
                   <div className="h-0.5 bg-zinc-900 w-full"></div>
                 </div>
                 <div className="flex w-full h-full">
@@ -243,7 +243,12 @@ function SummaryPage() {
                       Resume
                     </button>
                     <button>
-                      <a href="mailto:anthonyalabado@gmail.com">Message Me</a>
+                      <a
+                        className="text-white"
+                        href="mailto:anthonyalabado@gmail.com"
+                      >
+                        Message Me
+                      </a>
                     </button>
                   </div>
                 </div>
