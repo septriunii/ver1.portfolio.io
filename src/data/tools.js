@@ -13,6 +13,10 @@ import nodejs from "../assets/nodeJS.svg";
 import python from "../assets/python.svg";
 import photoshop from "../assets/photoshop.svg";
 import figma from "../assets/figma.svg";
+import express from "../assets/express.svg";
+import mongodb from "../assets/mongodb.svg";
+import php from "../assets/php.svg";
+import mysql from "../assets/mysql.svg";
 
 export const tools = [
   {
@@ -57,6 +61,35 @@ export const tools = [
     img: sass,
     class: "Frontend",
   },
+
+  {
+    id: "tool16",
+    name: "Express",
+    img: express,
+    class: "Backend",
+  },
+
+  {
+    id: "tool17",
+    name: "MongoDB",
+    img: mongodb,
+    class: "Backend",
+  },
+
+  {
+    id: "tool18",
+    name: "MySQL",
+    img: mysql,
+    class: "Backend",
+  },
+
+  {
+    id: "tool19",
+    name: "PHP",
+    img: php,
+    class: "Backend",
+  },
+
   {
     id: "tool8",
     name: "Edge",

@@ -39,7 +39,7 @@ function AboutMe() {
         <div className=" h-56 w-full md:w-[20rem] lg:h-full lg:w-[40%] flex items-center justify-center ">
           <div
             ref={fadeRefs[2]}
-            className="h-48 w-48 md:w-56 md:h-56 lg:h-[17rem] lg:w-[15rem] flex items-center justify-center absolute left-fade-in"
+            className="h-48 w-48 md:w-48 md:h-56 lg:h-[17rem] lg:w-[15rem] flex items-center justify-center absolute left-fade-in"
           >
             <ImageDiv />
           </div>

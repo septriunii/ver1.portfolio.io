@@ -11,7 +11,7 @@ function Tools() {
           <p>Technologies I Utillize</p>
         </div>
 
-        <div className="h-full w-full  flex gap-2">
+        <div className="h-full w-full  flex gap-2 font-bold">
           <div className="h-full w-5 p-3  flex flex-col items-center justify-center ">
             {hoveredTool
               ? hoveredTool.name
