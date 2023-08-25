@@ -225,7 +225,7 @@ function Projects() {
               <img src={img1} alt="" className="" />
               <div className="h-7 w-7 absolute top-[40%] left-3">
                 <a
-                  href="https://github.com/Septriunii/ver1.portfolio.io"
+                  href="https://septriunii.github.io/proj1.swiftcart.io"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -233,7 +233,13 @@ function Projects() {
                 </a>
               </div>
               <div className="h-7 w-7 absolute top-[60%] left-3">
-                <img src={viewcode} alt="" className="cursor-pointer" />
+                <a
+                  href="https://github.com/Septriunii/proj1.swiftcart.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={viewcode} alt="" className="cursor-pointer" />
+                </a>
               </div>
             </div>
             <div className="flex flex-col">
@@ -261,10 +267,22 @@ function Projects() {
             <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
               <img src={img2} alt="" />
               <div className="h-7 w-7 absolute top-[40%] left-3">
-                <img src={viewsite} alt="" />
+                <a
+                  href="https://septriunii.github.io/proj2.aimrobotics.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={viewsite} alt="" className="cursor-pointer" />
+                </a>
               </div>
               <div className="h-7 w-7 absolute top-[60%] left-3">
-                <img src={viewcode} alt="" />
+                <a
+                  href="https://github.com/Septriunii/proj2.aimrobotics.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={viewcode} alt="" className="cursor-pointer" />
+                </a>
               </div>
             </div>
             <div className="flex flex-col">
@@ -290,11 +308,23 @@ function Projects() {
           <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
             <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
               <img src={img3} alt="" />
-              <div className="h-7 w-7 absolute top-[40%] left-3 ">
-                <img src={viewsite} alt="" />
+              <div className="h-7 w-7 absolute top-[40%] left-3">
+                <a
+                  href="https://septriunii.github.io/proj3.reelquest.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={viewsite} alt="" className="cursor-pointer" />
+                </a>
               </div>
               <div className="h-7 w-7 absolute top-[60%] left-3">
-                <img src={viewcode} alt="" />
+                <a
+                  href="https://github.com/Septriunii/proj3.reelquest.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={viewcode} alt="" className="cursor-pointer" />
+                </a>
               </div>
             </div>
             <div className="flex flex-col">

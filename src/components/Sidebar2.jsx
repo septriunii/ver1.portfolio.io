@@ -42,7 +42,7 @@ function Sidebar2() {
 
   return (
     <nav>
-      <ul className="flex  fixed flex-col gap-8 right-3 top-[38%]">
+      <ul className="flex fixed flex-col gap-8 top-[38%] right-6">
         {sections.map((section) => (
           <li
             key={section.id}

@@ -4,7 +4,7 @@ function Sidebar1() {
   return (
     <div>
       {/* sidebar */}
-      <div className="bg-zinc- h-[32rem] w-16 left-0 flex flex-col justify-center items-center gap-6 fixed ">
+      <div className="bg-zinc- h-[32rem] w-16 left-0 flex flex-col justify-center items-center gap-6 fixed -right-10">
         <div className="h-36 w-0.5 bg-zinc-900 absolute top-0"></div>
 
         <div className="w-9 h-9 cursor-pointer flex items-center p-1 relative">

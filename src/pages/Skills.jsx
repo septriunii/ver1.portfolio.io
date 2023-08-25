@@ -109,7 +109,7 @@ function Skills() {
               </ul>
               <div
                 ref={fadeRefs[8]}
-                className="md:w-[80%] lg:w-[60%] h-auto bg-opacity-20 bg-zinc-700 fade-in ml-5"
+                className="md:w-[110%] lg:w-[60%] h-auto bg-opacity-20 bg-zinc-700 fade-in ml-5 pb-7 "
               >
                 <Tools />
               </div>

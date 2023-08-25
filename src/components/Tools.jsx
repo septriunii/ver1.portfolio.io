@@ -27,7 +27,11 @@ function Tools() {
                 onMouseEnter={() => setHoveredTool(tool)}
                 onMouseLeave={() => setHoveredTool(null)}
               >
-                <img src={tool.img} alt={tool.name} />
+                <img
+                  src={tool.img}
+                  alt={tool.name}
+                  className="lg:scale-100 md:scale-95"
+                />
               </div>
             ))}
           </div>

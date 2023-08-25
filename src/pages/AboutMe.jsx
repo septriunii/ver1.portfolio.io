@@ -39,12 +39,12 @@ function AboutMe() {
         <div className=" h-56 w-full md:w-[20rem] lg:h-full lg:w-[40%] flex items-center justify-center ">
           <div
             ref={fadeRefs[2]}
-            className="h-48 w-48 md:w-56 md:h-56 lg:h-[20rem] lg:w-[20rem] flex items-center justify-center absolute left-fade-in"
+            className="h-48 w-48 md:w-56 md:h-56 lg:h-[17rem] lg:w-[15rem] flex items-center justify-center absolute left-fade-in"
           >
             <ImageDiv />
           </div>
         </div>
-        <div className="h-full w-[100%] gap-3 flex flex-col text-xs p-2 md:text-sm  lg:gap-4  lg:py-2 lg:px-14 lg:text-justify justify-center  font-light opacity-90">
+        <div className="h-full w-[100%] gap-3 flex flex-col text-xs p-2 md:text-sm lg:py-2 lg:pr-14 lg:text-justify justify-center  font-light opacity-90">
           <p
             ref={fadeRefs[0]}
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"

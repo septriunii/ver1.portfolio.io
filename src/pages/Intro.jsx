@@ -24,7 +24,7 @@ function Intro() {
     };
   }, []);
   return (
-    <div id="intro">
+    <div id="intro" className="lg:px-6 ">
       <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-0 ">
         <div className="h-full w-full p-2 lg:pt-14 md:pt-7 lg:pl-10  md:mt-5 z-40">
           <p
@@ -84,12 +84,7 @@ function Intro() {
           }`}
         >
           <div className="aspect-square bg-opacity-40  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-end justify-center relative ">
-            {/* <div className="bg-orange-600 h-[40rem] w-52   -right-64 -top-[19rem] md:-right-52 lg:-right-28  md:h-[50rem] md:-top-64  md:w-80 rounded-full rotate-[55deg] opacity-70 absolute shadow-lg">
-              <div className="bg-zinc-900 opacity-90 h-80 rounded-full -left-12 w-10 absolute bottom-20 md:bottom-80"></div>
-              <div className="bg-zinc-900 opacity-90 h-[40rem] rounded-full -right-12 w-10 absolute bottom-40"></div>
-              <div className="w-full aspect-square  rounded-full bottom-0 absolute border-orange-500 border-2"></div>
-            </div> */}
-            <img src={img} alt="" className="absolute top-10 " />
+            <img src={img} alt="" className="absolute scale-90 -top-3" />
           </div>
         </div>
       </div>
