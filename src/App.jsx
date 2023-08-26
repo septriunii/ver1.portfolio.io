@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ToggleButton from "./components/ToggleButton";
-import BlackComponent from "./components/BlackComponent";
 import {
   Intro,
   AboutMe,
@@ -11,8 +10,18 @@ import {
 } from "./pages";
 import { Footer, Body } from "./components";
 import SummaryPage from "./components/SummaryPage";
+import Preloader from "./components/Preloader";
+
 const App = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate content loading delay
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Adjust the delay time as needed
+  }, []);
 
   const toggleMode = () => {
     setIsActive(!isActive);
@@ -21,18 +30,31 @@ const App = () => {
   return (
     <div className="w-full h-auto relative ">
       <ToggleButton isActive={isActive} toggleMode={toggleMode} />
-      {isActive ? (
-        <SummaryPage />
+
+      {isLoading ? (
+        <Preloader />
       ) : (
-        <Body>
-          <Intro />
-          <AboutMe />
-          <Skills />
-          <Projects />
-          <Experience />
-          <ContactMe />
-          <Footer />
-        </Body>
+        <div
+          className={`transition-opacity duration-1000 ${
+            isActive ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <Body>
+            {isActive ? (
+              <SummaryPage />
+            ) : (
+              <>
+                <Intro />
+                <AboutMe />
+                <Skills />
+                <Projects />
+                <Experience />
+                <ContactMe />
+                <Footer />
+              </>
+            )}
+          </Body>
+        </div>
       )}
     </div>
   );

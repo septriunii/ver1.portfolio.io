@@ -67,7 +67,7 @@ function Intro() {
             </p>
           </div>
           <button
-            className={`w-full md:w-56 text-orange-600 font-semibold place-self-center md:place-self-start left-fade-in  ${
+            className={`w-full md:w-56 text-orange-600 font-semibold place-self-center md:place-self-start left-fade-in lg:text-base md:text-sm text-xs ${
               isVisible ? "active" : ""
             }`}
             onClick={() =>

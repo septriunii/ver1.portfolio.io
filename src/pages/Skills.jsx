@@ -2,17 +2,8 @@ import Tools from "../components/Tools";
 import { useEffect, useRef } from "react";
 
 function Skills() {
-  const fadeRefs = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-  ];
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const fadeRefs = Array.from({ length: 9 }, () => useRef(null));
 
   const observers = useRef([]);
 

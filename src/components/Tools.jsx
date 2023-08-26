@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { tools } from "../data/tools";
 
 function Tools() {
@@ -23,14 +23,14 @@ function Tools() {
             {tools.map((tool) => (
               <div
                 key={tool.id}
-                className="h-10 w-full flex justify-center   duration-200 ease-in-out hover:scale-105"
+                className="h-10 w-full flex justify-center   duration-300 ease-in-out hover:scale-105 "
                 onMouseEnter={() => setHoveredTool(tool)}
                 onMouseLeave={() => setHoveredTool(null)}
               >
                 <img
                   src={tool.img}
                   alt={tool.name}
-                  className="lg:scale-100 md:scale-95"
+                  className="lg:scale-100 md:scale-95 scale-90 "
                 />
               </div>
             ))}
