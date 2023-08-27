@@ -20,7 +20,7 @@ const App = () => {
     // Simulate content loading delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust the delay time as needed
+    }, 3500); // Adjust the delay time as needed
   }, []);
 
   const toggleMode = () => {
@@ -34,11 +34,7 @@ const App = () => {
       {isLoading ? (
         <Preloader />
       ) : (
-        <div
-          className={`transition-opacity duration-1000 ${
-            isActive ? "opacity-0" : "opacity-100"
-          }`}
-        >
+        <div className="transition-opacity duration-1000 ">
           <Body>
             {isActive ? (
               <SummaryPage />

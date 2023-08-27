@@ -108,7 +108,7 @@ function Experience() {
                 </h1>
 
                 <p className="text-xs md:text-sm italic ml-3">
-                  R.T.Lim Municipal Office - Human Ressources Department
+                  R.T.Lim Municipal Office - Human Resources Department
                 </p>
 
                 <p className="text-xs md:text-sm ml-3 lg:text-sm text-orange-600">

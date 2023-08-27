@@ -35,7 +35,7 @@ function ImageDiv({ image, visit, view }) {
           onMouseLeave={handleContainerLeave}
         >
           <button
-            className={`absolute  opacity-0 transition-all z-40 md:left-20 lg:left-40 duration-300 ease-in-out md:text-sm lg:text-base md:px-2 ${
+            className={`absolute opacity-0 transition-all z-40 md:left-20 lg:left-40 duration-300 ease-in-out md:text-sm lg:text-base md:px-2 ${
               isHovered ? "opacity-100" : ""
             }`}
           >

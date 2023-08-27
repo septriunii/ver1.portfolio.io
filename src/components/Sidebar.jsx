@@ -34,7 +34,7 @@ function Sidebar1() {
         </div>
         <div className="w-9 h-9 cursor-pointer flex items-center p-1 relative">
           <a
-            href="https://www.linkedin.com/in/anthony-alabado-7b5112279/"
+            href="https://www.linkedin.com/in/anthony-alabado"
             target="_blank"
             rel="noreferrer"
             className="bg w-full h-full object-contain transition-opacity duration-500 ease-out hover:opacity-100  bg-[url('../assets/linkedin-svgrepo-com.svg')] hover:bg-[url('../assets/linkedin-svgrepo-com.png')] bg bg-cover bg-center"

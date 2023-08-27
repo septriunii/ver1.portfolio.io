@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "../assets/a.png";
 import { Link as ScrollLink } from "react-scroll";
 import Rectangle from "./Rectangle";
@@ -8,6 +8,27 @@ function Navbar() {
   const [isSmScreen, setIsSmScreen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [showRectangle, setShowRectangle] = useState(false);
+  const fadeRefs = [useRef(null)];
+  const observers = useRef([]);
+
+  useEffect(() => {
+    observers.current = fadeRefs.map((ref) => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          ref.current.classList.add("active");
+        }
+      });
+
+      observer.observe(ref.current);
+      return observer;
+    });
+
+    return () => {
+      observers.current.forEach((observer) => {
+        observer.disconnect(); // Disconnect each observer
+      });
+    };
+  }, []);
 
   const toggleRectangle = () => {
     setShowRectangle(!showRectangle);
@@ -49,7 +70,7 @@ function Navbar() {
       ) : (
         // Regular navbar for md and lg screens
         <div className="backdrop-blur-md  w-full h-20 fixed top-0 left-0 flex justify-between items-center shadow-lg ">
-          <section className="ml-7 cursor-pointer">
+          <section className="ml-7 cursor-pointer ">
             <ScrollLink
               to="intro"
               smooth={true}
@@ -64,7 +85,10 @@ function Navbar() {
           </section>
 
           {/* Navbar responsive */}
-          <section className="hidden sm:flex mr-7 gap-4 md:gap-7 lg:mr-14 lg:gap-12">
+          <section
+            ref={fadeRefs[0]}
+            className="hidden sm:flex mr-7 gap-4 md:gap-7 lg:mr-14 lg:gap-12 left-fade-in md:opacity-100 "
+          >
             {navs.map((nav) => (
               <div key={nav.id} className="opacity-80">
                 <ScrollLink
