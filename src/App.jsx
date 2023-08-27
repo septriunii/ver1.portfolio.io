@@ -20,7 +20,7 @@ const App = () => {
     // Simulate content loading delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 3500); // Adjust the delay time as needed
+    }, 2500); // Adjust the delay time as needed
   }, []);
 
   const toggleMode = () => {
