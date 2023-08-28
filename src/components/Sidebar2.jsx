@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, Link as ScrollLink } from "react-scroll";
+
+import img from "../assets/arrow-up.svg";
 
 function Sidebar2() {
   const [activeSection, setActiveSection] = useState(null);
@@ -53,6 +55,15 @@ function Sidebar2() {
             }`}
           ></li>
         ))}
+        {activeSection === "contact" && (
+          <div
+            className={`lg:h-8 lg:w-8 md:w-6 md:h-6 opacity-40 cursor-pointer mx-auto absolute -left-14 -bottom-44 blinking`}
+          >
+            <ScrollLink to="intro" smooth={true} duration={500} offset={-100}>
+              <img src={img} alt="" />
+            </ScrollLink>
+          </div>
+        )}
       </ul>
     </nav>
   );

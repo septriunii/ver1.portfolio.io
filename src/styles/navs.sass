@@ -58,3 +58,13 @@
   width: 520px
   height: 460px
   transform: translate(70%, -20%)
+
+.blinking
+  animation: blinkAnimation 1.5s infinite
+
+@keyframes blinkAnimation
+  0%, 100%
+    opacity: 0
+
+  50%
+    opacity: 0.5

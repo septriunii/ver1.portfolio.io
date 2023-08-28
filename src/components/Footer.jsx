@@ -1,6 +1,9 @@
 function Footer() {
   return (
-    <div className=" w-full h-24 mt-10 left-0 relative flex justify-center items-center">
+    <div
+      id="footer"
+      className=" w-full h-24 mt-10 left-0 relative flex justify-center items-center"
+    >
       <div className="m-5 absolute bottom-0 justify-center items-center flex flex-col">
         <a
           href="https://github.com/Septriunii/ver1.portfolio.io"
