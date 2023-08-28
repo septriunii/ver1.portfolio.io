@@ -52,6 +52,19 @@ function Navbar() {
       {isSmScreen ? (
         // Hamburger menu for sm screen
         <div className="h-16 backdrop-blur-md shadow-md w-full flex place-items-center">
+          <section className="ml-3 cursor-pointer ">
+            <ScrollLink
+              to="intro"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
+            >
+              <div className="h-11 w-11 flex bg-center items-center p-3">
+                <img src={logo} alt="" href="#" />
+              </div>
+            </ScrollLink>
+          </section>
           <div id="menu">
             <div
               id="menu-bar"
