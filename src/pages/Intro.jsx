@@ -66,7 +66,10 @@ function Intro() {
               isVisible ? "active" : ""
             }`}
             onClick={() =>
-              window.open("/ver1.portfolio.io/src/assets/resume.pdf", "_blank")
+              window.open(
+                "https://1drv.ms/b/s!AoBBjjZ9Mc0khAlD-gjVukgP7t8Y?e=TDsb6e",
+                "_blank"
+              )
             }
           >
             Check out my resume
