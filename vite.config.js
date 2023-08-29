@@ -8,5 +8,5 @@ export default defineConfig({
     // million.vite({ auto: true }),
     react(),
   ],
-  base: "/ver1.portfolio.io/",
+  base: "/anthonyalabado.online/",
 });
