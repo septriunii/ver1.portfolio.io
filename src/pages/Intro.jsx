@@ -65,12 +65,7 @@ function Intro() {
             className={`w-full md:w-56 text-orange-600 font-semibold place-self-center md:place-self-start left-fade-in lg:text-base md:text-sm text-xs ${
               isVisible ? "active" : ""
             }`}
-            onClick={() =>
-              window.open(
-                "https://1drv.ms/b/s!AoBBjjZ9Mc0khAlD-gjVukgP7t8Y?e=TDsb6e",
-                "_blank"
-              )
-            }
+            onClick={() => window.open("/src/assets/resume.pdf", "_blank")}
           >
             Check out my resume
           </button>
