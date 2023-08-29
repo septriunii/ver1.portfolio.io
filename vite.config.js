@@ -8,5 +8,4 @@ export default defineConfig({
     // million.vite({ auto: true }),
     react(),
   ],
-  base: "/www.anthonyalabado.online",
 });
