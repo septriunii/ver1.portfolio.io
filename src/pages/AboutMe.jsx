@@ -19,7 +19,7 @@ function AboutMe() {
 
     return () => {
       observers.current.forEach((observer) => {
-        observer.disconnect(); // Disconnect each observer
+        observer.disconnect();
       });
     };
   }, []);
@@ -34,9 +34,8 @@ function AboutMe() {
         <div className="h-0.5 w-full bg-zinc-900"></div>
       </h1>
 
-      {/* image  */}
-      <div className="lg:pl-10 flex flex-col-reverse h-full items-center justify-center md:flex-row md:gap-5 lg:mt-7 ">
-        <div className=" h-56 w-full md:w-[20rem] lg:h-full lg:w-[40%] flex items-center justify-center ">
+      <div className="lg:pl-10 flex flex-col-reverse h-full items-center justify-center md:flex-row md:gap-5 lg:mt-7">
+        <div className="h-56 w-full md:w-[20rem] lg:h-full lg:w-[40%] flex items-center justify-center">
           <div
             ref={fadeRefs[2]}
             className="h-48 w-48 md:w-48 md:h-56 lg:h-[17rem] lg:w-[15rem] flex items-center justify-center absolute left-fade-in"
@@ -44,7 +43,7 @@ function AboutMe() {
             <ImageDiv />
           </div>
         </div>
-        <div className="h-full w-[100%] gap-3 flex flex-col text-xs p-2 md:text-sm lg:py-2 lg:pr-14 lg:text-justify justify-center  font-light opacity-90">
+        <div className="h-full w-[100%] gap-3 flex flex-col text-xs p-2 md:text-sm lg:py-2 lg:pr-14 lg:text-justify justify-center font-light opacity-90">
           <p
             ref={fadeRefs[0]}
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"

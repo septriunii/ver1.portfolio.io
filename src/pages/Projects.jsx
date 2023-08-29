@@ -197,10 +197,7 @@ function Projects() {
                   isHovered[2] ? "lg:left-0 md:left-0" : ""
                 }`}
               >
-                <p
-                  className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
-              "
-                >
+                <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
                   {projects[2].description}
                 </p>
               </div>
@@ -218,135 +215,46 @@ function Projects() {
           </div>
         </div>
 
-        {/* For small screen */}
         <div className="h-auto w-full flex p-2 flex-col gap-7 md:hidden">
-          <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
-            <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
-              <img src={img1} alt="" className="" />
-              <div className="h-7 w-7 absolute top-[40%] left-3">
-                <a
-                  href="https://septriunii.github.io/proj1.swiftcart.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viewsite} alt="" className="cursor-pointer" />
-                </a>
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2"
+            >
+              <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
+                <img src={project.img} alt="" className="" />
+                <div className="h-7 w-7 absolute top-[40%] left-3">
+                  <a href={project.viewsite} target="_blank" rel="noreferrer">
+                    <img src={viewsite} alt="" className="cursor-pointer" />
+                  </a>
+                </div>
+                <div className="h-7 w-7 absolute top-[60%] left-3">
+                  <a href={project.viewcode} target="_blank" rel="noreferrer">
+                    <img src={viewcode} alt="" className="cursor-pointer" />
+                  </a>
+                </div>
               </div>
-              <div className="h-7 w-7 absolute top-[60%] left-3">
-                <a
-                  href="https://github.com/Septriunii/proj1.swiftcart.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viewcode} alt="" className="cursor-pointer" />
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold">
-                {projects[0].name}
-              </p>
-              <p className="opacity-60 italic text-xs"> {projects[0].class}</p>
+              <div className="flex flex-col">
+                <p className="text-orange-600 text-lg font-bold">
+                  {project.name}
+                </p>
+                <p className="opacity-60 italic text-xs"> {project.class}</p>
 
-              <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                {projects[0].description}
-              </p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                {projects[0].composition.map((tech, index) => (
-                  <p key={index} className=" ">
-                    {tech}
-                  </p>
-                ))}
+                <p className="bg-zinc-900 p-2 leading-5 mt-5">
+                  {project.description}
+                </p>
+              </div>
+              <div className="flex flex-col gap-5">
+                <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                  {project.composition.map((tech, index) => (
+                    <p key={index} className=" ">
+                      {tech}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
-            <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
-              <img src={img2} alt="" />
-              <div className="h-7 w-7 absolute top-[40%] left-3">
-                <a
-                  href="https://septriunii.github.io/proj2.aimrobotics.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viewsite} alt="" className="cursor-pointer" />
-                </a>
-              </div>
-              <div className="h-7 w-7 absolute top-[60%] left-3">
-                <a
-                  href="https://github.com/Septriunii/proj2.aimrobotics.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viewcode} alt="" className="cursor-pointer" />
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold">
-                {projects[1].name}
-              </p>
-              <p className="opacity-60 italic text-xs">{projects[1].class}</p>
-              <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                {projects[1].description}
-              </p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                {projects[1].composition.map((tech, index) => (
-                  <p key={index} className=" ">
-                    {tech}
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="p-2 h-auto w-full bg-zinc-700 bg-opacity-20 font-light text-xs flex flex-col gap-2">
-            <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
-              <img src={img3} alt="" />
-              <div className="h-7 w-7 absolute top-[40%] left-3">
-                <a
-                  href="https://septriunii.github.io/proj3.reelquest.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viewsite} alt="" className="cursor-pointer" />
-                </a>
-              </div>
-              <div className="h-7 w-7 absolute top-[60%] left-3">
-                <a
-                  href="https://github.com/Septriunii/proj3.reelquest.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={viewcode} alt="" className="cursor-pointer" />
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-orange-600 text-lg font-bold">
-                {projects[2].name}
-              </p>
-              <p className="opacity-60 italic text-xs">{projects[2].class}</p>
-
-              <p className="bg-zinc-900 p-2 leading-5 mt-5">
-                {projects[2].description}
-              </p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                {projects[2].composition.map((tech, index) => (
-                  <p key={index} className=" ">
-                    {tech}
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>

@@ -153,57 +153,29 @@ function SummaryPage() {
                   <p>Projects</p>
                   <div className="h-0.5 ml-3 bg-zinc-900 w-full"></div>
                 </div>
+
                 <div className=" h-full w-full mt-5 gap-3 flex flex-col ">
-                  <div className="bg-zinc-900 p-3 rounded-md bg-opacity-70">
-                    <p className="font-bold text-lg">{projects[0].name}</p>
-                    <div className="flex gap-3 justify-between items-center">
-                      <p className=" text-sm">{projects[0].class}</p>
-                      <button className="px-5 py-2 text-sm ">
-                        <a
-                          href="https://septriunii.github.io/proj1.swiftcart.io"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-white hover:text-white"
-                        >
-                          Visit
-                        </a>
-                      </button>
+                  {projects.map((project) => (
+                    <div
+                      key={project.id}
+                      className="bg-zinc-900 p-3 rounded-md bg-opacity-70"
+                    >
+                      <p className="font-bold text-lg">{project.name}</p>
+                      <div className="flex gap-3 justify-between items-center">
+                        <p className=" text-sm">{project.class}</p>
+                        <button className="px-5 py-2 text-sm ">
+                          <a
+                            href={project.viewsite}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-white hover:text-white"
+                          >
+                            Visit
+                          </a>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="bg-zinc-900 p-3 bg-opacity-70 rounded-md">
-                    <p className="font-bold text-lg">{projects[1].name}</p>
-                    <div className="flex gap-3 justify-between items-center">
-                      <p className="text-sm">{projects[1].class}</p>
-                      <button className="px-5 py-2 text-sm ">
-                        <a
-                          href="https://septriunii.github.io/proj2.aimrobotics.io"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-white hover:text-white"
-                        >
-                          Visit
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="bg-zinc-900 p-3 bg-opacity-70 rounded-md">
-                    <p className="font-bold text-lg">{projects[2].name}</p>
-                    <div className="flex gap-3 justify-between items-center">
-                      <p className="text-sm">{projects[2].class}</p>
-                      <button className="px-5 py-2 text-sm ">
-                        <a
-                          href="https://septriunii.github.io/proj3.reelquest.io"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-white hover:text-white"
-                        >
-                          Visit
-                        </a>
-                      </button>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -215,7 +187,7 @@ function SummaryPage() {
                 <p className="flex md:w-52 lg:w-44">Contact Me</p>
                 <div className="h-0.5 bg-zinc-900 w-full"></div>
               </div>
-              <div className="flex w-full h-full">
+              <div className="flex w-full h-full mt-5">
                 <div className="text-sm h-full w-full items-center flex">
                   {" "}
                   If you're seeking a Frontend Web Developer committed to
@@ -224,7 +196,7 @@ function SummaryPage() {
                   bring your vision to life and create remarkable digital
                   experiences that leave a lasting impact.
                 </div>
-                <div className="h-full w-[35%] gap-2 justify-center  flex flex-col px-3">
+                <div className="h-full w-[45%] gap-2 justify-center  flex flex-col px-3">
                   <button
                     onClick={() =>
                       window.open(
@@ -240,7 +212,7 @@ function SummaryPage() {
                       className="text-white"
                       href="mailto:anthonyalabado@gmail.com"
                     >
-                      Message Me
+                      Get in Touch
                     </a>
                   </button>
                 </div>
