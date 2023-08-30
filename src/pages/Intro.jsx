@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import img from "../assets/IntroIMGbg.png";
+import resume from "../assets/resume.pdf";
 
 function Intro() {
   const [showText, setShowText] = useState(false);
@@ -65,7 +66,7 @@ function Intro() {
             className={`w-full md:w-56 text-orange-600 font-semibold place-self-center md:place-self-start left-fade-in lg:text-base md:text-sm text-xs ${
               isVisible ? "active" : ""
             }`}
-            onClick={() => window.open("/src/assets/resume.pdf", "_blank")}
+            onClick={() => window.open(resume, "_blank")}
           >
             Check out my resume
           </button>
