@@ -1,9 +1,9 @@
-import React from "react";
-import { Body, Footer } from ".";
+import { Footer } from ".";
 import { tools } from "../data/tools";
 import { useState } from "react";
 import { projects } from "../data/projects";
 import { useRef, useEffect } from "react";
+import resume from "../assets/resume.pdf";
 
 function SummaryPage() {
   const [hoveredTool, setHoveredTool] = useState(null);
@@ -122,7 +122,7 @@ function SummaryPage() {
             <div className=" w-full h-full flex">
               <div ref={fadeRefs[2]} className="w-full h-full p-3 left-fade-in">
                 <div className="bg-zinc-900 w-full h-full bg-opacity-50 flex flex-col ">
-                  <p className="text-xl p-2 font-bold">Experiences</p>
+                  <p className="text-[1.5rem] p-2 font-bold">Experiences</p>
                   <div className="h-full w-full  p-2">
                     <p className="font-bold text-orange-600 text-lg">
                       IT Support Intern
@@ -196,20 +196,13 @@ function SummaryPage() {
                   bring your vision to life and create remarkable digital
                   experiences that leave a lasting impact.
                 </div>
-                <div className="h-full w-[45%] gap-2 justify-center  flex flex-col px-3">
-                  <button
-                    onClick={() =>
-                      window.open(
-                        "/ver1.portfolio.io/src/assets/resume.pdf",
-                        "_blank"
-                      )
-                    }
-                  >
+                <div className="h-full w-[45%] gap-2 justify-center  flex flex-col px-3 text-orange-600">
+                  <button onClick={() => window.open(resume, "_blank")}>
                     Resume
                   </button>
                   <button>
                     <a
-                      className="text-white"
+                      className="text-orange-600 hover:text-orange-600"
                       href="mailto:anthonyalabado@gmail.com"
                     >
                       Get in Touch

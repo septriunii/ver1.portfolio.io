@@ -1,19 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
-function ToggleButton({ isActive, toggleMode }) {
+function ToggleButton({ isActive, toggleMode, contactRef }) {
   const [isChecked, setIsChecked] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
+  const toggleButtonRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsHovered(entry.isIntersecting);
+      },
+      { root: null, rootMargin: "0px", threshold: 1 }
+    );
+
+    if (toggleButtonRef.current) {
+      observer.observe(toggleButtonRef.current);
+    }
+
+    return () => {
+      if (toggleButtonRef.current) {
+        observer.unobserve(toggleButtonRef.current);
+      }
+    };
+  }, [contactRef]);
+
   const handleToggle = () => {
     setIsChecked((prevChecked) => !prevChecked);
-    toggleMode(); // Call the toggleMode function to update the active mode
+    toggleMode();
   };
 
   return (
     <div
+      ref={toggleButtonRef}
       className="hidden md:fixed md:flex w-10 h-6 items-center justify-center z-50 -mt-[4.2rem] md:right-7  lg:right-14"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       <input
         type="checkbox"
@@ -21,6 +42,7 @@ function ToggleButton({ isActive, toggleMode }) {
         className="absolute w-10 h-full appearance-none rounded-full bg-white cursor-pointer"
         checked={isChecked}
         onChange={handleToggle}
+        disabled={!isHovered} // Disable the button when not hovered
       />
       <label
         htmlFor="toggleButton"
