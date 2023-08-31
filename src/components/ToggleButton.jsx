@@ -1,30 +1,31 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
-function ToggleButton({ isActive, toggleMode, contactRef }) {
+function ToggleButton({ isActive, toggleMode }) {
   const [isChecked, setIsChecked] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
-  const toggleButtonRef = useRef(null);
+  const [isContactVisible, setIsContactVisible] = useState(false);
+  const [hasReachedContact, setHasReachedContact] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        setIsHovered(entry.isIntersecting);
-      },
-      { root: null, rootMargin: "0px", threshold: 1 }
-    );
+    const handleScroll = () => {
+      const contactSection = document.querySelector("#contact");
 
-    if (toggleButtonRef.current) {
-      observer.observe(toggleButtonRef.current);
-    }
+      if (contactSection) {
+        const rect = contactSection.getBoundingClientRect();
+        setIsContactVisible(rect.top <= window.innerHeight && rect.bottom >= 0);
 
-    return () => {
-      if (toggleButtonRef.current) {
-        observer.unobserve(toggleButtonRef.current);
+        if (!hasReachedContact && rect.top <= window.innerHeight) {
+          setHasReachedContact(true);
+        }
       }
     };
-  }, [contactRef]);
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [hasReachedContact]);
 
   const handleToggle = () => {
     setIsChecked((prevChecked) => !prevChecked);
@@ -33,8 +34,9 @@ function ToggleButton({ isActive, toggleMode, contactRef }) {
 
   return (
     <div
-      ref={toggleButtonRef}
-      className="hidden md:fixed md:flex w-10 h-6 items-center justify-center z-50 -mt-[4.2rem] md:right-7  lg:right-14"
+      className="hidden md:fixed md:flex w-10 h-6 items-center justify-center z-50 -mt-[4.2rem] md:right-7 lg:right-14"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <input
         type="checkbox"
@@ -42,7 +44,7 @@ function ToggleButton({ isActive, toggleMode, contactRef }) {
         className="absolute w-10 h-full appearance-none rounded-full bg-white cursor-pointer"
         checked={isChecked}
         onChange={handleToggle}
-        disabled={!isHovered} // Disable the button when not hovered
+        disabled={!hasReachedContact && !isContactVisible}
       />
       <label
         htmlFor="toggleButton"
