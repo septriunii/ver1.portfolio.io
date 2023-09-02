@@ -36,4 +36,22 @@ export const projects = [
     viewcode: "https://github.com/Septriunii/proj3.reelquest.io",
     img: img3,
   },
+  {
+    id: "proj4",
+    name: "MERN CRUD",
+    class: "fullstack ",
+    description:
+      "ReelQuest is a movie search database that showcases my adeptness in harnessing the power of RESTful APIs to develop fully operational and dynamically engaging web applications. This skillful creation not only serves as a testament to my technical proficiency but also underscores my commitment to enhancing users' entertainment journeys. By seamlessly integrating real-time data from APIs, ReelQuest offers an immersive experience, where users can explore an extensive collection of films. ",
+    composition: [
+      "HTML",
+      "CSS",
+      "ReactJS",
+      "TailwindCSS",
+      "MongoDB",
+      "Express",
+    ],
+    viewsite: "https://septriunii.github.io/proj3.reelquest.io",
+    viewcode: "https://github.com/Septriunii/proj3.reelquest.io",
+    img: img3,
+  },
 ];

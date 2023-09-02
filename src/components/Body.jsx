@@ -14,7 +14,7 @@ function Body({ children }) {
         <img
           src={img}
           alt=""
-          className="fixed opacity-[0.02] w-full h-full -z-50 top-0"
+          className="fixed top-5 opacity-[0.02] w-full h-full -z-50"
         />
         <img
           src={img1}
