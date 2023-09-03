@@ -17,7 +17,7 @@ export const projects = [
   {
     id: "proj2",
     name: "AimRobotics",
-    class: " company brochure website",
+    class: " Company Brochure Website",
     description:
       "AimRobotics is a company brochure website showcasing my adept skill in website design. Highlighting my skill in website design, this project demonstrates my expertise in creating digital experiences. Prioritizing user-friendly navigation, engaging content, and an artfully designed layout, it effectively shows my ability to build impactful and visually pleasing online platforms that enhance businesses' digital presence.",
     composition: ["HTML", "CSS", "ReactJS", "TailwindCSS"],
@@ -28,7 +28,7 @@ export const projects = [
   {
     id: "proj3",
     name: "ReelQuest",
-    class: "movie search database",
+    class: "Movie Search Database",
     description:
       "ReelQuest is a movie search database that showcases my adeptness in harnessing the power of RESTful APIs to develop fully operational and dynamically engaging web applications. This skillful creation not only serves as a testament to my technical proficiency but also underscores my commitment to enhancing users' entertainment journeys. By seamlessly integrating real-time data from APIs, ReelQuest offers an immersive experience, where users can explore an extensive collection of films. ",
     composition: ["HTML", "CSS", "ReactJS", "TailwindCSS"],
@@ -38,10 +38,10 @@ export const projects = [
   },
   {
     id: "proj4",
-    name: "MERN CRUD",
-    class: "fullstack ",
+    name: "ListMasters",
+    class: "MERN fullstack CRUD",
     description:
-      "ReelQuest is a movie search database that showcases my adeptness in harnessing the power of RESTful APIs to develop fully operational and dynamically engaging web applications. This skillful creation not only serves as a testament to my technical proficiency but also underscores my commitment to enhancing users' entertainment journeys. By seamlessly integrating real-time data from APIs, ReelQuest offers an immersive experience, where users can explore an extensive collection of films. ",
+      "ListMasters is a versatile full-stack web app that helps you create, organize, and work with any data. It uses MongoDB for storage, Express for server operations, React for a user-friendly interface, and Node.js to make it all run smoothly. Manage your data effortlessly with this simplified tool. This project is a testament of my ability to work between frontend and backend development",
     composition: [
       "HTML",
       "CSS",
@@ -50,8 +50,8 @@ export const projects = [
       "MongoDB",
       "Express",
     ],
-    viewsite: "https://septriunii.github.io/proj3.reelquest.io",
-    viewcode: "https://github.com/Septriunii/proj3.reelquest.io",
+    viewsite: "https://septriunii.github.io/proj4.mern-crud.io",
+    viewcode: "https://github.com/Septriunii/proj4./proj4.mern-crud.io",
     img: img3,
   },
 ];
