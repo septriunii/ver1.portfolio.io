@@ -148,8 +148,11 @@ function SummaryPage() {
                 </div>
               </div>
             </div>
-            <div ref={fadeRefs[2]} className="w-full h-full p-3 left-fade-in">
-              <div className="bg-zinc-900 w-full h-full bg-opacity-50 flex flex-col ">
+            <div
+              ref={fadeRefs[2]}
+              className="w-full h-full p-3 left-fade-in bg-zinc-900 bg-opacity-80 mt-3"
+            >
+              <div className=" w-full h-full  flex flex-col ">
                 <p className="text-[1.5rem] p-2 font-bold">Experiences</p>
                 <div className="h-full w-full  p-2">
                   <p className="font-bold text-orange-600 text-lg">
