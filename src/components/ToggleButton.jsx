@@ -32,6 +32,13 @@ function ToggleButton({ isActive, toggleMode }) {
     toggleMode();
   };
 
+  // Determine the text to display based on the button's state
+  const buttonText = !hasReachedContact
+    ? "Reach the bottom first to summarize"
+    : isChecked
+    ? "summarized"
+    : "summarize?";
+
   return (
     <div
       className="hidden md:fixed md:flex w-10 h-6 items-center justify-center z-50 -mt-[4.2rem] md:right-7 lg:right-14"
@@ -53,8 +60,8 @@ function ToggleButton({ isActive, toggleMode }) {
         }`}
       ></label>
       {isHovered && (
-        <div className="absolute top-full text-xs text-gray-500 mt-1">
-          {isActive ? "summarized" : "summarize?"}
+        <div className="absolute top-full text-xs text-gray-500 mt-1 text-center  w-32">
+          {buttonText}
         </div>
       )}
     </div>
