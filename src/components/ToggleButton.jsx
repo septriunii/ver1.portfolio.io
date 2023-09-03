@@ -36,8 +36,8 @@ function ToggleButton({ isActive, toggleMode }) {
   const buttonText = !hasReachedContact
     ? "Reach the bottom first to summarize"
     : isChecked
-    ? "summarized"
-    : "summarize?";
+    ? "Return to main page"
+    : "Summarize";
 
   return (
     <div
@@ -60,7 +60,7 @@ function ToggleButton({ isActive, toggleMode }) {
         }`}
       ></label>
       {isHovered && (
-        <div className="absolute top-full text-xs text-gray-500 mt-1 text-center  w-32">
+        <div className="absolute top-full text-xs text-gray-500 mt-1 text-center w-32">
           {buttonText}
         </div>
       )}
