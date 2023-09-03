@@ -7,13 +7,7 @@ import resume from "../assets/resume.pdf";
 
 function SummaryPage() {
   const [hoveredTool, setHoveredTool] = useState(null);
-  const fadeRefs = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-  ];
+  const fadeRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const observers = useRef([]);
 
   useEffect(() => {
@@ -120,31 +114,6 @@ function SummaryPage() {
 
           <div className="w-full h-full flex flex-col pl-3">
             <div className=" w-full h-full flex">
-              <div ref={fadeRefs[2]} className="w-full h-full p-3 left-fade-in">
-                <div className="bg-zinc-900 w-full h-full bg-opacity-50 flex flex-col ">
-                  <p className="text-[1.5rem] p-2 font-bold">Experiences</p>
-                  <div className="h-full w-full  p-2">
-                    <p className="font-bold text-orange-600 text-lg">
-                      IT Support Intern
-                    </p>
-                    <p className="text-sm italic">
-                      Zamboanga Sibugay 2nd District House of The Representative
-                      Office
-                    </p>
-                    <p className="text-xs mt-2"> January 2023 - April 2023</p>
-                  </div>
-
-                  <div className="h-full w-full  p-2">
-                    <p className="font-bold text-orange-600 text-lg">
-                      Data Entry Clerk Intern
-                    </p>
-                    <p className="text-sm italic">
-                      R.T.Lim Municipal Office - Human Resources
-                    </p>
-                    <p className="text-xs mt-2"> September 2018</p>
-                  </div>
-                </div>
-              </div>
               <div
                 ref={fadeRefs[3]}
                 className="w-full h-full flex flex-col right-fade-in"
@@ -154,7 +123,7 @@ function SummaryPage() {
                   <div className="h-0.5 ml-3 bg-zinc-900 w-full"></div>
                 </div>
 
-                <div className=" h-full w-full mt-5 gap-3 flex flex-col ">
+                <div className=" h-full w-full mt-5 gap-3 grid grid-cols-2">
                   {projects.map((project) => (
                     <div
                       key={project.id}
@@ -179,35 +148,28 @@ function SummaryPage() {
                 </div>
               </div>
             </div>
-            <div
-              ref={fadeRefs[4]}
-              className=" w-full h-[40%] flex flex-col fade-in"
-            >
-              <div className=" text-2xl font-bold text-orange-600 flex items-center">
-                <p className="flex md:w-52 lg:w-44">Contact Me</p>
-                <div className="h-0.5 bg-zinc-900 w-full"></div>
-              </div>
-              <div className="flex w-full h-full mt-5">
-                <div className="text-sm h-full w-full items-center flex">
-                  {" "}
-                  If you're seeking a Frontend Web Developer committed to
-                  delivering exceptional web experiences, I would be delighted
-                  to connect and explore opportunities to work together. Let's
-                  bring your vision to life and create remarkable digital
-                  experiences that leave a lasting impact.
+            <div ref={fadeRefs[2]} className="w-full h-full p-3 left-fade-in">
+              <div className="bg-zinc-900 w-full h-full bg-opacity-50 flex flex-col ">
+                <p className="text-[1.5rem] p-2 font-bold">Experiences</p>
+                <div className="h-full w-full  p-2">
+                  <p className="font-bold text-orange-600 text-lg">
+                    IT Support Intern
+                  </p>
+                  <p className="text-sm italic">
+                    Zamboanga Sibugay 2nd District House of The Representative
+                    Office
+                  </p>
+                  <p className="text-xs mt-2"> January 2023 - April 2023</p>
                 </div>
-                <div className="h-full w-[45%] gap-2 justify-center  flex flex-col px-3 text-orange-600">
-                  <button onClick={() => window.open(resume, "_blank")}>
-                    Resume
-                  </button>
-                  <button>
-                    <a
-                      className="text-orange-600 hover:text-orange-600"
-                      href="mailto:anthonyalabado@gmail.com"
-                    >
-                      Get in Touch
-                    </a>
-                  </button>
+
+                <div className="h-full w-full  p-2">
+                  <p className="font-bold text-orange-600 text-lg">
+                    Data Entry Clerk Intern
+                  </p>
+                  <p className="text-sm italic">
+                    R.T.Lim Municipal Office - Human Resources
+                  </p>
+                  <p className="text-xs mt-2"> September 2018</p>
                 </div>
               </div>
             </div>
