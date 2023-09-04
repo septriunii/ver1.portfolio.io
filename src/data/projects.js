@@ -45,7 +45,7 @@ export const projects = [
       "ListMasters is a versatile full-stack web app that helps you create, organize, and work with any data. It uses MongoDB for storage, Express for server operations, React for a user-friendly interface, and Node.js to make it all run smoothly. Manage your data effortlessly with this simplified tool. This project is a testament of my ability to work between frontend and backend development",
     composition: [
       "HTML",
-      "CSS",
+      "Sass",
       "ReactJS",
       "TailwindCSS",
       "MongoDB",
