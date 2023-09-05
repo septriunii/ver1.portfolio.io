@@ -14,7 +14,7 @@ function Preloader() {
 
   return (
     <div className="flex h-screen justify-center items-center flex-col gap-5 relative">
-      <p className="reveal-text absolute">Welcome.</p>
+      <p className="reveal-text absolute">WELCOME!</p>
 
       <div
         className={`h-auto w-40 absolute top-[60%] ${
