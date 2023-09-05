@@ -48,15 +48,17 @@ function ToggleButton({ isActive, toggleMode }) {
       <input
         type="checkbox"
         id="toggleButton"
-        className="absolute w-10 h-full appearance-none rounded-full bg-white cursor-pointer"
+        className={`absolute w-10 h-full appearance-none rounded-full bg-orange-600 cursor-pointer ${
+          isChecked ? "bg-orange-600   " : "bg-white"
+        }`}
         checked={isChecked}
         onChange={handleToggle}
         disabled={!hasReachedContact && !isContactVisible}
       />
       <label
         htmlFor="toggleButton"
-        className={`absolute left-1 w-4 h-4 bg-orange-600 rounded-full transform transition-transform ease-in-out duration-300 ${
-          isChecked ? "translate-x-4" : ""
+        className={`absolute left-1  w-4 h-4 rounded-full transform transition-transform ease-in-out duration-300 ${
+          isChecked ? "translate-x-4  bg-white " : "bg-orange-600"
         }`}
       ></label>
       {isHovered && (
