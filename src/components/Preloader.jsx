@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Loading from "./Loading";
 
-const Preloader = () => {
+function Preloader() {
+  const [showDiv, setShowDiv] = useState(false);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setShowDiv(true);
+    }, 1000);
+
+    return () => clearTimeout(delay);
+  }, []);
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-zinc-900 opacity-70 z-50 ease-in-out">
-      <div className="lds-ripple">
-        <div></div>
-        <div></div>
+    <div className="flex h-screen justify-center items-center flex-col gap-5 relative">
+      <p className="reveal-text absolute">Welcome.</p>
+
+      <div
+        className={`h-auto w-40 absolute top-[60%] ${
+          showDiv
+            ? "opacity-100 transition-opacity duration-300 ease-in-out"
+            : "opacity-0"
+        }`}
+      >
+        <Loading />
       </div>
     </div>
   );
-};
+}
 
 export default Preloader;

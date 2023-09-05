@@ -24,7 +24,7 @@ function Intro() {
       <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-0">
         <div className="h-full w-full p-2 lg:pt-14 md:pt-7 lg:pl-10 md:mt-5 z-40">
           <p
-            className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic z-50 left-fade-in ${
+            className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic z-50 left-fade-in  ${
               isVisible ? "active" : ""
             }`}
           >
@@ -32,11 +32,11 @@ function Intro() {
           </p>
           <div>
             <div className="flex flex-row">
-              <p className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40 shrink typing-effect">
+              <p className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40 duration-300 ease-in-out typing-effect ">
                 Anthony<span className="text-orange-600">Alabado</span>
               </p>
               {showText && (
-                <h1 className="md:text-5xl lg:text-6xl text-4xl text cursor-blink">
+                <h1 className="md:text-5xl lg:text-6xl text-4xl text cursor-blink duration-300 ease-in-out">
                   |
                 </h1>
               )}

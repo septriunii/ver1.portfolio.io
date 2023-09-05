@@ -3,6 +3,7 @@
 @tailwind utilities
 @import 'fades'
 @import 'navs'
+@import 'preloader'
 
 :root
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
@@ -112,10 +113,10 @@ span
 .typing-effect
   overflow: hidden
   white-space: nowrap
-  animation: typing 1.5s steps(40)
+  animation: typing 1.5s steps(70)
 
 .cursor-blink
-  animation: blink 1s step-end infinite
+  animation: blink 1.5s step-end infinite
 
 .lds-ripple
   display: inline-block
