@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import img from "../assets/IntroIMGbg.png";
 import resume from "../assets/resume.pdf";
 
 function Intro() {
   const [showText, setShowText] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const fadeRefs = Array.from({ length: 4 }, () => useRef(null)); // Create an array of useRef
 
   useEffect(() => {
     setIsVisible(true);
@@ -19,11 +20,31 @@ function Intro() {
     };
   }, []);
 
+  useEffect(() => {
+    const observers = fadeRefs.map((ref) => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          ref.current.classList.add("active");
+        }
+      });
+
+      observer.observe(ref.current);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer) => {
+        observer.disconnect();
+      });
+    };
+  }, [fadeRefs]);
+
   return (
     <div id="intro" className="lg:px-6">
       <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-0">
         <div className="h-full w-full p-2 lg:pt-14 md:pt-7 lg:pl-10 md:mt-5 z-40">
           <p
+            ref={fadeRefs[0]}
             className={`text-sm md:text-base lg:text-lg font-light font_theme mb-3 text-orange-600 Hi italic z-50 left-fade-in  ${
               isVisible ? "active" : ""
             }`}
@@ -32,17 +53,21 @@ function Intro() {
           </p>
           <div>
             <div className="flex flex-row">
-              <p className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40 duration-300 ease-in-out typing-effect ">
+              <p
+                ref={fadeRefs[1]}
+                className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40  typing-effect"
+              >
                 Anthony<span className="text-orange-600">Alabado</span>
               </p>
               {showText && (
-                <h1 className="md:text-5xl lg:text-6xl text-4xl text cursor-blink duration-300 ease-in-out">
+                <h1 className="md:text-5xl lg:text-6xl text-4xl text cursor-blink ">
                   |
                 </h1>
               )}
             </div>
 
             <p
+              ref={fadeRefs[2]}
               className={`text-lg mb-4 md:text-xl lg:mb-8 font-bold lg:text-2xl text-opacity-40 opacity-40 italic above-fade-in flex ${
                 isVisible ? "active" : ""
               }`}
@@ -51,6 +76,7 @@ function Intro() {
               specializing in ReactJS and Tailwind CSS.
             </p>
             <p
+              ref={fadeRefs[3]}
               className={`md:mt-5 text-xs mb-10 text-justify leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light opacity-90 font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
