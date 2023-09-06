@@ -4,8 +4,7 @@ import img1 from "../assets/Project_1.jpg";
 import img2 from "../assets/Project_2.jpg";
 import img3 from "../assets/Project_3.jpg";
 import img4 from "../assets/Project_4.png";
-import viewsite from "../assets/viewsite.svg";
-import viewcode from "../assets/viewcode.svg";
+
 import { projects } from "../data/projects";
 
 function Projects() {
@@ -235,21 +234,33 @@ function Projects() {
             >
               <div className="h-auto w-full bg-slate-950 py-2 flex flex-col justify-center relative ">
                 <img src={project.img} alt="" className="" />
-                <div className="h-7 w-7 absolute top-[40%] left-3">
-                  <a href={project.viewsite} target="_blank" rel="noreferrer">
-                    <img src={viewsite} alt="" className="cursor-pointer" />
-                  </a>
-                </div>
-                <div className="h-7 w-7 absolute top-[60%] left-3">
-                  <a href={project.viewcode} target="_blank" rel="noreferrer">
-                    <img src={viewcode} alt="" className="cursor-pointer" />
-                  </a>
-                </div>
               </div>
               <div className="flex flex-col">
-                <p className="text-orange-600 text-lg font-bold">
-                  {project.name}
-                </p>
+                <div className="text-orange-600 text-lg font-bold flex justify-between">
+                  <p>{project.name}</p>
+                  <div className="flex gap-2">
+                    <button className="h-5 justify-center items-center flex px-5 py-4 ">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={project.viewsite}
+                        className="opacity-75 text-xs text-gray-400 hover:text-gray-400"
+                      >
+                        visit
+                      </a>
+                    </button>
+                    <button className="h-5 justify-center items-center flex px-5 py-4 ">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={project.viewcode}
+                        className="opacity-75 text-xs text-gray-400 hover:text-gray-400"
+                      >
+                        code
+                      </a>
+                    </button>
+                  </div>
+                </div>
                 <p className="opacity-60 italic text-xs"> {project.class}</p>
 
                 <p className="bg-zinc-900 p-2 leading-5 mt-5">
@@ -259,7 +270,10 @@ function Projects() {
               <div className="flex flex-col gap-5">
                 <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
                   {project.composition.map((tech, index) => (
-                    <p key={index} className=" ">
+                    <p
+                      key={index}
+                      className="cursor-pointer hover:scale-105 duration-300 ease-in-out"
+                    >
                       {tech}
                     </p>
                   ))}

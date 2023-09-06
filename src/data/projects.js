@@ -52,7 +52,7 @@ export const projects = [
       "Express",
     ],
     viewsite: "https://septriunii.github.io/proj4.mern-crud.io",
-    viewcode: "https://github.com/Septriunii/proj4./proj4.mern-crud.io",
+    viewcode: "https://github.com/Septriunii/proj4.mern-crud.io",
     img: img4,
   },
 ];
