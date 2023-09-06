@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
+import bg from "../assets/bg.jpg";
 
 function Preloader() {
   const [showDiv, setShowDiv] = useState(false);
@@ -13,8 +14,8 @@ function Preloader() {
   }, []);
 
   return (
-    <div className="flex h-screen justify-center items-center flex-col gap-5 relative">
-      <p className="reveal-text absolute">WELCOME!</p>
+    <div className="flex h-screen justify-center items-center flex-col gap-5 relative bg-zinc-900">
+      <p className="reveal-text absolute font-mono z-50">welcome!</p>
 
       <div
         className={`h-auto w-40 absolute top-[60%] ${
@@ -25,6 +26,7 @@ function Preloader() {
       >
         <Loading />
       </div>
+      {/* <img src={bg} alt="" className="-z-20 opacity-5" /> */}
     </div>
   );
 }
