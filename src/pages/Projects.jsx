@@ -58,173 +58,230 @@ function Projects() {
           <div className="h-0.5 w-full bg-zinc-900"></div>
         </h1>
         {/* Project 1 */}
-        <div
-          ref={fadeRefs[0]}
-          className="hidden md:flex h-auto mt-10 mb-10 right-fade-in relative"
-        >
+        <div className="flex flex-col gap-10 lg:px-8 mt-10">
           <div
-            className={`transition-all duration-500 ease-in-out ${
-              isHovered[0] ? "lg:left-[39rem] md:left-[28rem]" : ""
-            }`}
-            onMouseEnter={() => handleContainerHover(0)}
-            onMouseLeave={() => handleContainerLeave(0)}
+            ref={fadeRefs[0]}
+            className="hidden md:flex h-auto right-fade-in relative"
           >
-            <ImageDiv
-              image={img1}
-              visit={"https://septriunii.github.io/proj1.swiftcart.io"}
-              view={"https://github.com/Septriunii/proj1.swiftcart.io"}
-            />
-          </div>
-          <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
-            <div className="gap-1 flex flex-col ">
-              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                {projects[0].name}
-              </p>
-
-              <p className="opacity-60 italic md:text-xs lg:text-sm">
-                {projects[0].class}
-              </p>
+            <div
+              className={`transition-all duration-500 ease-in-out ${
+                isHovered[0] ? "lg:left-[39rem] md:left-[28rem]" : ""
+              }`}
+              onMouseEnter={() => handleContainerHover(0)}
+              onMouseLeave={() => handleContainerLeave(0)}
+            >
+              <ImageDiv
+                image={img1}
+                visit={"https://septriunii.github.io/proj1.swiftcart.io"}
+                view={"https://github.com/Septriunii/proj1.swiftcart.io"}
+              />
             </div>
-            <div className="w-full h-full relative">
-              <div
-                className={`bg-green-500 w-full h-auto -left-28 absolute transition-all duration-500 ease-in-out ${
-                  isHovered[0] ? "lg:left-0 md:left-0" : ""
-                }`}
-              >
-                <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
-                  {projects[0].description}
+            <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
+              <div className="gap-1 flex flex-col ">
+                <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                  {projects[0].name}
+                </p>
+
+                <p className="opacity-60 italic md:text-xs lg:text-sm">
+                  {projects[0].class}
                 </p>
               </div>
-            </div>
-
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                {projects[0].composition.map((tech, index) => (
-                  <p
-                    key={index}
-                    className="cursor-pointer transition-all duration-300 hover:font-bold"
-                  >
-                    {tech}
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Project 2 */}
-        <div
-          ref={fadeRefs[1]}
-          className="hidden md:flex h-full mt-10 mb-10 left-fade-in relative"
-        >
-          <div className="w-full h-auto flex flex-col items-end justify-between gap-4 p-2 text-justify font-light mr-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
-            <div className="gap-1 flex flex-col ">
-              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                {projects[1].name}
-              </p>
-              <p className="opacity-60 italic md:text-xs lg:text-sm">
-                {projects[1].class}
-              </p>
-            </div>
-            <div className="w-full h-full relative">
-              <div
-                className={`bg-green-500 w-full h-auto -right-28 absolute z-20 transition-all duration-500 ease-in-out ${
-                  isHovered[1] ? "lg:right-0 md:right-0" : ""
-                }`}
-              >
-                <p
-                  className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
-              "
+              <div className="w-full h-full relative">
+                <div
+                  className={`bg-green-500 w-full h-auto -left-28 absolute transition-all duration-500 ease-in-out ${
+                    isHovered[0] ? "lg:left-0 md:left-0" : ""
+                  }`}
                 >
-                  {projects[1].description}
+                  <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
+                    {projects[0].description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-5">
+                <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                  {projects[0].composition.map((tech, index) => (
+                    <p
+                      key={index}
+                      className="cursor-pointer transition-all duration-300 hover:font-bold"
+                    >
+                      {tech}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div
+            ref={fadeRefs[1]}
+            className="hidden md:flex h-full left-fade-in relative"
+          >
+            <div className="w-full h-auto flex flex-col items-end justify-between gap-4 p-2 text-justify font-light mr-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
+              <div className="gap-1 flex flex-col ">
+                <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                  {projects[1].name}
+                </p>
+                <p className="opacity-60 italic md:text-xs lg:text-sm">
+                  {projects[1].class}
                 </p>
               </div>
-            </div>
-
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                {projects[1].composition.map((tech, index) => (
+              <div className="w-full h-full relative">
+                <div
+                  className={`bg-green-500 w-full h-auto -right-28 absolute z-20 transition-all duration-500 ease-in-out ${
+                    isHovered[1] ? "lg:right-0 md:right-0" : ""
+                  }`}
+                >
                   <p
-                    key={index}
-                    className="cursor-pointer transition-all duration-300 hover:font-bold"
+                    className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
+              "
                   >
-                    {tech}
+                    {projects[1].description}
                   </p>
-                ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-5">
+                <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                  {projects[1].composition.map((tech, index) => (
+                    <p
+                      key={index}
+                      className="cursor-pointer transition-all duration-300 hover:font-bold"
+                    >
+                      {tech}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className={`transition-all duration-500 ease-in-out ${
-              isHovered[1] ? "lg:left-[39rem] md:left-[28rem]" : ""
-            }`}
-            onMouseEnter={() => handleContainerHover(1)}
-            onMouseLeave={() => handleContainerLeave(1)}
-          >
-            <ImageDiv
-              image={img2}
-              visit={"https://septriunii.github.io/proj2.aimrobotics.io"}
-              view={"https://github.com/Septriunii/proj2.aimrobotics.io"}
-            />
-          </div>
-        </div>
-
-        {/* Project 3 */}
-        <div
-          ref={fadeRefs[2]}
-          className="hidden md:flex h-full mt-10 mb-10 right-fade-in relative"
-        >
-          <div
-            className={`transition-all duration-500 ease-in-out ${
-              isHovered[2] ? "lg:left-[39rem] md:left-[28rem]" : ""
-            }`}
-            onMouseEnter={() => handleContainerHover(2)}
-            onMouseLeave={() => handleContainerLeave(2)}
-          >
-            <ImageDiv
-              image={img3}
-              visit={"https://septriunii.github.io/proj3.reelquest.io"}
-              view={"https://github.com/Septriunii/proj3.reelquest.io"}
-            />
-          </div>
-          <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
-            <div className="gap-1 flex flex-col ">
-              <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
-                {projects[2].name}
-              </p>
-
-              <p className="opacity-60 italic md:text-xs lg:text-sm">
-                {projects[2].class}
-              </p>
+            <div
+              className={`transition-all duration-500 ease-in-out ${
+                isHovered[1] ? "lg:left-[39rem] md:left-[28rem]" : ""
+              }`}
+              onMouseEnter={() => handleContainerHover(1)}
+              onMouseLeave={() => handleContainerLeave(1)}
+            >
+              <ImageDiv
+                image={img2}
+                visit={"https://septriunii.github.io/proj2.aimrobotics.io"}
+                view={"https://github.com/Septriunii/proj2.aimrobotics.io"}
+              />
             </div>
-            <div className="w-full h-full relative">
-              <div
-                className={`bg-green-500 w-full h-auto -left-28 absolute transition-all duration-500 ease-in-out ${
-                  isHovered[2] ? "lg:left-0 md:left-0" : ""
-                }`}
-              >
-                <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
-                  {projects[2].description}
+          </div>
+
+          {/* Project 3 */}
+          <div
+            ref={fadeRefs[2]}
+            className="hidden md:flex h-full right-fade-in relative"
+          >
+            <div
+              className={`transition-all duration-500 ease-in-out ${
+                isHovered[2] ? "lg:left-[39rem] md:left-[28rem]" : ""
+              }`}
+              onMouseEnter={() => handleContainerHover(2)}
+              onMouseLeave={() => handleContainerLeave(2)}
+            >
+              <ImageDiv
+                image={img3}
+                visit={"https://septriunii.github.io/proj3.reelquest.io"}
+                view={"https://github.com/Septriunii/proj3.reelquest.io"}
+              />
+            </div>
+            <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
+              <div className="gap-1 flex flex-col ">
+                <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                  {projects[2].name}
+                </p>
+
+                <p className="opacity-60 italic md:text-xs lg:text-sm">
+                  {projects[2].class}
                 </p>
               </div>
-            </div>
-
-            <div className="flex flex-col gap-5">
-              <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
-                {projects[2].composition.map((tech, index) => (
-                  <p
-                    key={index}
-                    className="cursor-pointer transition-all duration-300 hover:font-bold"
-                  >
-                    {tech}
+              <div className="w-full h-full relative">
+                <div
+                  className={`bg-green-500 w-full h-auto -left-28 absolute transition-all duration-500 ease-in-out ${
+                    isHovered[2] ? "lg:left-0 md:left-0" : ""
+                  }`}
+                >
+                  <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
+                    {projects[2].description}
                   </p>
-                ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-5">
+                <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                  {projects[2].composition.map((tech, index) => (
+                    <p
+                      key={index}
+                      className="cursor-pointer transition-all duration-300 hover:font-bold"
+                    >
+                      {tech}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Project 4 */}
+          {/* Project 4 */}
+          <div
+            ref={fadeRefs[3]}
+            className="hidden md:flex h-full left-fade-in relative"
+          >
+            <div className="w-full h-auto flex flex-col items-end justify-between gap-4 p-2 text-justify font-light mr-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
+              <div className="gap-1 flex flex-col ">
+                <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
+                  {projects[3].name}
+                </p>
+                <p className="opacity-60 italic md:text-xs lg:text-sm">
+                  {projects[3].class}
+                </p>
+              </div>
+              <div className="w-full h-full relative">
+                <div
+                  className={`bg-green-500 w-full h-auto -right-28 absolute z-20 transition-all duration-500 ease-in-out ${
+                    isHovered[3] ? "lg:right-0 md:right-0" : ""
+                  }`}
+                >
+                  <p
+                    className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out 
+              "
+                  >
+                    {projects[3].description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-5">
+                <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
+                  {projects[3].composition.map((tech, index) => (
+                    <p
+                      key={index}
+                      className="cursor-pointer transition-all duration-300 hover:font-bold"
+                    >
+                      {tech}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div
+              className={`transition-all duration-500 ease-in-out ${
+                isHovered[3] ? "lg:left-[39rem] md:left-[28rem]" : ""
+              }`}
+              onMouseEnter={() => handleContainerHover(3)}
+              onMouseLeave={() => handleContainerLeave(3)}
+            >
+              <ImageDiv
+                image={img4}
+                visit={"https://septriunii.github.io/proj2.aimrobotics.io"}
+                view={"https://github.com/Septriunii/proj2.aimrobotics.io"}
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="h-auto w-full flex p-2 flex-col gap-7 md:hidden">
           {projects.map((project) => (
