@@ -19,7 +19,7 @@ function ImageDiv({ image, visit, view }) {
         <div
           id="border"
           className={`lg:w-[570px] lg:h-[360px] md:h-72 md:w-96 border-orange-600 border-2 absolute top-0 right-0 z-0 transition-all duration-300 ease-in-out ${
-            isHovered ? "top-5 right-5" : ""
+            isHovered ? "top-5 right-5 " : ""
           }`}
         ></div>
 
@@ -28,8 +28,8 @@ function ImageDiv({ image, visit, view }) {
         </div>
 
         <div
-          className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center border-0 border-black absolute transition-all duration-1000 ease-in-out  ${
-            isHovered ? "bg-black opacity-70 p-5" : ""
+          className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  absolute duration-1000 ease-in-out  ${
+            isHovered ? "backdrop-blur-[2px] p-5" : ""
           }`}
           onMouseEnter={handleContainerHover}
           onMouseLeave={handleContainerLeave}
