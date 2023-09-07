@@ -276,8 +276,8 @@ function Projects() {
             >
               <ImageDiv
                 image={img4}
-                visit={"https://septriunii.github.io/proj2.aimrobotics.io"}
-                view={"https://github.com/Septriunii/proj2.aimrobotics.io"}
+                visit={"https://septriunii.github.io/proj4.mern-crud.io"}
+                view={"https://github.com/Septriunii/proj4.mern-crud.io"}
               />
             </div>
           </div>
