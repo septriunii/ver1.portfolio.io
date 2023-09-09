@@ -83,9 +83,12 @@ function Intro() {
               My passion lies in crafting visually captivating and user-friendly
               interfaces, skillfully combining graphics design and
               web-responsive design. I am well-versed in{" "}
-              <span>web development architecture</span> and have a thorough
-              understanding of how to integrate frontend interfaces with{" "}
-              <span>backend systems</span>.
+              <span className="font-semibold">
+                web development architecture
+              </span>{" "}
+              and have a thorough understanding of how to integrate frontend
+              interfaces with{" "}
+              <span className="font-semibold">backend systems</span>.
             </p>
           </div>
           <button

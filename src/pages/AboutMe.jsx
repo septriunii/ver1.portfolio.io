@@ -49,11 +49,11 @@ function AboutMe() {
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
             Hello! I'm{" "}
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white ">
               Anthony Alabado
             </span>
             , a dedicated{" "}
-            <span className="font-bold text-zinc-900 bg-orange-600 px-1 cursor-default">
+            <span className="font-bold text-zinc-900 bg-orange-600 px-1 ">
               Frontend Web Developer
             </span>{" "}
             with a strong passion for crafting exceptional digital experiences.
@@ -63,7 +63,7 @@ function AboutMe() {
             various school activities, my curiosity led me to explore online
             courses and embark on self-guided projects. Since then, I have
             continuously fueled my enthusiasm for web development, eagerly{" "}
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white ">
               seeking new challenges and opportunities
             </span>{" "}
             to further grow my skills.
@@ -73,15 +73,15 @@ function AboutMe() {
             ref={fadeRefs[1]}
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white ">
               Design and code hygiene{" "}
             </span>
             are at the core of my expertise. With a focus on{" "}
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white ">
               aesthetics
             </span>{" "}
             and{" "}
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white ">
               clean code
             </span>
             , I believe in the importance of well-designed interfaces and robust

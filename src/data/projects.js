@@ -42,7 +42,7 @@ export const projects = [
     name: "ListMasters",
     class: "MERN fullstack CRUD",
     description:
-      "ListMasters is a versatile full-stack web app that helps you create, organize, and work with any data. It uses MongoDB for storage, Express for server operations, React for a user-friendly interface, and Node.js to make it all run smoothly. Manage your data effortlessly with this simplified tool. This project is a testament of my ability to work between frontend and backend development",
+      "ListMasters is a versatile full-stack web app that helps you create, organize, and work with any data. This project is a testament of my ability to work between frontend and backend development. It uses MongoDB for storage, Express for server operations, React for a user-friendly interface, and Node.js to make it all run smoothly. Manage your data effortlessly with this simplified tool. ",
     composition: ["MongoDB", "Express", "ReactJS", "Node.js"],
     viewsite: "https://septriunii.github.io/proj4.mern-crud.io",
     viewcode: "https://github.com/Septriunii/proj4.mern-crud.io",

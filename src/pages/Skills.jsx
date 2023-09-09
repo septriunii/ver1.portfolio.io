@@ -37,55 +37,67 @@ function Skills() {
               <li ref={fadeRefs[0]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in frontend web technologies such as
-                  <span> HTML</span>, <span>CSS</span>, and
-                  <span> JavaScript</span>.
+                  <span className="font-semibold"> HTML</span>,{" "}
+                  <span className="font-semibold">CSS</span>, and
+                  <span className="font-semibold"> JavaScript</span>.
                 </span>
               </li>
 
               <li ref={fadeRefs[1]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Experienced in modern frontend frameworks and libraries
-                  including <span>ReactJS</span> and <span>TailwindCSS</span>.
-                  Familiar with additional tools and languages like
-                  <span> TypeScript</span> and <span>Sass</span> for enhanced
+                  including <span className="font-semibold">ReactJS</span> and{" "}
+                  <span className="font-semibold">TailwindCSS</span>. Familiar
+                  with additional tools and languages like
+                  <span className="font-semibold"> TypeScript</span> and{" "}
+                  <span className="font-semibold">Sass</span> for enhanced
                   development capabilities.
                 </span>
               </li>
 
               <li ref={fadeRefs[2]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
-                  Skilled in <span>graphic design</span>, applying fundamental
-                  design principles to create visually appealing web
-                  experiences, and adept at building <span>responsive</span> and
-                  <span> interactive</span> user interfaces.
+                  Skilled in{" "}
+                  <span className="font-semibold">graphic design</span>,
+                  applying fundamental design principles to create visually
+                  appealing web experiences, and adept at building{" "}
+                  <span className="font-semibold">responsive</span> and
+                  <span className="font-semibold"> interactive</span> user
+                  interfaces.
                 </span>
               </li>
 
               <li ref={fadeRefs[3]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
-                  Knowledgeable in <span>backend development</span>, including
-                  database management, SQL, and NoSQL.
+                  Knowledgeable in{" "}
+                  <span className="font-semibold">backend development</span>,
+                  including database management, SQL, and NoSQL.
                 </span>
               </li>
               <li ref={fadeRefs[4]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Experienced in utilizing version control systems like
-                  <span> Git</span> and <span>GitHub</span> for efficient
+                  <span className="font-semibold"> Git</span> and{" "}
+                  <span className="font-semibold">GitHub</span> for efficient
                   collaboration and code management.
                 </span>
               </li>
               <li ref={fadeRefs[5]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
-                  Proficient in programming languages such as <span>C++</span>,
-                  <span> Python </span>, and
-                  <span> JavaScript</span>, enabling versatile problem-solving.
+                  Proficient in programming languages such as{" "}
+                  <span className="font-semibold">C++</span>,
+                  <span className="font-semibold"> Python </span>, and
+                  <span className="font-semibold"> JavaScript</span>, enabling
+                  versatile problem-solving.
                 </span>
               </li>
               <li ref={fadeRefs[6]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
-                  Experienced in utilizing prompts for <span>chatbots</span> and
-                  other <span>AI tools</span>, including their applications in
-                  web development and other areas of software development.
+                  Experienced in utilizing prompts for{" "}
+                  <span className="font-semibold">chatbots</span> and other{" "}
+                  <span className="font-semibold">AI tools</span>, including
+                  their applications in web development and other areas of
+                  software development.
                 </span>
               </li>
             </ul>
