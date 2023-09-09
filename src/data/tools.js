@@ -17,6 +17,7 @@ import express from "../assets/express.svg";
 import mongodb from "../assets/mongodb.svg";
 import php from "../assets/php.svg";
 import mysql from "../assets/mysql.svg";
+import vite from "../assets/vitejs.svg";
 
 export const tools = [
   {
@@ -88,6 +89,12 @@ export const tools = [
     name: "PHP",
     img: php,
     class: "Backend",
+  },
+  {
+    id: "tool190",
+    name: "Vite",
+    img: vite,
+    class: "Bundler",
   },
 
   {

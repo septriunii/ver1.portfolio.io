@@ -12,7 +12,7 @@ function Tools() {
         </div>
 
         <div className="h-full w-full  flex gap-2 font-bold">
-          <div className="h-full w-5 p-3  flex flex-col items-center justify-center ml-3">
+          <div className="h-full w-5 p-3  flex flex-col items-center justify-center ml-3 ">
             {hoveredTool
               ? hoveredTool.name
                   .split("")
@@ -23,7 +23,7 @@ function Tools() {
             {tools.map((tool) => (
               <div
                 key={tool.id}
-                className="h-10 w-full flex justify-center   duration-300 ease-in-out hover:scale-105 "
+                className="h-10 w-full flex justify-center duration-300 ease-in-out hover:scale-105 "
                 onMouseEnter={() => setHoveredTool(tool)}
                 onMouseLeave={() => setHoveredTool(null)}
               >

@@ -86,7 +86,7 @@ function Skills() {
                 <span className="text-white">
                   Proficient in programming languages such as{" "}
                   <span className="font-semibold">C++</span>,
-                  <span className="font-semibold"> Python </span>, and
+                  <span className="font-semibold"> Python</span>, and
                   <span className="font-semibold"> JavaScript</span>, enabling
                   versatile problem-solving.
                 </span>
