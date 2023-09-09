@@ -77,18 +77,17 @@ function Intro() {
             </p>
             <p
               ref={fadeRefs[3]}
-              className={`md:mt-5 text-xs mb-10 text-justify leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light opacity-90 font_theme indent-4
+              className={`md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light opacity-90 font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
               My passion lies in crafting visually captivating and user-friendly
               interfaces, skillfully combining graphics design and
-              web-responsive design. I am well-versed in{" "}
+              web-responsive design. {""}
               <span className="font-semibold">
-                web development architecture
+                I am well-versed in web development architecture
               </span>{" "}
               and have a thorough understanding of how to integrate frontend
-              interfaces with{" "}
-              <span className="font-semibold">backend systems</span>.
+              interfaces with backend systems.
             </p>
           </div>
           <button

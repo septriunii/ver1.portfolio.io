@@ -9,7 +9,7 @@ export const projects = [
     name: "SwiftCart",
     class: "e-commerce website",
     description:
-      "SwiftCart is an exquisite e-commerce website that showcases my prowess in JavaScript functions . With a functioning features like an add to cart, purchasing, and page linking, it delivers a captivating and dynamic browsing experience. Moreover, restart surprises you with a fresh array of product displays, adding a touch of elegance to your shopping journey.",
+      "SwiftCart is an exquisite e-commerce website that showcases my prowess in JavaScript functions. With a functioning features like an add to cart, purchasing, and page linking, it delivers a captivating and dynamic browsing experience. Moreover, restart surprises you with a fresh array of product displays, adding a touch of elegance to your shopping journey.",
     composition: ["HTML", "CSS", "ReactJS", "TailwindCSS"],
     viewsite: "https://septriunii.github.io/proj1.swiftcart.io",
     viewcode: "https://github.com/Septriunii/proj1.swiftcart.io",

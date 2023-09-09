@@ -57,39 +57,37 @@ function AboutMe() {
               Frontend Web Developer
             </span>{" "}
             with a strong passion for crafting exceptional digital experiences.
-            I graduated with a Bachelor's degree in Information Technology and
-            my interest in web development was sparked during my high school
+            I graduated with a{" "}
+            <span className="border-b border-orange-600 text-white ">
+              Bachelor's degree in Information Technology
+            </span>{" "}
+            and my interest in web development was sparked during my high school
             years when I was first exposed to its captivating world. Even amidst
             various school activities, my curiosity led me to explore online
-            courses and embark on self-guided projects. Since then, I have
-            continuously fueled my enthusiasm for web development, eagerly{" "}
+            courses and embark on self-guided projects. Since then,{" "}
             <span className="border-b border-orange-600 text-white ">
-              seeking new challenges and opportunities
+              I have continuously fueling my enthusiasm for web development{" "}
             </span>{" "}
-            to further grow my skills.
+            , eagerly seeking new challenges and opportunities to further grow
+            my skills.
           </p>
 
           <p
             ref={fadeRefs[1]}
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
+            Design and code hygiene are at the core of my expertise. {""}
             <span className="border-b border-orange-600 text-white ">
-              Design and code hygiene{" "}
-            </span>
-            are at the core of my expertise. With a focus on{" "}
-            <span className="border-b border-orange-600 text-white ">
-              aesthetics
-            </span>{" "}
-            and{" "}
-            <span className="border-b border-orange-600 text-white ">
-              clean code
+              With a focus on aesthetics design and clean code
             </span>
             , I believe in the importance of well-designed interfaces and robust
             coding practices. Throughout the development process, I employ
             design thinking principles to create visually appealing interfaces
-            that prioritize user satisfaction. Simultaneously, I maintain a
-            strong commitment to code hygiene, ensuring the codebase is
-            organized, readable, and maintainable.
+            that prioritize user satisfaction. Simultaneously, {""}
+            <span className="border-b border-orange-600 text-white ">
+              I maintain a strong commitment to code hygiene
+            </span>
+            , ensuring the codebase is organized, readable, and maintainable.
           </p>
         </div>
       </div>
