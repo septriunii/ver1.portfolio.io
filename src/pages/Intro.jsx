@@ -106,7 +106,11 @@ function Intro() {
           }`}
         >
           <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-center justify-center relative opacity-75 mr-5 ">
-            <img src={img} alt="" className="absolute scale-90 -top-7" />
+            <img
+              src={img}
+              alt=""
+              className="absolute scale-90 top-0 md:-top-3 lg:-top-7"
+            />
           </div>
         </div>
       </div>
