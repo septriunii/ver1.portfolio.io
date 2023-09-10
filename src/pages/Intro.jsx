@@ -72,16 +72,16 @@ function Intro() {
                 isVisible ? "active" : ""
               }`}
             >
-              I am a dedicated web developer focusing on frontend development
-              specializing in ReactJS and Tailwind CSS.
+              I am a dedicated frontend web developer focusing on frontend
+              development specializing in ReactJS
             </p>
             <p
               ref={fadeRefs[3]}
               className={`md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light opacity-90 font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
-              My passion lies in crafting visually captivating and user-friendly
-              interfaces, skillfully combining graphics design and
+              I'm passionate about crafting visually captivating and
+              user-friendly interfaces, skillfully combining graphics design and
               web-responsive design. {""}
               <span className="font-semibold">
                 I am well-versed in web development architecture
@@ -105,7 +105,7 @@ function Intro() {
             isVisible ? "active" : ""
           }`}
         >
-          <div className="aspect-square bg-opacity-40 h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-end justify-center relative">
+          <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-end justify-center relative">
             <img src={img} alt="" className="absolute scale-90 -top-3" />
           </div>
         </div>

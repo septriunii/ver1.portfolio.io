@@ -54,7 +54,7 @@ function Experience() {
               </div>
 
               <div className="text-xs md:text-sm flex flex-col gap-5 mt-5 lg:ml-3">
-                <ul className="flex flex-col gap-5 list-disc ml-5">
+                <ul className="flex flex-col gap-5 list-square ml-5">
                   <li className="text-orange-600">
                     <span className="text-white">
                       Assisted staff with{" "}
@@ -117,7 +117,7 @@ function Experience() {
               </div>
 
               <div className="text-xs md:text-sm flex flex-col gap-5 mt-5 lg:ml-3">
-                <ul className="flex flex-col gap-5 list-disc ml-5">
+                <ul className="flex flex-col gap-5 list-square ml-5">
                   <li className="text-orange-600">
                     <span className="text-white">
                       Assisted in{" "}

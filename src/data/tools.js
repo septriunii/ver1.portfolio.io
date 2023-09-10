@@ -133,16 +133,17 @@ export const tools = [
     img: python,
     class: "Language",
   },
-  {
-    id: "tool15",
-    name: "Photoshop",
-    img: photoshop,
-    class: "Design",
-  },
+
   {
     id: "tool14",
     name: "Figma",
     img: figma,
+    class: "Design",
+  },
+  {
+    id: "tool15",
+    name: "Photoshop",
+    img: photoshop,
     class: "Design",
   },
 ];

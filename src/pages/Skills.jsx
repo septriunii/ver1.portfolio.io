@@ -33,7 +33,7 @@ function Skills() {
       <div className="flex h-auto -mt-3">
         <div className="text-xs px-3 h-full md:w-full flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:mr-5 lg:px-5 lg:p-5">
           <div className="flex flex-col md:flex-row w-full gap-3">
-            <ul className="flex flex-col gap-3 list-disc ml-5 lg:gap-5">
+            <ul className="flex flex-col gap-3 list-square ml-5 lg:gap-5">
               <li ref={fadeRefs[0]} className="text-orange-600 right-fade-in">
                 <span className="text-white">
                   Proficient in frontend web technologies such as
