@@ -77,7 +77,7 @@ function Intro() {
             </p>
             <p
               ref={fadeRefs[3]}
-              className={`md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light opacity-90 font_theme indent-4
+              className={` md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
               I'm passionate about crafting visually captivating and
@@ -106,7 +106,7 @@ function Intro() {
           }`}
         >
           <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-center justify-center relative opacity-75 mr-5 ">
-            <img src={img} alt="" className="absolute scale-90 -top-3" />
+            <img src={img} alt="" className="absolute scale-90 -top-7" />
           </div>
         </div>
       </div>
