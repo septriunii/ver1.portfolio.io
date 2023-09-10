@@ -101,11 +101,11 @@ function Intro() {
         </div>
 
         <div
-          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-end flex right-fade-in  ${
+          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex right-fade-in  ${
             isVisible ? "active" : ""
           }`}
         >
-          <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-end justify-center relative opacity-75 mr-5 ">
+          <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-center justify-center relative opacity-75 mr-5 ">
             <img src={img} alt="" className="absolute scale-90 -top-3" />
           </div>
         </div>
