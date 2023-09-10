@@ -105,7 +105,7 @@ function Intro() {
             isVisible ? "active" : ""
           }`}
         >
-          <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-end justify-center relative">
+          <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-end justify-center relative opacity-75 mr-5 ">
             <img src={img} alt="" className="absolute scale-90 -top-3" />
           </div>
         </div>
