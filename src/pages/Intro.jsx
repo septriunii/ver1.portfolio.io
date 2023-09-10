@@ -57,7 +57,7 @@ function Intro() {
                 ref={fadeRefs[1]}
                 className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40  typing-effect"
               >
-                Anthony<span className="text-orange-600">Alabado</span>
+                Anthony<span className="text-orange-600"> Alabado</span>
               </p>
               {showText && (
                 <h1 className="md:text-5xl lg:text-6xl text-4xl text cursor-blink ">
