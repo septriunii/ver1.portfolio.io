@@ -33,7 +33,9 @@ function ProjSMscreen({ project }) {
           </div>
         </div>
         <p className="opacity-60 italic text-xs">{project.class}</p>
-        <p className="bg-zinc-900 p-2 leading-5 mt-5">{project.description}</p>
+        <p className="bg-zinc-900 p-2 leading-5 mt-5">
+          <p dangerouslySetInnerHTML={{ __html: project.description }} />
+        </p>
       </div>
       <div className="flex flex-col gap-5">
         <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
