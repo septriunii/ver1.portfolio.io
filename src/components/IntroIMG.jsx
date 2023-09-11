@@ -7,11 +7,21 @@ function IntroIMG() {
       <div className="hidden md:flex md:h-4 md:w-4 lg:h-7 lg:w-7 bg-orange-600 absolute bottom-0 right-28 rotate-12 z-10"></div>
 
       <div className=" rounded-full h-full w-full absolute overflow-hidden">
-        <img src={bg} alt="" className=" h-full opacity-20 object-cover" />
+        <img
+          src={bg}
+          alt=""
+          className=" h-full opacity-20 object-cover"
+          loading="lazy"
+        />
       </div>
       <div className="h-[85%] w-[85%] border-orange-600 border-2 absolute place-self-center z-30  md:-rotate-12"></div>
       <div className="h-full w-full bg-opacity-50 rounded-full overflow-hidden relative">
-        <img src={img} className="top-0 absolute opacity-70 " alt="" />
+        <img
+          src={img}
+          className="top-0 absolute opacity-70 "
+          alt=""
+          loading="lazy"
+        />
       </div>
     </div>
   );
