@@ -36,7 +36,7 @@ function ProjectRightTemp({ id }) {
               }`}
             >
               <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
-                {project.description}
+                <p dangerouslySetInnerHTML={{ __html: project.description }} />
               </p>
             </div>
           </div>
