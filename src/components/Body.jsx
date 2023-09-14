@@ -3,6 +3,8 @@ import Sidebar1 from "./Sidebar";
 import Sidebar2 from "./Sidebar2";
 import img1 from "../assets/bgpattern.png";
 import img from "../assets/bg.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Body({ children }) {
   return (
@@ -11,12 +13,12 @@ function Body({ children }) {
         <Navbar />
       </div>
       <div className="w-full h-auto mt-14 md:mt-24 gap-2 flex ">
-        <img
+        <LazyLoadImage
           src={img}
           alt=""
           className="fixed top-5 opacity-[0.02] w-full h-full -z-50"
         />
-        <img
+        <LazyLoadImage
           src={img1}
           alt=""
           className="fixed opacity-30  md:h-full -z-50 top-0 right-0 w-full"

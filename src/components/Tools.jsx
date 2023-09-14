@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { tools } from "../data/tools";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Tools() {
   const [hoveredTool, setHoveredTool] = useState(null);
@@ -27,10 +29,11 @@ function Tools() {
                 onMouseEnter={() => setHoveredTool(tool)}
                 onMouseLeave={() => setHoveredTool(null)}
               >
-                <img
+                <LazyLoadImage
                   src={tool.img}
                   alt={tool.name}
-                  className="lg:scale-100 md:scale-95 scale-90 "
+                  className="lg:scale-100 md:scale-95 scale-90 h-full w-full"
+                  effect="blur"
                 />
               </div>
             ))}

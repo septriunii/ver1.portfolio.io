@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function ImageDiv({ image, visit, view }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,8 +25,8 @@ function ImageDiv({ image, visit, view }) {
           }`}
         ></div>
 
-        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-zinc-900 bg-opacity-70">
-          <img src={image} alt="" />
+        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-zinc-900 bg-opacity-70 -z-20">
+          <LazyLoadImage effect="blur" src={image} alt="" />
         </div>
 
         <div
