@@ -33,8 +33,11 @@ function Skills() {
       <div className="flex h-auto -mt-3">
         <div className="text-xs px-3 h-full md:w-full flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:mr-5 lg:px-5 lg:p-5">
           <div className="flex flex-col md:flex-row w-full gap-3">
-            <ul className="flex flex-col gap-3 list-square ml-5 lg:gap-5">
-              <li ref={fadeRefs[0]} className="text-orange-600 right-fade-in">
+            <ul className="flex flex-col gap-3 list-square ml-5 lg:gap-5 ">
+              <li
+                ref={fadeRefs[0]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2  "
+              >
                 <span className="text-white">
                   Proficient in frontend web technologies such as
                   <span className="font-semibold"> HTML</span>,{" "}
@@ -43,7 +46,10 @@ function Skills() {
                 </span>
               </li>
 
-              <li ref={fadeRefs[1]} className="text-orange-600 right-fade-in">
+              <li
+                ref={fadeRefs[1]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2 "
+              >
                 <span className="text-white">
                   Experienced in modern frontend frameworks and libraries
                   including <span className="font-semibold">ReactJS</span> and{" "}
@@ -55,7 +61,10 @@ function Skills() {
                 </span>
               </li>
 
-              <li ref={fadeRefs[2]} className="text-orange-600 right-fade-in">
+              <li
+                ref={fadeRefs[2]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2 "
+              >
                 <span className="text-white">
                   Skilled in{" "}
                   <span className="font-semibold">graphic design</span>,
@@ -67,14 +76,20 @@ function Skills() {
                 </span>
               </li>
 
-              <li ref={fadeRefs[3]} className="text-orange-600 right-fade-in">
+              <li
+                ref={fadeRefs[3]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2 "
+              >
                 <span className="text-white">
                   Knowledgeable in{" "}
                   <span className="font-semibold">backend development</span>,
                   including database management, SQL, and NoSQL.
                 </span>
               </li>
-              <li ref={fadeRefs[4]} className="text-orange-600 right-fade-in">
+              <li
+                ref={fadeRefs[4]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2 "
+              >
                 <span className="text-white">
                   Experienced in utilizing version control systems like
                   <span className="font-semibold"> Git</span> and{" "}
@@ -82,16 +97,22 @@ function Skills() {
                   collaboration and code management.
                 </span>
               </li>
-              <li ref={fadeRefs[5]} className="text-orange-600 right-fade-in">
+              <li
+                ref={fadeRefs[5]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2 "
+              >
                 <span className="text-white">
                   Proficient in programming languages such as{" "}
                   <span className="font-semibold">C++</span>,
                   <span className="font-semibold"> Python</span>, and
-                  <span className="font-semibold"> JavaScript</span>, enabling
+                  <span className="font-semibold"> Java</span>, enabling
                   versatile problem-solving.
                 </span>
               </li>
-              <li ref={fadeRefs[6]} className="text-orange-600 right-fade-in">
+              <li
+                ref={fadeRefs[6]}
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2 "
+              >
                 <span className="text-white">
                   Experienced in utilizing prompts for{" "}
                   <span className="font-semibold">chatbots</span> and other{" "}

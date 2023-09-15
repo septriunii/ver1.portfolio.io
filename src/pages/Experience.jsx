@@ -35,7 +35,7 @@ function Experience() {
         </h1>
 
         <div className="flex flex-col md:grid md:grid-cols-2 justify-center items-center gap-5">
-          <div className="flex h-full w-full ">
+          <div className="flex h-full w-full ease-in-out duration-300 hover:-translate-y-2">
             <div
               ref={fadeRefs[0]}
               className="fade-in h-full w-full flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light ml-3 bg-zinc-700 bg-opacity-20 rounded-md "
@@ -100,7 +100,10 @@ function Experience() {
             </div>
           </div>
 
-          <div ref={fadeRefs[1]} className="flex h-full w-full fade-in">
+          <div
+            ref={fadeRefs[1]}
+            className="flex h-full w-full fade-in ease-in-out duration-300 hover:-translate-y-2"
+          >
             <div className="h-full w-[100%] flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-md ">
               <div className="flex flex-col gap-2">
                 <h1 className="justify-center text-lg font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
