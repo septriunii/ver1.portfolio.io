@@ -115,7 +115,7 @@ function Navbar() {
           {/* Navbar responsive */}
           <section
             ref={fadeRefs[0]}
-            className="hidden sm:flex mr-7 gap-4 md:gap-7 lg:mr-14 lg:gap-12 left-fade-in md:opacity-100 "
+            className="hidden sm:flex mr-7 gap-4 md:gap-7 lg:mr-14 lg:gap-12  nav-fade-in md:opacity-100 "
           >
             {navs.map((nav) => (
               <div key={nav.id} className="opacity-80">

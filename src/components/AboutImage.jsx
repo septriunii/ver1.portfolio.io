@@ -33,7 +33,8 @@ function ImageDiv() {
           <LazyLoadImage
             src={img}
             alt=""
-            className="h-full w-full object-cover"
+            className="h-48 w-48 md:h-[14rem] lg:h-[17rem] md:w-full object-cover"
+            effect="blur"
           />
         </div>
         <div

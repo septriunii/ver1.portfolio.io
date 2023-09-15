@@ -1,16 +1,14 @@
-import { useState, useEffect } from "react";
-import ToggleButton from "./components/ToggleButton";
-import {
-  Intro,
-  AboutMe,
-  Skills,
-  Projects,
-  Experience,
-  ContactMe,
-} from "./pages";
-import { Footer, Body } from "./components";
-import SummaryPage from "./components/SummaryPage";
+import { useState, useEffect, lazy, Suspense } from "react";
+import Intro from "./pages/Intro";
 import Preloader from "./components/Preloader";
+import { Body } from "./components";
+import ToggleButton from "./components/ToggleButton";
+import AboutMe from "./pages/AboutMe";
+
+const SummaryPage = lazy(() => import("./components/SummaryPage"));
+const Footer = lazy(() => import("./components/Footer"));
+
+import { Skills, Projects, Experience, ContactMe } from "./pages/index";
 
 const App = () => {
   const [isActive, setIsActive] = useState(false);
@@ -20,7 +18,7 @@ const App = () => {
     // Simulate content loading delay
     setTimeout(() => {
       setIsLoading(false);
-    }, 2400); // Adjust the delay time as needed
+    }, 3000); // Adjust the delay time as needed
   }, []);
 
   const toggleMode = () => {
@@ -28,25 +26,29 @@ const App = () => {
   };
 
   return (
-    <div className="w-full h-auto relative ">
+    <div className="w-full h-auto relative duration-300 ease-in-out">
       <ToggleButton isActive={isActive} toggleMode={toggleMode} />
 
       {isLoading ? (
         <Preloader />
       ) : (
-        <div className="transition-opacity duration-1000 ">
+        <div className="duration-300 ease-in-out">
           <Body>
             {isActive ? (
-              <SummaryPage />
+              <Suspense fallback={null}>
+                <SummaryPage />
+              </Suspense>
             ) : (
               <>
                 <Intro />
                 <AboutMe />
-                <Skills />
-                <Projects />
-                <Experience />
-                <ContactMe />
-                <Footer />
+                <Suspense fallback={null}>
+                  <Skills />
+                  <Projects />
+                  <Experience />
+                  <ContactMe />
+                  <Footer />
+                </Suspense>
               </>
             )}
           </Body>

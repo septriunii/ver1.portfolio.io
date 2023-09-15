@@ -14,7 +14,7 @@ function Preloader() {
   }, []);
 
   return (
-    <div className="flex h-screen justify-center items-center flex-col gap-5 relative bg-zinc-900">
+    <div className="flex h-screen justify-center items-center flex-col md:gap-4 lg:gap-5 relative bg-zinc-900">
       <p className="reveal-text absolute font-mono z-50">welcome!</p>
 
       <div
@@ -26,7 +26,6 @@ function Preloader() {
       >
         <Loading />
       </div>
-      {/* <img src={bg} alt="" className="-z-20 opacity-5" /> */}
     </div>
   );
 }

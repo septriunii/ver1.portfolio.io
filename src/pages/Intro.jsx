@@ -5,7 +5,7 @@ import resume from "../assets/resume.pdf";
 function Intro() {
   const [showText, setShowText] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const fadeRefs = Array.from({ length: 4 }, () => useRef(null)); // Create an array of useRef
+  const fadeRefs = Array.from({ length: 4 }, () => useRef(null));
 
   useEffect(() => {
     setIsVisible(true);
@@ -101,7 +101,7 @@ function Intro() {
         </div>
 
         <div
-          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex right-fade-in  ${
+          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex right-fade-in ${
             isVisible ? "active" : ""
           }`}
         >

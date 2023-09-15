@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { projects } from "../data/projects";
 import ImageDiv from "./ProjIMG";
-import img1 from "../assets/Project_1.jpg";
 
 function ProjectLeftTemp({ id }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -48,9 +47,9 @@ function ProjectLeftTemp({ id }) {
                 isHovered ? "lg:left-0 md:left-0" : ""
               }`}
             >
-              <p className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
+              <div className="bg-zinc-900 rounded-md md:text-xs md:w-full absolute top-[50%] flex lg:text-sm lg:p-5 md:p-3 font-light transition-all duration-500 ease-in-out">
                 <p dangerouslySetInnerHTML={{ __html: project.description }} />
-              </p>
+              </div>
             </div>
           </div>
 

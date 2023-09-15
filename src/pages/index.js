@@ -1,8 +1,9 @@
-import Intro from "./Intro";
-import AboutMe from "./AboutMe";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Experience from "./Experience";
-import ContactMe from "./ContactMe";
+import { lazy } from "react";
 
-export { AboutMe, Intro, Skills, Projects, Experience, ContactMe };
+const AboutMe = lazy(() => import("../pages/AboutMe"));
+const Skills = lazy(() => import("../pages/Skills"));
+const Projects = lazy(() => import("../pages/Projects"));
+const Experience = lazy(() => import("../pages/Experience"));
+const ContactMe = lazy(() => import("../pages/ContactMe"));
+
+export { AboutMe, Skills, Projects, Experience, ContactMe };
