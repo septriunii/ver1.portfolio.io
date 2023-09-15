@@ -18,11 +18,11 @@ function IntroIMG() {
       </div>
       <div className="h-[85%] w-[85%] border-orange-600 border-2 absolute place-self-center z-30  md:-rotate-12"></div>
       <div className="h-full w-full bg-opacity-50 rounded-full overflow-hidden relative">
-        <img
+        <LazyLoadImage
           src={img}
           className="top-0 absolute opacity-70 "
           alt=""
-          loading="lazy"
+          effect="blur"
         />
       </div>
     </div>
