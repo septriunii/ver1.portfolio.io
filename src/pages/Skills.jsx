@@ -36,7 +36,7 @@ function Skills() {
             <ul className="flex flex-col gap-3 list-square ml-5 lg:gap-5 ">
               <li
                 ref={fadeRefs[0]}
-                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2  "
+                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2  hover:opacity-100"
               >
                 <span className="text-white">
                   Proficient in frontend web technologies such as

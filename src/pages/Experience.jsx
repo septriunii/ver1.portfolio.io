@@ -100,57 +100,56 @@ function Experience() {
             </div>
           </div>
 
-          <div
-            ref={fadeRefs[1]}
-            className="flex h-full w-full fade-in ease-in-out duration-300 hover:-translate-y-2"
-          >
-            <div className="h-full w-[100%] flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-md ">
-              <div className="flex flex-col gap-2">
-                <h1 className="justify-center text-lg font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
-                  Data Entry Clerk Intern
-                </h1>
+          <div ref={fadeRefs[1]} className="flex h-full w-full fade-in ">
+            <div className="flex h-full w-full ease-in-out duration-300 hover:-translate-y-2">
+              <div className="h-full w-[100%] flex flex-col gap-3 p-3 lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-md ">
+                <div className="flex flex-col gap-2">
+                  <h1 className="justify-center text-lg font-bold p-2 md:text-xl lg:text-2xl lg:p-3 text-orange-600 bg-zinc-900 flex w-full gap-2">
+                    Data Entry Clerk Intern
+                  </h1>
 
-                <p className="text-xs md:text-sm italic ml-3">
-                  R.T.Lim Municipal Office - Human Resources Department
-                </p>
+                  <p className="text-xs md:text-sm italic ml-3">
+                    R.T.Lim Municipal Office - Human Resources Department
+                  </p>
 
-                <p className="text-xs md:text-sm ml-3 lg:text-sm text-orange-600">
-                  September 2018
-                </p>
-              </div>
+                  <p className="text-xs md:text-sm ml-3 lg:text-sm text-orange-600">
+                    September 2018
+                  </p>
+                </div>
 
-              <div className="text-xs md:text-sm flex flex-col gap-5 mt-5 lg:ml-3">
-                <ul className="flex flex-col gap-5 list-square ml-5">
-                  <li className="text-orange-600">
-                    <span className="text-white">
-                      Assisted in{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
-                        encoding and organizing data
-                      </span>{" "}
-                      in the office’s database
-                    </span>
-                  </li>
-
-                  <li className="text-orange-600">
-                    <span className="text-white">
-                      Provided{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
-                        IT support and troubleshooting
-                      </span>{" "}
-                      for office staff.
-                    </span>
-                  </li>
-
-                  <li className="text-orange-600">
-                    <span className="text-white">
-                      Provided assistance to the office staff in{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
-                        HR-related tasks
+                <div className="text-xs md:text-sm flex flex-col gap-5 mt-5 lg:ml-3">
+                  <ul className="flex flex-col gap-5 list-square ml-5">
+                    <li className="text-orange-600">
+                      <span className="text-white">
+                        Assisted in{" "}
+                        <span className="border-b border-orange-600 text-white cursor-default">
+                          encoding and organizing data
+                        </span>{" "}
+                        in the office’s database
                       </span>
-                      , supporting their efforts in personnel management.
-                    </span>
-                  </li>
-                </ul>
+                    </li>
+
+                    <li className="text-orange-600">
+                      <span className="text-white">
+                        Provided{" "}
+                        <span className="border-b border-orange-600 text-white cursor-default">
+                          IT support and troubleshooting
+                        </span>{" "}
+                        for office staff.
+                      </span>
+                    </li>
+
+                    <li className="text-orange-600">
+                      <span className="text-white">
+                        Provided assistance to the office staff in{" "}
+                        <span className="border-b border-orange-600 text-white cursor-default">
+                          HR-related tasks
+                        </span>
+                        , supporting their efforts in personnel management.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
