@@ -77,7 +77,7 @@ function Intro() {
             </p>
             <p
               ref={fadeRefs[3]}
-              className={` md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light font_theme indent-4
+              className={` md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light  font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
               I'm passionate about crafting visually captivating and

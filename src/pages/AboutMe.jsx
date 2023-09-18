@@ -53,9 +53,11 @@ function AboutMe() {
               Anthony Alabado
             </span>
             , a dedicated{" "}
-            <span className="font-semibold ">Front-End Web Developer</span> with
-            a strong passion for crafting exceptional digital experiences. I
-            graduated with a{" "}
+            <span className="font-semibold hover:font-bold">
+              Front-End Web Developer
+            </span>{" "}
+            with a strong passion for crafting exceptional digital experiences.
+            I graduated with a{" "}
             <span className="border-b border-orange-600 text-white hover:border-b-2">
               Bachelor's degree in Information Technology
             </span>{" "}
