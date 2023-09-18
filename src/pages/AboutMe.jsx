@@ -49,21 +49,21 @@ function AboutMe() {
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
             Hello! I'm{" "}
-            <span className="border-b border-orange-600 text-white ">
+            <span className="border-b border-orange-600 text-white hover:border-b-2">
               Anthony Alabado
             </span>
             , a dedicated{" "}
-            <span className="font-semibold">Frontend Web Developer</span> with a
-            strong passion for crafting exceptional digital experiences. I
+            <span className="font-semibold ">Front-End Web Developer</span> with
+            a strong passion for crafting exceptional digital experiences. I
             graduated with a{" "}
-            <span className="border-b border-orange-600 text-white ">
+            <span className="border-b border-orange-600 text-white hover:border-b-2">
               Bachelor's degree in Information Technology
             </span>{" "}
             and my interest in web development was sparked during my high school
             years when I was first exposed to its captivating world. Even amidst
             various school activities, my curiosity led me to explore online
             courses and embark on self-guided projects. Since then,{" "}
-            <span className="border-b border-orange-600 text-white ">
+            <span className="border-b border-orange-600 text-white hover:border-b-2">
               I have continuously fueling my enthusiasm for web development{" "}
             </span>{" "}
             , eagerly seeking new challenges and opportunities to further grow
@@ -75,14 +75,14 @@ function AboutMe() {
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
             Design and code hygiene are at the core of my expertise. {""}
-            <span className="border-b border-orange-600 text-white ">
+            <span className="border-b border-orange-600 text-white hover:border-b-2">
               With a focus on aesthetics design and clean code
             </span>
             , I believe in the importance of well-designed interfaces and robust
             coding practices. Throughout the development process, I employ
             design thinking principles to create visually appealing interfaces
             that prioritize user satisfaction. Simultaneously, {""}
-            <span className="border-b border-orange-600 text-white ">
+            <span className="border-b border-orange-600 text-white hover:border-b-2 ">
               I maintain a strong commitment to code hygiene
             </span>
             , ensuring the codebase is organized, readable, and maintainable.

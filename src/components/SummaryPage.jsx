@@ -3,7 +3,6 @@ import { tools } from "../data/tools";
 import { useState } from "react";
 import { projects } from "../data/projects";
 import { useRef, useEffect } from "react";
-import resume from "../assets/resume.pdf";
 
 function SummaryPage() {
   const [hoveredTool, setHoveredTool] = useState(null);

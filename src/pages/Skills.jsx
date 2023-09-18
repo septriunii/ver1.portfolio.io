@@ -104,7 +104,8 @@ function Skills() {
                 <span className="text-white">
                   Proficient in programming languages such as{" "}
                   <span className="font-semibold">C++</span>,
-                  <span className="font-semibold"> Python</span>, and
+                  <span className="font-semibold"> Python</span>,{" "}
+                  <span className="font-semibold"> PHP</span>, and
                   <span className="font-semibold"> Java</span>, enabling
                   versatile problem-solving.
                 </span>
@@ -133,11 +134,11 @@ function Skills() {
             With these skills, I am well-equipped to handle various aspects of
             web development, from designing visually captivating interfaces to
             implementing robust backend functionality. I am committed to{" "}
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white cursor-default hover:border-b-2">
               staying updated with the latest industry trends
             </span>{" "}
             and{" "}
-            <span className="border-b border-orange-600 text-white cursor-default">
+            <span className="border-b border-orange-600 text-white cursor-default hover:border-b-2">
               continuously expanding my skill
             </span>{" "}
             set to deliver exceptional web solutions.

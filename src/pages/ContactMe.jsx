@@ -47,10 +47,10 @@ function ContactMe() {
             <div className="lg:h-[22rem]  p-2 md:w-[75%] lg:w-[65%] flex flex-col lg:gap-5  lg:p-5 text-justify font-light bg-zinc-700 bg-opacity-20 rounded-lg relative">
               <div className="text-xs md:text-sm  flex flex-col justify-center items-center lg:gap-2">
                 <p className="leading-6 bg-zinc-900 p-2 lg:p-3 indent-5 lg:indent-0 lg:leading-7">
-                  If you're seeking a Frontend Web Developer who is committed to
-                  delivering exceptional web experiences, leveraging ReactJS and
-                  Tailwind CSS expertise, I would be delighted to connect and
-                  explore opportunities to work together. Let's bring your
+                  If you're seeking a Front-End Web Developer who is committed
+                  to delivering exceptional web experiences, leveraging ReactJS
+                  and Tailwind CSS expertise, I would be delighted to connect
+                  and explore opportunities to work together. Let's bring your
                   vision to life and create remarkable digital experiences that
                   leave a lasting impact.
                 </p>

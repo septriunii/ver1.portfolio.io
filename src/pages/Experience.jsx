@@ -58,7 +58,7 @@ function Experience() {
                   <li className="text-orange-600">
                     <span className="text-white">
                       Assisted staff with{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
+                      <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                         troubleshooting technical issues
                       </span>
                       , both hardware and software, providing prompt
@@ -69,7 +69,7 @@ function Experience() {
                   <li className="text-orange-600">
                     <span className="text-white">
                       Supported the{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
+                      <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                         setup and configuration
                       </span>{" "}
                       of computer systems, printers, and other peripherals.
@@ -79,7 +79,7 @@ function Experience() {
                   <li className="text-orange-600">
                     <span className="text-white">
                       Provided{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
+                      <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                         guidance to staff members
                       </span>{" "}
                       on the effective use of technology resources.
@@ -88,7 +88,7 @@ function Experience() {
                   <li className="text-orange-600">
                     <span className="text-white">
                       Assisted in various{" "}
-                      <span className="border-b border-orange-600 text-white cursor-default">
+                      <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                         social work-related tasks
                       </span>
                       , contributing to the support and development of
@@ -122,7 +122,7 @@ function Experience() {
                     <li className="text-orange-600">
                       <span className="text-white">
                         Assisted in{" "}
-                        <span className="border-b border-orange-600 text-white cursor-default">
+                        <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                           encoding and organizing data
                         </span>{" "}
                         in the office’s database
@@ -132,7 +132,7 @@ function Experience() {
                     <li className="text-orange-600">
                       <span className="text-white">
                         Provided{" "}
-                        <span className="border-b border-orange-600 text-white cursor-default">
+                        <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                           IT support and troubleshooting
                         </span>{" "}
                         for office staff.
@@ -142,7 +142,7 @@ function Experience() {
                     <li className="text-orange-600">
                       <span className="text-white">
                         Provided assistance to the office staff in{" "}
-                        <span className="border-b border-orange-600 text-white cursor-default">
+                        <span className="border-b border-orange-600 hover:border-b-2 text-white cursor-default">
                           HR-related tasks
                         </span>
                         , supporting their efforts in personnel management.

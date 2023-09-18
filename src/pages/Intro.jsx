@@ -5,7 +5,7 @@ import resume from "../assets/resume.pdf";
 function Intro() {
   const [showText, setShowText] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const fadeRefs = Array.from({ length: 4 }, () => useRef(null));
+  const fadeRefs = Array.from({ length: 4 }, () => useRef(null)); // Create an array of useRef
 
   useEffect(() => {
     setIsVisible(true);
@@ -72,8 +72,8 @@ function Intro() {
                 isVisible ? "active" : ""
               }`}
             >
-              I am a dedicated frontend web developer focusing on frontend
-              development specializing in ReactJS
+              I am a dedicated web developer focusing on front-end development
+              specializing in ReactJS and Tailwind CSS
             </p>
             <p
               ref={fadeRefs[3]}
@@ -83,11 +83,11 @@ function Intro() {
               I'm passionate about crafting visually captivating and
               user-friendly interfaces, skillfully combining graphics design and
               web-responsive design. {""}
-              <span className="font-semibold">
+              <span className="font-semibold hover:border-b border-orange-600 ">
                 I am well-versed in web development architecture
               </span>{" "}
-              and have a thorough understanding of how to integrate frontend
-              interfaces with backend systems.
+              and have a thorough understanding of how to integrate front-end
+              interfaces with back-end systems.
             </p>
           </div>
           <button
@@ -96,12 +96,12 @@ function Intro() {
             }`}
             onClick={() => window.open(resume, "_blank")}
           >
-            Check out my resume
+            View my resume
           </button>
         </div>
 
         <div
-          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex right-fade-in ${
+          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex right-fade-in  ${
             isVisible ? "active" : ""
           }`}
         >
