@@ -27,7 +27,7 @@ function Skills() {
   return (
     <div id="skills" className="lg:h-auto flex flex-col lg:pl-10 lg:mt-28 z-40">
       <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
-        <p className="w-16 italic mr-5 lg:w-20 lg:mr-5">Skills</p>
+        <p className="w-16 italic mr-5 lg:w-20 lg:mr-5 ">Skills</p>
         <div className="h-0.5 w-full bg-zinc-900"></div>
       </h1>
       <div className="flex h-auto -mt-3">
@@ -36,7 +36,7 @@ function Skills() {
             <ul className="flex flex-col gap-3 list-square ml-5 lg:gap-5 ">
               <li
                 ref={fadeRefs[0]}
-                className="text-orange-600 right-fade-in ease-in-out duration-100 hover:translate-x-2  hover:opacity-100"
+                className="text-orange-600 right-fade-in ease-in-out hover:translate-x-2 "
               >
                 <span className="text-white">
                   Proficient in frontend web technologies such as

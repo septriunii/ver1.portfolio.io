@@ -49,7 +49,7 @@ function Intro() {
               isVisible ? "active" : ""
             }`}
           >
-            Hi I am
+            Hi! I am
           </p>
           <div>
             <div className="flex flex-row">
@@ -72,17 +72,15 @@ function Intro() {
                 isVisible ? "active" : ""
               }`}
             >
-              I am a dedicated web developer focusing on front-end development
-              specializing in ReactJS and Tailwind CSS
+              Front-End Web Developer
             </p>
             <p
               ref={fadeRefs[3]}
               className={` md:mt-5 text-xs mb-10 text-justify lg:pr-10 leading-5 md:leading-7 md:indent-0 md:text-sm lg:text-base font-light  font_theme indent-4
             fade-in ${isVisible ? "active" : ""}`}
             >
-              I'm passionate about crafting visually captivating and
-              user-friendly interfaces, skillfully combining graphics design and
-              web-responsive design. {""}
+              I am a dedicated web developer focusing on front-end development
+              specializing in ReactJS and Tailwind CSS. {""}
               <span className="font-semibold hover:border-b border-orange-600 ">
                 I am well-versed in web development architecture
               </span>{" "}
