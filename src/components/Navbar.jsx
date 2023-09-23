@@ -85,7 +85,7 @@ function Navbar() {
                     smooth={true}
                     duration={500}
                     offset={-100}
-                    className="text-white flex justify-center mb-7 items-center cursor-pointer hover:text-orange-600 transition-colors duration-300 font-semibold text-sm"
+                    className="text-white flex justify-center mb-7 items-center cursor-pointer  hover:text-orange-600"
                   >
                     {nav.name}
                   </ScrollLink>

@@ -55,7 +55,7 @@ function Intro() {
             <div className="flex flex-row">
               <p
                 ref={fadeRefs[1]}
-                className="text-4xl mb-2 font-bold md:text-5xl lg:text-7xl z-40  typing-effect"
+                className="text-4xl mb-2 font-bold md:text-5xl lg:text-[4.6rem] z-40  typing-effect"
               >
                 Anthony<span className="text-orange-600"> Alabado</span>
               </p>
@@ -68,7 +68,7 @@ function Intro() {
 
             <p
               ref={fadeRefs[2]}
-              className={`text-lg mb-4 md:text-xl lg:mb-8 font-bold lg:text-2xl text-opacity-40 opacity-40 italic above-fade-in flex ${
+              className={`text-lg mb-4 md:text-xl lg:mb-8 font-bold lg:text-3xl text-opacity-40 opacity-40 italic above-fade-in flex ${
                 isVisible ? "active" : ""
               }`}
             >
