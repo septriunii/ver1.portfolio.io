@@ -18,7 +18,7 @@ function Preloader() {
       <p className="reveal-text absolute font-mono z-50">welcome!</p>
 
       <div
-        className={`h-auto w-40 absolute top-[60%] ${
+        className={`h-auto w-40 absolute md:top-[60%] top-[55%] ${
           showDiv
             ? "opacity-100 transition-opacity duration-300 ease-in-out"
             : "opacity-0"
