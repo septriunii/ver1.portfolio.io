@@ -1,5 +1,7 @@
-import Tools from "../components/Tools";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
+import { lazy } from "react";
+
+const Tools = lazy(() => import("../components/Tools"));
 
 function Skills() {
   const fadeRefs = Array.from({ length: 9 }, () => useRef(null));
@@ -127,7 +129,9 @@ function Skills() {
               ref={fadeRefs[8]}
               className="md:w-[110%] lg:w-[60%] h-auto bg-opacity-20 bg-zinc-700 fade-in ml-5 pb-7 mt-5 md:mt-0 "
             >
-              <Tools />
+              <Suspense fallback={null}>
+                <Tools />
+              </Suspense>
             </div>
           </div>
           <p ref={fadeRefs[7]} className="leading-7 right-fade-in">
