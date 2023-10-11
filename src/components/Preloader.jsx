@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Loading from "./Loading";
-import bg from "../assets/bg.jpg";
 
 function Preloader() {
   const [showDiv, setShowDiv] = useState(false);

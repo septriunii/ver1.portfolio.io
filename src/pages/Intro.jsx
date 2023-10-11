@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import img from "../assets/IntroIMGbg.png";
 import resume from "../assets/resume.pdf";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Intro() {
   const [showText, setShowText] = useState(false);
@@ -99,16 +101,14 @@ function Intro() {
         </div>
 
         <div
-          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex right-fade-in  ${
+          className={`h-52 mt-3 md:mt-0 md:h-auto md:w-[70%] lg:w-[65%] lg:items-center justify-start md:justify-center lg:p-3 flex   ${
             isVisible ? "active" : ""
           }`}
         >
           <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-center justify-center relative opacity-75 mr-5 ">
-            <img
-              src={img}
-              alt=""
-              className="absolute scale-90 top-0 md:-top-3 lg:-top-7"
-            />
+            <div className="absolute scale-90 top-0 md:-top-3 lg:-top-7">
+              <LazyLoadImage src={img} alt="" effect="blur" />
+            </div>
           </div>
         </div>
       </div>
