@@ -16,6 +16,7 @@ function Body({ children }) {
           src={img}
           alt=""
           className="fixed top-5 opacity-[0.02] w-full h-full -z-50"
+          loading="eager"
         />
 
         <div className=" md:flex md:w-16 h-auto hidden">

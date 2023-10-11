@@ -107,7 +107,7 @@ function Intro() {
         >
           <div className="aspect-square  h-full md:h-[70%] lg:h-[90%] md:mt-10 lg:mt-0 flex items-center justify-center relative opacity-75 mr-5 ">
             <div className="absolute scale-90 top-0 md:-top-3 lg:-top-7">
-              <LazyLoadImage src={img} alt="" effect="blur" />
+              <LazyLoadImage src={img} alt="" effect="blur" loading="eager" />
             </div>
           </div>
         </div>
