@@ -40,7 +40,7 @@ const App = () => {
               </Suspense>
             ) : (
               <>
-                <Intro />
+                <Intro loading="eager" />
                 <AboutMe />
                 <Suspense fallback={null}>
                   <Skills />
