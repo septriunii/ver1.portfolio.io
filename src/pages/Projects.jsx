@@ -5,7 +5,7 @@ import ProjectRightTemp from "../components/ProjectRightTemp";
 import ProjSMscreen from "../components/ProjSMscreen";
 
 function Projects() {
-  const fadeRefs = Array(4)
+  const fadeRefs = Array(3)
     .fill(null)
     .map(() => useRef(null));
 
