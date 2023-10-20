@@ -31,9 +31,9 @@ function SummaryPage() {
   return (
     <>
       <div className="h-auto w-full md:mt-0 mt-5">
-        <div className="bg-zinc-700 bg-opacity-20 h-full w-full flex p-3 md:flex-row flex-col gap-5">
-          <div className="md:w-[90%] h-full  flex flex-col md:border-r-[2px] md:pr-2 lg:pr-3  md:border-zinc-900 ">
-            <div
+        <main className="bg-zinc-700 bg-opacity-20 h-full w-full flex p-3 md:flex-row flex-col gap-5">
+          <section className="md:w-[90%] h-full  flex flex-col md:border-r-[2px] md:pr-2 lg:pr-3  md:border-zinc-900 ">
+            <article
               ref={fadeRefs[0]}
               className="font-thin w-full h-full flex flex-col fade-in"
             >
@@ -75,17 +75,17 @@ function SummaryPage() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </article>
             <div
               ref={fadeRefs[1]}
               className="w-full h-full flex flex-col  mt-5 left-fade-in"
             >
-              <div className="text-2xl font-bold text-orange-600 flex items-center">
+              <header className="text-2xl font-bold text-orange-600 flex items-center">
                 <p>Skills</p>
                 <div className="h-0.5 ml-3 bg-zinc-900 w-full"></div>
-              </div>
-              <div className="h-full">
-                <div className="flex flex-col ">
+              </header>
+              <main className="h-full">
+                <section className="flex flex-col ">
                   <div className=" w-full h-7 justify-center flex font-bold text-white">
                     {" "}
                     {hoveredTool
@@ -94,35 +94,35 @@ function SummaryPage() {
                           .map((char, index) => <span key={index}>{char}</span>)
                       : ""}
                   </div>
-                  <div className="grid grid-cols-5 gap-3">
+                  <section className="grid grid-cols-5 gap-3">
                     {tools.map((tool) => (
-                      <div
+                      <figure
                         key={tool.id}
                         className="h-10 w-full flex justify-center   duration-200 ease-in-out hover:scale-105"
                         onMouseEnter={() => setHoveredTool(tool)}
                         onMouseLeave={() => setHoveredTool(null)}
                       >
                         <img src={tool.img} alt={tool.name} />
-                      </div>
+                      </figure>
                     ))}
-                  </div>
-                </div>
-              </div>
+                  </section>
+                </section>
+              </main>
             </div>
-          </div>
+          </section>
 
-          <div className="w-full h-full flex flex-col pl-3">
-            <div className=" w-full h-full flex">
-              <div
+          <section className="w-full h-full flex flex-col pl-3">
+            <main className=" w-full h-full flex">
+              <section
                 ref={fadeRefs[3]}
                 className="w-full h-full flex flex-col right-fade-in"
               >
-                <div className="text-2xl font-bold text-orange-600 flex items-center">
+                <header className="text-2xl font-bold text-orange-600 flex items-center">
                   <p>Projects</p>
                   <div className="h-0.5 ml-3 bg-zinc-900 w-full"></div>
-                </div>
+                </header>
 
-                <div className=" h-full w-full mt-5 gap-3 grid grid-cols-2">
+                <section className=" h-full w-full mt-5 gap-3 grid grid-cols-2">
                   {projects.map((project) => (
                     <div
                       key={project.id}
@@ -144,16 +144,19 @@ function SummaryPage() {
                       </div>
                     </div>
                   ))}
-                </div>
-              </div>
-            </div>
-            <div
+                </section>
+              </section>
+            </main>
+
+            <section
               ref={fadeRefs[2]}
               className="w-full h-full p-3 left-fade-in bg-zinc-900 bg-opacity-80 mt-3 "
             >
-              <div className=" w-full h-full  flex flex-col ">
-                <p className="text-[1.5rem] p-2 font-bold">Experiences</p>
-                <div className="h-full w-full  p-2">
+              <article className=" w-full h-full  flex flex-col ">
+                <header className="text-[1.5rem] p-2 font-bold">
+                  Experiences
+                </header>
+                <section className="h-full w-full  p-2">
                   <p className="font-bold text-orange-600 text-lg">
                     IT Support Intern
                   </p>
@@ -162,9 +165,9 @@ function SummaryPage() {
                     Office
                   </p>
                   <p className="text-xs mt-2"> January 2023 - April 2023</p>
-                </div>
+                </section>
 
-                <div className="h-full w-full  p-2">
+                <section className="h-full w-full  p-2">
                   <p className="font-bold text-orange-600 text-lg">
                     Data Entry Clerk Intern
                   </p>
@@ -172,11 +175,11 @@ function SummaryPage() {
                     R.T.Lim Municipal Office - Human Resources
                   </p>
                   <p className="text-xs mt-2"> September 2018</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </section>
+              </article>
+            </section>
+          </section>
+        </main>
       </div>
       <Footer />
     </>

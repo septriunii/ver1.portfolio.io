@@ -5,13 +5,13 @@ import img from "../assets/bg.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-function Body({ children }) {
+function Body(props) {
   return (
-    <div>
-      <div className="h-auto w-full fixed z-[49] top-0 ">
+    <>
+      <nav className="h-auto w-full fixed z-[49] top-0 ">
         <Navbar />
-      </div>
-      <div className="w-full h-auto mt-14 md:mt-24 gap-2 flex ">
+      </nav>
+      <main className="w-full h-auto mt-14 md:mt-24 gap-2 flex ">
         <LazyLoadImage
           src={img}
           alt=""
@@ -19,15 +19,15 @@ function Body({ children }) {
           loading="eager"
         />
 
-        <div className=" md:flex md:w-16 h-auto hidden">
+        <aside className=" md:flex md:w-16 h-auto hidden">
           <Sidebar1 />
-        </div>
-        <div className="w-full h-auto mx-5 md:mx-0">{children}</div>
-        <div className="md:flex md:w-16 h-auto hidden ">
+        </aside>
+        <main className="w-full h-auto mx-5 md:mx-0">{props.children}</main>
+        <aside className="md:flex md:w-16 h-auto hidden ">
           <Sidebar2 />
-        </div>
-      </div>
-    </div>
+        </aside>
+      </main>
+    </>
   );
 }
 

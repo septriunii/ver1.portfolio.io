@@ -43,7 +43,7 @@ function Sidebar2() {
   }, []);
 
   return (
-    <nav>
+    <>
       <ul className="flex fixed flex-col gap-8 top-[38%] right-6">
         {sections.map((section) => (
           <li
@@ -56,16 +56,16 @@ function Sidebar2() {
           ></li>
         ))}
         {activeSection === "contact" && (
-          <div
+          <figure
             className={`lg:h-8 lg:w-8 md:w-6 md:h-6 opacity-40 cursor-pointer mx-auto absolute -left-14 -bottom-44 blinking`}
           >
             <ScrollLink to="intro" smooth={true} duration={500} offset={-100}>
               <img src={img} alt="" />
             </ScrollLink>
-          </div>
+          </figure>
         )}
       </ul>
-    </nav>
+    </>
   );
 }
 

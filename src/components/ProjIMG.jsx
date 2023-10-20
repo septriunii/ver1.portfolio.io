@@ -2,7 +2,7 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-function ImageDiv({ image, visit, view }) {
+function ImageDiv(props) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleContainerHover = () => {
@@ -15,21 +15,21 @@ function ImageDiv({ image, visit, view }) {
 
   return (
     <>
-      <div className="h-full w-auto flex items-center p-5 pl-0 relative">
+      <main className="h-full w-auto flex items-center p-5 pl-0 relative">
         {/* image */}
 
-        <div
+        <section
           id="border"
           className={`lg:w-[570px] lg:h-[360px] md:h-72 md:w-96 border-orange-600 border-2 absolute top-0 right-0 z-0 transition-all duration-300 ease-in-out ${
             isHovered ? "top-5 right-5 " : ""
           }`}
-        ></div>
+        ></section>
 
-        <div className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-zinc-900 bg-opacity-70 -z-20">
-          <LazyLoadImage effect="blur" src={image} alt="" />
-        </div>
+        <figure className="lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  bg-zinc-900 bg-opacity-70 -z-20">
+          <LazyLoadImage effect="blur" src={props.image} alt="" />
+        </figure>
 
-        <div
+        <section
           className={`lg:h-[360px] lg:w-[570px] md:h-72 md:w-96 flex items-center justify-center  absolute duration-1000 ease-in-out  ${
             isHovered ? "backdrop-blur-[2px] p-5" : ""
           }`}
@@ -42,7 +42,7 @@ function ImageDiv({ image, visit, view }) {
             }`}
           >
             <a
-              href={visit}
+              href={props.visit}
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-white"
@@ -56,7 +56,7 @@ function ImageDiv({ image, visit, view }) {
             }`}
           >
             <a
-              href={view}
+              href={props.view}
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-white"
@@ -64,8 +64,8 @@ function ImageDiv({ image, visit, view }) {
               View code
             </a>
           </button>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 }

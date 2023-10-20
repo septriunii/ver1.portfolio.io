@@ -48,10 +48,10 @@ function Navbar() {
   }, [prevScrollPos]);
 
   return (
-    <div className="">
+    <>
       {isSmScreen ? (
         // Hamburger menu for sm screen
-        <div className="h-16 backdrop-blur-md shadow-md w-full flex place-items-center">
+        <nav className="h-16 backdrop-blur-md shadow-md w-full flex place-items-center">
           <section className="ml-3 cursor-pointer ">
             <ScrollLink
               to="intro"
@@ -60,13 +60,13 @@ function Navbar() {
               offset={-100}
               className="text-white cursor-pointer hover:text-orange-600 transition-colors duration-300 font-light font_theme text-sm"
             >
-              <div className="h-11 w-11 flex bg-center items-center p-3">
+              <figure className="h-11 w-11 flex bg-center items-center p-3">
                 <img src={logo} alt="" href="#" />
-              </div>
+              </figure>
             </ScrollLink>
           </section>
-          <div id="menu">
-            <div
+          <section id="menu">
+            <section
               id="menu-bar"
               onClick={menuOnClick}
               className={menuClicked ? "change" : ""}
@@ -76,8 +76,8 @@ function Navbar() {
                 <div id="bar2" className="bar"></div>
                 <div id="bar3" className="bar"></div>
               </div>
-            </div>
-            <nav className={`nav ${menuClicked ? "change" : ""}`} id="nav">
+            </section>
+            <section className={`nav ${menuClicked ? "change" : ""}`} id="nav">
               {navs.map((nav) => (
                 <div key={nav.id} className="opacity-80 text-white">
                   <ScrollLink
@@ -91,13 +91,15 @@ function Navbar() {
                   </ScrollLink>
                 </div>
               ))}
-            </nav>
-          </div>
-          <div className={`menu-bg ${menuClicked ? "change-bg" : ""}`}></div>
-        </div>
+            </section>
+          </section>
+          <section
+            className={`menu-bg ${menuClicked ? "change-bg" : ""}`}
+          ></section>
+        </nav>
       ) : (
         // Regular navbar for md and lg screens
-        <div className="backdrop-blur-md  w-full h-20 fixed top-0 left-0 flex justify-between items-center shadow-lg ">
+        <nav className="backdrop-blur-md  w-full h-20 fixed top-0 left-0 flex justify-between items-center shadow-lg ">
           <section className="ml-7 cursor-pointer ">
             <ScrollLink
               to="intro"
@@ -132,9 +134,9 @@ function Navbar() {
             ))}
             <div className="w-10 hidden md:flex"></div>
           </section>
-        </div>
+        </nav>
       )}
-    </div>
+    </>
   );
 }
 

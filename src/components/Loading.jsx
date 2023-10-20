@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Loading = () => {
   const [progress, setProgress] = useState(0);
@@ -23,12 +23,12 @@ const Loading = () => {
   }, []);
 
   return (
-    <div className="h-1 w-auto bg-zinc-900">
-      <div
+    <main className="h-1 w-auto bg-zinc-900">
+      <section
         className="h-full bg-orange-600"
         style={{ width: `${progress}%` }}
-      ></div>
-    </div>
+      ></section>
+    </main>
   );
 };
 

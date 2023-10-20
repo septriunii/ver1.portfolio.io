@@ -29,22 +29,22 @@ function AboutMe() {
       id="aboutme"
       className="mt-5 md:mt-10 lg:mt-20 lg:flex lg:flex-col p-3 lg:h-auto z-40"
     >
-      <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
+      <header className="font-bold text-2xl md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
         <p className="w-44 lg:w-52 lg:mr-1 italic">About Me</p>
         <div className="h-0.5 w-full bg-zinc-900"></div>
-      </h1>
+      </header>
 
-      <div className="lg:pl-10 flex flex-col-reverse h-full items-center justify-center md:flex-row md:gap-5 lg:mt-7">
-        <div className="h-56 w-full md:w-[20rem] lg:h-full lg:w-[40%] flex items-center justify-center">
-          <div
+      <main className="lg:pl-10 flex flex-col-reverse h-full items-center justify-center md:flex-row md:gap-5 lg:mt-7">
+        <section className="h-56 w-full md:w-[20rem] lg:h-full lg:w-[40%] flex items-center justify-center">
+          <figure
             ref={fadeRefs[2]}
             className="h-48 w-48 md:w-48 md:h-56 lg:h-[17rem] lg:w-[15rem] flex items-center justify-center absolute left-fade-in"
           >
             <ImageDiv />
-          </div>
-        </div>
-        <div className="h-full w-[100%] gap-3 flex flex-col text-xs p-2 md:text-sm lg:py-2 lg:pr-14 lg:text-justify justify-center font-light opacity-90">
-          <p
+          </figure>
+        </section>
+        <section className="h-full w-[100%] gap-3 flex flex-col text-xs p-2 md:text-sm lg:py-2 lg:pr-14 lg:text-justify justify-center font-light opacity-90">
+          <article
             ref={fadeRefs[0]}
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
@@ -70,9 +70,9 @@ function AboutMe() {
             </span>{" "}
             , eagerly seeking new challenges and opportunities to further grow
             my skills.
-          </p>
+          </article>
 
-          <p
+          <article
             ref={fadeRefs[1]}
             className="text-gap indent-4 text-justify lg:indent-0 fade-in"
           >
@@ -88,9 +88,9 @@ function AboutMe() {
               I maintain a strong commitment to code hygiene
             </span>
             , ensuring the codebase is organized, readable, and maintainable.
-          </p>
-        </div>
-      </div>
+          </article>
+        </section>
+      </main>
     </div>
   );
 }

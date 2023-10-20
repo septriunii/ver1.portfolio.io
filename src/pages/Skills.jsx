@@ -28,13 +28,13 @@ function Skills() {
 
   return (
     <div id="skills" className="lg:h-auto flex flex-col lg:pl-10 lg:mt-28 z-40">
-      <h1 className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
+      <header className="font-bold text-2xl mb-8 md:text-3xl lg:text-4xl lg:py-3 text-orange-600 flex justify-center items-center">
         <p className="w-16 italic mr-5 lg:w-20 lg:mr-5 ">Skills</p>
         <div className="h-0.5 w-full bg-zinc-900"></div>
-      </h1>
-      <div className="flex h-auto -mt-3">
-        <div className="text-xs px-3 h-full md:w-full flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:mr-5 lg:px-5 lg:p-5">
-          <div className="flex flex-col md:flex-row w-full gap-3">
+      </header>
+      <main className="flex h-auto -mt-3">
+        <section className="text-xs px-3 h-full md:w-full flex flex-col gap-7 text-justify font-light opacity-90 md:text-sm lg:mr-5 lg:px-5 lg:p-5">
+          <article className="flex flex-col md:flex-row w-full gap-3">
             <ul className="flex flex-col gap-3 list-square ml-5 lg:gap-5 ">
               <li
                 ref={fadeRefs[0]}
@@ -125,16 +125,16 @@ function Skills() {
                 </span>
               </li>
             </ul>
-            <div
+            <figure
               ref={fadeRefs[8]}
               className="md:w-[110%] lg:w-[60%] h-auto bg-opacity-20 bg-zinc-700 fade-in ml-5 pb-7 mt-5 md:mt-0 "
             >
               <Suspense fallback={null}>
                 <Tools />
               </Suspense>
-            </div>
-          </div>
-          <p ref={fadeRefs[7]} className="leading-7 right-fade-in">
+            </figure>
+          </article>
+          <article ref={fadeRefs[7]} className="leading-7 right-fade-in">
             With these skills, I am well-equipped to handle various aspects of
             web development, from designing visually captivating interfaces to
             implementing robust backend functionality. I am committed to{" "}
@@ -146,9 +146,9 @@ function Skills() {
               continuously expanding my skill
             </span>{" "}
             set to deliver exceptional web solutions.
-          </p>
-        </div>
-      </div>
+          </article>
+        </section>
+      </main>
     </div>
   );
 }

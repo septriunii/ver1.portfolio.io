@@ -16,9 +16,9 @@ function ProjectLeftTemp({ id }) {
   const project = projects[id]; // Get the project based on the 'id' prop
 
   return (
-    <div>
-      <div className="hidden md:flex h-auto">
-        <div
+    <>
+      <main className="hidden md:flex h-auto">
+        <figure
           className={`transition-all duration-500 ease-in-out ${
             isHovered ? "lg:left-[39rem] md:left-[28rem]" : ""
           }`}
@@ -30,9 +30,9 @@ function ProjectLeftTemp({ id }) {
             visit={project.viewsite}
             view={project.viewcode}
           />
-        </div>
-        <div className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
-          <div className="gap-1 flex flex-col ">
+        </figure>
+        <article className="w-full h-auto flex flex-col justify-between gap-4 p-2 text-justify font-light ml-5 px-5 bg-zinc-700 bg-opacity-20 rounded">
+          <section className="gap-1 flex flex-col ">
             <p className="font-bold md:text-2xl lg:text-3xl text-orange-600">
               {project.name}
             </p>
@@ -40,8 +40,8 @@ function ProjectLeftTemp({ id }) {
             <p className="opacity-60 italic md:text-xs lg:text-sm">
               {project.class}
             </p>
-          </div>
-          <div className="w-full h-full relative">
+          </section>
+          <section className="w-full h-full relative">
             <div
               className={`bg-green-500 w-full h-auto -left-28 absolute transition-all duration-500 ease-in-out ${
                 isHovered ? "lg:left-0 md:left-0" : ""
@@ -51,9 +51,9 @@ function ProjectLeftTemp({ id }) {
                 <p dangerouslySetInnerHTML={{ __html: project.description }} />
               </div>
             </div>
-          </div>
+          </section>
 
-          <div className="flex flex-col gap-5">
+          <section className="flex flex-col gap-5">
             <div className="flex gap-5 opacity-40 md:text-xs lg:text-sm">
               {project.composition.map((tech, index) => (
                 <p
@@ -64,10 +64,10 @@ function ProjectLeftTemp({ id }) {
                 </p>
               ))}
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
+        </article>
+      </main>
+    </>
   );
 }
 
