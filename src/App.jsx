@@ -7,8 +7,10 @@ import AboutMe from "./pages/AboutMe";
 
 const SummaryPage = lazy(() => import("./components/SummaryPage"));
 const Footer = lazy(() => import("./components/Footer"));
-
-import { Skills, Projects, Experience, ContactMe } from "./pages/index";
+const Skills = lazy(() => import("./pages/Skills"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Experience = lazy(() => import("./pages/Experience"));
+const ContactMe = lazy(() => import("./pages/ContactMe"));
 
 const App = () => {
   const [isActive, setIsActive] = useState(false);
@@ -29,31 +31,27 @@ const App = () => {
     <div className="w-full h-auto relative duration-300 ease-in-out">
       <ToggleButton isActive={isActive} toggleMode={toggleMode} />
 
-      {isLoading ? (
-        <Preloader />
-      ) : (
-        <div className="duration-300 ease-in-out">
+      <Suspense fallback={null}>
+        {isLoading ? (
+          <Preloader />
+        ) : (
           <Body>
             {isActive ? (
-              <Suspense fallback={null}>
-                <SummaryPage />
-              </Suspense>
+              <SummaryPage />
             ) : (
               <>
                 <Intro loading="eager" />
                 <AboutMe />
-                <Suspense fallback={null}>
-                  <Skills />
-                  <Projects />
-                  <Experience />
-                  <ContactMe />
-                  <Footer />
-                </Suspense>
+                <Skills />
+                <Projects />
+                <Experience />
+                <ContactMe />
+                <Footer />
               </>
             )}
           </Body>
-        </div>
-      )}
+        )}
+      </Suspense>
     </div>
   );
 };

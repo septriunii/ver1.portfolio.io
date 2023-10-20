@@ -62,7 +62,7 @@ function Intro() {
                 Anthony<span className="text-orange-600"> Alabado</span>
               </p>
               {showText && (
-                <p className="md:text-5xl lg:text-6xl text-4xl text cursor-blink ">
+                <p className="md:text-5xl lg:text-6xl text-4xl text cursor-blink ease-in-out">
                   |
                 </p>
               )}
