@@ -96,7 +96,7 @@ function Intro() {
             }`}
             onClick={() => window.open(resume, "_blank")}
           >
-            View my resume
+            Resume
           </button>
         </section>
 
