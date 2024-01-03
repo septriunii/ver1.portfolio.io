@@ -1,0 +1,3 @@
+This is my portfolio website proudly displays my proficiency in React.js and my skill in UI/UX design. It
+serves as a platform to present my details and features 3 additional standout projects that exemplify
+my skills and creativity in action.
